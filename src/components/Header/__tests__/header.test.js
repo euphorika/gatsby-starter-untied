@@ -1,6 +1,6 @@
 import React from "React"
 import renderer from "react-test-renderer"
-import Header from "../header"
+import Header from "../"
 
 describe("Header", () => {
   it("renders correctly", () => {
