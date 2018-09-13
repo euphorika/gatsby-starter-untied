@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation renders correctly 1`] = `
+<div>
+  <button
+    className="navLink"
+    id="nav-link"
+    onClick={[Function]}
+  >
+    ☰
+  </button>
+  <nav
+    className="menu"
+    id="menu"
+  >
+    <ul>
+      <li>
+        <Link
+          to="/"
+        >
+          Menu Entry 1
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/"
+        >
+          Menu Entry 2
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/"
+        >
+          Menu Entry 3
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/"
+        >
+          Menu Entry 4
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/"
+        >
+          Menu Entry 5
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/"
+        >
+          Menu Entry 6
+        </Link>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
