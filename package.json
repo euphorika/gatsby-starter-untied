@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "next",
-    "gatsby-plugin-manifest": "next",
-    "gatsby-plugin-offline": "next",
-    "gatsby-plugin-react-helmet": "next",
+    "gatsby": "^2.0.0-rc.21",
+    "gatsby-plugin-manifest": "^2.0.2-rc.1",
+    "gatsby-plugin-offline": "^2.0.0-rc.7",
+    "gatsby-plugin-react-helmet": "^3.0.0-rc.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0"
@@ -48,7 +48,11 @@
       ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
       ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
     },
-    "testPathIgnorePatterns": ["node_modules", "__snapshots__", ".cache"],
+    "testPathIgnorePatterns": [
+      "node_modules",
+      "__snapshots__",
+      ".cache"
+    ],
     "transformIgnorePatterns": [
       "node_modules/(?!(gatsby)/)"
     ],
