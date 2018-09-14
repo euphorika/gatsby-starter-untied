@@ -3,40 +3,71 @@ import { Link } from 'gatsby'
 
 import Navigation from '../Navigation'
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
+const Header = ({ siteTitle }) => {
+
+  const navigationEntries = [
+    {
+      text: 'Menu Entry 1',
+      to: '#',
+      title: null
+    },{
+      text: 'Menu Entry 2',
+      to: '#',
+      title: null
+    },{
+      text: 'Menu Entry 3',
+      to: '#',
+      title: null
+    },{
+      text: 'Menu Entry 4',
+      to: '#',
+      title: null
+    },{
+      text: 'Menu Entry 5',
+      to: '#',
+      title: null
+    },{
+      text: 'Menu Entry 6',
+      to: '#',
+      title: null
+    }
+  ]
+
+  return (
     <div
       style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-        display: 'flex',
-        justifyContent: 'flex-end'
+        background: 'rebeccapurple',
+        marginBottom: '1.45rem',
       }}
     >
-      <h1 style={{
-         margin: 0,
-         fontSize: '18px'
-       }}
+      <div
+        style={{
+          margin: '0 auto',
+          maxWidth: 960,
+          padding: '1.45rem 1.0875rem',
+          display: 'flex',
+          justifyContent: 'flex-end'
+        }}
       >
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
+        <h1 style={{
+           margin: 0,
+           fontSize: '18px'
+         }}
         >
-          {siteTitle}
-        </Link>
-      </h1>
-      <Navigation />
+          <Link
+            to="/"
+            style={{
+              color: 'white',
+              textDecoration: 'none',
+            }}
+          >
+            {siteTitle}
+          </Link>
+        </h1>
+        <Navigation entries={navigationEntries} />
+      </div>
     </div>
-  </div>
-)
+  )
+}
 
 export default Header

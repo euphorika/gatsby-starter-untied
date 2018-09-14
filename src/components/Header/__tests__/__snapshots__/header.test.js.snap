@@ -53,42 +53,48 @@ exports[`Header renders correctly 1`] = `
         <ul>
           <li>
             <Link
-              to="/"
+              title={null}
+              to="#"
             >
               Menu Entry 1
             </Link>
           </li>
           <li>
             <Link
-              to="/"
+              title={null}
+              to="#"
             >
               Menu Entry 2
             </Link>
           </li>
           <li>
             <Link
-              to="/"
+              title={null}
+              to="#"
             >
               Menu Entry 3
             </Link>
           </li>
           <li>
             <Link
-              to="/"
+              title={null}
+              to="#"
             >
               Menu Entry 4
             </Link>
           </li>
           <li>
             <Link
-              to="/"
+              title={null}
+              to="#"
             >
               Menu Entry 5
             </Link>
           </li>
           <li>
             <Link
-              to="/"
+              title={null}
+              to="#"
             >
               Menu Entry 6
             </Link>
