@@ -1,14 +1,25 @@
+@require '../../themes/standard/config/breakpoints'
+@require '../../themes/standard/config/colors'
+@require '../../themes/standard/components/navigation'
+
+:root
+  --menu-bg-color secondary-color
+  --menu-padding menu-padding
+
 .nav-link
   cursor pointer
   text-rendering geometricPrecision
 
 .menu
   display none
-  background #fff
+  background var(--menu-bg-color)
   position absolute
   right 0
   left 0
-  padding 10px
+  padding var(--menu-padding)
 
   &.open
     display block
+
+  a
+    color link-color

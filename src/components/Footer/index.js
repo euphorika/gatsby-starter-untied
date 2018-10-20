@@ -1,14 +1,13 @@
 import React from 'react'
 
+import styles from './styles.module.styl'
+
 const Footer = () => (
-  <footer style={{
-    textAlign: 'right',
-    background: 'rebeccapurple',
-    padding: '1.45rem 1.0875rem',
-    color: '#fff'
-  }}>
-    <span style={{fontSize: '12px'}}>&copy; 2018</span>
-  </footer>
+  <div className={styles.footerContainer}>
+    <footer>
+      <span className={styles.copyright}>&copy; 2018</span>
+    </footer>
+  </div>
 )
 
 export default Footer

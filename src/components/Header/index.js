@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 
 import Navigation from '../Navigation'
 
+import styles from './styles.module.styl'
+
 const Header = ({ siteTitle }) => {
 
   const navigationEntries = [
@@ -34,38 +36,15 @@ const Header = ({ siteTitle }) => {
   ]
 
   return (
-    <div
-      style={{
-        background: 'rebeccapurple',
-        marginBottom: '1.45rem',
-      }}
-    >
-      <div
-        style={{
-          margin: '0 auto',
-          maxWidth: 960,
-          padding: '1.45rem 1.0875rem',
-          display: 'flex',
-          justifyContent: 'flex-end'
-        }}
-      >
-        <h1 style={{
-           margin: 0,
-           fontSize: '18px'
-         }}
-        >
-          <Link
-            to="/"
-            style={{
-              color: 'white',
-              textDecoration: 'none',
-            }}
-          >
+    <div className={styles.headerContainer}>
+      <header>
+        <h1>
+          <Link to="/">
             {siteTitle}
           </Link>
         </h1>
         <Navigation entries={navigationEntries} />
-      </div>
+      </header>
     </div>
   )
 }
