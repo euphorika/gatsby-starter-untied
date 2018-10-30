@@ -14,12 +14,32 @@
   display none
   background var(--menu-bg-color)
   position absolute
+  top 0
   right 0
+  bottom 0
   left 0
   padding var(--menu-padding)
 
   &.open
-    display block
+    display flex
+
+  &.horizontal-align-left
+    justify-content flex-start
+
+  &.horizontal-align-right
+    justify-content flex-end
+
+  &.horizontal-align-center
+    justify-content center
+
+  &.vertical-align-top
+    align-items flex-start
+
+  &.vertical-align-center
+    align-items center
+
+  &.vertical-align-bottom
+    align-items flex-end
 
   a
     color link-color

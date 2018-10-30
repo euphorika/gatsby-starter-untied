@@ -32,8 +32,28 @@ const navigationEntries = [
 ]
 
 describe("Navigation", () => {
-  it("renders correctly", () => {
+  it("renders correctly - navigation center center", () => {
     const tree = renderer.create(<Navigation entries={navigationEntries} />).toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+
+  it("renders correctly - navigation top center", () => {
+    const tree = renderer.create(<Navigation entries={navigationEntries} verticalAlignment="top" horizontalAlignment="center" />).toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+
+  it("renders correctly - navigation bottom center", () => {
+    const tree = renderer.create(<Navigation entries={navigationEntries} verticalAlignment="bottom" horizontalAlignment="center" />).toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+
+  it("renders correctly - navigation center left", () => {
+    const tree = renderer.create(<Navigation entries={navigationEntries} verticalAlignment="center" horizontalAlignment="left" />).toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+
+  it("renders correctly - navigation center right", () => {
+    const tree = renderer.create(<Navigation entries={navigationEntries} verticalAlignment="center" horizontalAlignment="right" />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })

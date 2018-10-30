@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Navigation renders correctly 1`] = `
+exports[`Navigation renders correctly - navigation bottom center 1`] = `
 <div>
   <button
     className="navLink"
@@ -10,7 +10,275 @@ exports[`Navigation renders correctly 1`] = `
     ☰
   </button>
   <nav
-    className="menu"
+    className="menu horizontalAlignCenter verticalAlignBottom"
+    id="menu"
+  >
+    <ul>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 1
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 2
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 3
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 4
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 5
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 6
+        </Link>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Navigation renders correctly - navigation center center 1`] = `
+<div>
+  <button
+    className="navLink"
+    id="nav-link"
+    onClick={[Function]}
+  >
+    ☰
+  </button>
+  <nav
+    className="menu horizontalAlignCenter verticalAlignCenter"
+    id="menu"
+  >
+    <ul>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 1
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 2
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 3
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 4
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 5
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 6
+        </Link>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Navigation renders correctly - navigation center left 1`] = `
+<div>
+  <button
+    className="navLink"
+    id="nav-link"
+    onClick={[Function]}
+  >
+    ☰
+  </button>
+  <nav
+    className="menu horizontalAlignLeft verticalAlignCenter"
+    id="menu"
+  >
+    <ul>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 1
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 2
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 3
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 4
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 5
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 6
+        </Link>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Navigation renders correctly - navigation center right 1`] = `
+<div>
+  <button
+    className="navLink"
+    id="nav-link"
+    onClick={[Function]}
+  >
+    ☰
+  </button>
+  <nav
+    className="menu horizontalAlignRight verticalAlignCenter"
+    id="menu"
+  >
+    <ul>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 1
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 2
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 3
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 4
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 5
+        </Link>
+      </li>
+      <li>
+        <Link
+          title={null}
+          to="#"
+        >
+          Menu Entry 6
+        </Link>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Navigation renders correctly - navigation top center 1`] = `
+<div>
+  <button
+    className="navLink"
+    id="nav-link"
+    onClick={[Function]}
+  >
+    ☰
+  </button>
+  <nav
+    className="menu horizontalAlignCenter verticalAlignTop"
     id="menu"
   >
     <ul>

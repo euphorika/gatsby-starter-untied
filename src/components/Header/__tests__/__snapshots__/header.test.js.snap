@@ -19,7 +19,7 @@ exports[`Header renders correctly 1`] = `
         ☰
       </button>
       <nav
-        className="menu"
+        className="menu horizontalAlignCenter verticalAlignCenter"
         id="menu"
       >
         <ul>
