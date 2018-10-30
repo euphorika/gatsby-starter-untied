@@ -58,11 +58,19 @@ class Navigation extends React.Component {
           onClick={(e) => {this.setState({navigationVisible: !this.state.navigationVisible})}}>
           ☰
         </button>
-        <nav className={`${toggleVisibilityClass} ${horizontalAlignmentClass} ${verticalAlignmentClass}`} id="menu">
-          <ul>
-            {this._renderNavigationEntries(this.state.entries)}
-          </ul>
-        </nav>
+        <div  className={`${toggleVisibilityClass} ${horizontalAlignmentClass} ${verticalAlignmentClass}`} id="menu">
+          <button
+            className={styles.navClose}
+            id="nav-close"
+            onClick={() => {this.setState({navigationVisible: false})}}>
+            ×
+          </button>
+          <nav>
+            <ul>
+              {this._renderNavigationEntries(this.state.entries)}
+            </ul>
+          </nav>
+        </div>
       </div>
     )
   }
