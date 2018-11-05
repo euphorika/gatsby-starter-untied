@@ -65,6 +65,7 @@
     "testPathIgnorePatterns": [
       "node_modules",
       "__snapshots__",
+      "cypress",
       ".cache"
     ],
     "transformIgnorePatterns": [

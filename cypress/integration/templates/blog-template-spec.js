@@ -4,5 +4,6 @@ describe('My First Test', () => {
     cy.get('h1').should('be.visible')
     cy.get('h2').should('be.visible')
     cy.get('div').should('be.visible')
+    cy.get('img').should('be.visible')
   })
 })
