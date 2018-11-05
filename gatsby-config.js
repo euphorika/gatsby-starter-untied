@@ -9,8 +9,19 @@ module.exports = {
         path: `${__dirname}/src/pages`,
         name: "pages",
       },
+    },{
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1024,
+            },
+          },
+        ],
+      },
     },
-    `gatsby-transformer-remark`,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-stylus',
     {
