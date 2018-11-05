@@ -5,7 +5,6 @@ import { Link } from 'gatsby'
 import styles from './styles.module.styl'
 
 class Navigation extends React.Component {
-
   constructor(props) {
     super(props)
 
@@ -13,16 +12,22 @@ class Navigation extends React.Component {
       navigationVisible: false,
       horizontalAlignment: this.props.horizontalAlignment || 'center',
       verticalAlignment: this.props.verticalAlignment || 'center',
-      entries: this.props.entries
+      entries: this.props.entries,
     }
   }
 
   _renderNavigationEntries(entries) {
-    return entries.map((entry, key) => <li key={key}><Link to={entry.to} title={entry.title}>{entry.text}</Link></li>)
+    return entries.map((entry, key) => (
+      <li key={key}>
+        <Link to={entry.to} title={entry.title}>
+          {entry.text}
+        </Link>
+      </li>
+    ))
   }
 
   _calculateHorizontalPosition(horizontalAlignment) {
-    switch(horizontalAlignment) {
+    switch (horizontalAlignment) {
       case 'right':
         return styles.horizontalAlignRight
       case 'left':
@@ -34,7 +39,7 @@ class Navigation extends React.Component {
   }
 
   _calculateVerticalPosition(verticalAlignment) {
-    switch(verticalAlignment) {
+    switch (verticalAlignment) {
       case 'top':
         return styles.verticalAlignTop
       case 'bottom':
@@ -46,29 +51,42 @@ class Navigation extends React.Component {
   }
 
   render() {
-    const toggleVisibilityClass = this.state.navigationVisible ? `${styles.menu} ${styles.open}` : styles.menu
-    const horizontalAlignmentClass =  this._calculateHorizontalPosition(this.state.horizontalAlignment)
-    const verticalAlignmentClass = this._calculateVerticalPosition(this.state.verticalAlignment)
+    const toggleVisibilityClass = this.state.navigationVisible
+      ? `${styles.menu} ${styles.open}`
+      : styles.menu
+    const horizontalAlignmentClass = this._calculateHorizontalPosition(
+      this.state.horizontalAlignment
+    )
+    const verticalAlignmentClass = this._calculateVerticalPosition(
+      this.state.verticalAlignment
+    )
 
     return (
       <div>
         <button
           className={styles.navLink}
           id="nav-link"
-          onClick={(e) => {this.setState({navigationVisible: !this.state.navigationVisible})}}>
+          onClick={e => {
+            this.setState({ navigationVisible: !this.state.navigationVisible })
+          }}
+        >
           ☰
         </button>
-        <div  className={`${toggleVisibilityClass} ${horizontalAlignmentClass} ${verticalAlignmentClass}`} id="menu">
+        <div
+          className={`${toggleVisibilityClass} ${horizontalAlignmentClass} ${verticalAlignmentClass}`}
+          id="menu"
+        >
           <button
             className={styles.navClose}
             id="nav-close"
-            onClick={() => {this.setState({navigationVisible: false})}}>
+            onClick={() => {
+              this.setState({ navigationVisible: false })
+            }}
+          >
             ×
           </button>
           <nav>
-            <ul>
-              {this._renderNavigationEntries(this.state.entries)}
-            </ul>
+            <ul>{this._renderNavigationEntries(this.state.entries)}</ul>
           </nav>
         </div>
       </div>
