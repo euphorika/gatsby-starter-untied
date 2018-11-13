@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post-Link renders correctly 1`] = `
+<div>
+  <h2>
+    <Link
+      to="/slug"
+    >
+      title
+       (
+      November 05, 2018
+      )
+    </Link>
+  </h2>
+  <p>
+    excerpt
+  </p>
+</div>
+`;
