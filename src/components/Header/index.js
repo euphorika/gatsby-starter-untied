@@ -5,7 +5,18 @@ import Navigation from '../Navigation'
 
 import styles from './styles.module.styl'
 
-const Header = ({ siteTitle }) => {
+export const PureHeader = ({ siteTitle, data }) => (
+  <div className={styles.headerContainer}>
+    <header>
+      <h1>
+        <Link to="/">{siteTitle}</Link>
+      </h1>
+      <Navigation entries={data.allMenuEntryMain.edges} />
+    </header>
+  </div>
+)
+
+const Header = props => {
   return (
     <StaticQuery
       query={graphql`
@@ -23,16 +34,7 @@ const Header = ({ siteTitle }) => {
           }
         }`
       }
-      render={data => (
-        <div className={styles.headerContainer}>
-          <header>
-            <h1>
-              <Link to="/">{siteTitle}</Link>
-            </h1>
-            <Navigation entries={data.allMenuEntryMain.edges} />
-          </header>
-        </div>
-      )}
+      render={data => <PureHeader {...props} data={data} />}
     />
   )
 }

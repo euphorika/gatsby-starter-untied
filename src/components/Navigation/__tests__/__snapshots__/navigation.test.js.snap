@@ -24,7 +24,7 @@ exports[`Navigation renders correctly - navigation bottom center 1`] = `
       <ul>
         <li>
           <Link
-            title={null}
+            title="Title"
             to="#"
           >
             Menu Entry 1
@@ -32,42 +32,10 @@ exports[`Navigation renders correctly - navigation bottom center 1`] = `
         </li>
         <li>
           <Link
-            title={null}
+            target="Target"
             to="#"
           >
             Menu Entry 2
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 3
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 4
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 5
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 6
           </Link>
         </li>
       </ul>
@@ -100,7 +68,7 @@ exports[`Navigation renders correctly - navigation center center 1`] = `
       <ul>
         <li>
           <Link
-            title={null}
+            title="Title"
             to="#"
           >
             Menu Entry 1
@@ -108,42 +76,10 @@ exports[`Navigation renders correctly - navigation center center 1`] = `
         </li>
         <li>
           <Link
-            title={null}
+            target="Target"
             to="#"
           >
             Menu Entry 2
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 3
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 4
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 5
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 6
           </Link>
         </li>
       </ul>
@@ -176,7 +112,7 @@ exports[`Navigation renders correctly - navigation center left 1`] = `
       <ul>
         <li>
           <Link
-            title={null}
+            title="Title"
             to="#"
           >
             Menu Entry 1
@@ -184,42 +120,10 @@ exports[`Navigation renders correctly - navigation center left 1`] = `
         </li>
         <li>
           <Link
-            title={null}
+            target="Target"
             to="#"
           >
             Menu Entry 2
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 3
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 4
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 5
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 6
           </Link>
         </li>
       </ul>
@@ -252,7 +156,7 @@ exports[`Navigation renders correctly - navigation center right 1`] = `
       <ul>
         <li>
           <Link
-            title={null}
+            title="Title"
             to="#"
           >
             Menu Entry 1
@@ -260,42 +164,10 @@ exports[`Navigation renders correctly - navigation center right 1`] = `
         </li>
         <li>
           <Link
-            title={null}
+            target="Target"
             to="#"
           >
             Menu Entry 2
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 3
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 4
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 5
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 6
           </Link>
         </li>
       </ul>
@@ -328,7 +200,7 @@ exports[`Navigation renders correctly - navigation top center 1`] = `
       <ul>
         <li>
           <Link
-            title={null}
+            title="Title"
             to="#"
           >
             Menu Entry 1
@@ -336,42 +208,10 @@ exports[`Navigation renders correctly - navigation top center 1`] = `
         </li>
         <li>
           <Link
-            title={null}
+            target="Target"
             to="#"
           >
             Menu Entry 2
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 3
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 4
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 5
-          </Link>
-        </li>
-        <li>
-          <Link
-            title={null}
-            to="#"
-          >
-            Menu Entry 6
           </Link>
         </li>
       </ul>

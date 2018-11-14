@@ -8,7 +8,9 @@ exports[`Header renders correctly 1`] = `
     <h1>
       <Link
         to="/"
-      />
+      >
+        Site Title
+      </Link>
     </h1>
     <div>
       <button
@@ -33,7 +35,7 @@ exports[`Header renders correctly 1`] = `
           <ul>
             <li>
               <Link
-                title={null}
+                title="Title"
                 to="#"
               >
                 Menu Entry 1
@@ -41,42 +43,10 @@ exports[`Header renders correctly 1`] = `
             </li>
             <li>
               <Link
-                title={null}
+                target="_blank"
                 to="#"
               >
                 Menu Entry 2
-              </Link>
-            </li>
-            <li>
-              <Link
-                title={null}
-                to="#"
-              >
-                Menu Entry 3
-              </Link>
-            </li>
-            <li>
-              <Link
-                title={null}
-                to="#"
-              >
-                Menu Entry 4
-              </Link>
-            </li>
-            <li>
-              <Link
-                title={null}
-                to="#"
-              >
-                Menu Entry 5
-              </Link>
-            </li>
-            <li>
-              <Link
-                title={null}
-                to="#"
-              >
-                Menu Entry 6
               </Link>
             </li>
           </ul>

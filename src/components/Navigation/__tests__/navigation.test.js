@@ -5,35 +5,19 @@ import Navigation from '../'
 // required array parameter
 const navigationEntries = [
   {
-    text: 'Menu Entry 1',
-    to: '#',
-    title: null,
+    node: {
+      name: 'Menu Entry 1',
+      link: '#',
+      title: 'Title',
+    }
   },
   {
-    text: 'Menu Entry 2',
-    to: '#',
-    title: null,
-  },
-  {
-    text: 'Menu Entry 3',
-    to: '#',
-    title: null,
-  },
-  {
-    text: 'Menu Entry 4',
-    to: '#',
-    title: null,
-  },
-  {
-    text: 'Menu Entry 5',
-    to: '#',
-    title: null,
-  },
-  {
-    text: 'Menu Entry 6',
-    to: '#',
-    title: null,
-  },
+    node: {
+      name: 'Menu Entry 2',
+      link: '#',
+      target: 'Target',
+    }
+  }
 ]
 
 describe('Navigation', () => {
