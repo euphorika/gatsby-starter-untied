@@ -25,6 +25,7 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-stylus',
+    'gatsby-plugin-navigation',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

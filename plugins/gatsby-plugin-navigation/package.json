@@ -1,0 +1,14 @@
+{
+  "name": "gatsby-plugin-navigation",
+  "version": "0.0.1",
+  "description": "Gatsby plugin which sets up a navigation object automatically",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "Gatsby",
+    "Navigation"
+  ],
+  "author": "Jan Winterfeld <jan@euphorika.hamburg> (www.markenbegeisterung.de)",
+  "license": "MIT"
+}
