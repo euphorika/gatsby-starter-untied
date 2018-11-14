@@ -33,12 +33,14 @@ module.exports = {
             {
               id: 'home',
               name: 'Home',
-              link: '/'
+              link: '/',
+              title: 'Title Home'
             },
             {
               id: 'antoher-page',
               name: 'Another Page',
-              link: '/another-page/'
+              link: '/another-page/',
+              target: '_blank'
             }
           ]
         }

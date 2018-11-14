@@ -16,6 +16,8 @@ const Header = ({ siteTitle }) => {
                 id
                 name
                 link
+                title
+                target
               }
             }
           }

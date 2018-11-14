@@ -19,7 +19,11 @@ class Navigation extends React.Component {
   _renderNavigationEntries(entries) {
     return entries.map((entry, key) => (
       <li key={key}>
-        <Link to={entry.node.link}>
+        <Link
+          to={entry.node.link}
+          {...(!!entry.node.title ? {title: entry.node.title} : {})}
+          {...(!!entry.node.target ? {target: entry.node.target} : {})}
+        >
           {entry.node.name}
         </Link>
       </li>
