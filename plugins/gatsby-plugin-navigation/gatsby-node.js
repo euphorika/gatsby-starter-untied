@@ -9,13 +9,14 @@ exports.sourceNodes = (
   const processMenuEntry = (entry, key) => {
     const nodeId = createNodeId(`menu-entry-${key}-${entry.link}`)
     const nodeContent = JSON.stringify(entry)
+    const nodeIdentifier = key.charAt(0).toUpperCase() + key.slice(1).toLowerCase()
 
     const nodeData = Object.assign({}, entry, {
       id: nodeId,
       parent: null,
       children: [],
       internal: {
-        type: 'MenuEntry',
+        type: `MenuEntry${nodeIdentifier}`,
         content: nodeContent,
         contentDigest: createContentDigest(entry)
       }
@@ -25,13 +26,13 @@ exports.sourceNodes = (
   }
 
   return new Promise((resolve, reject) => {
+    for(let key in configOptions.menues) {  
+      configOptions.menues[key].forEach(entry => {
+        const nodeData = processMenuEntry(entry, key)
+        createNode(nodeData)
+      })
+    }
 
-    // check for duplicate entries per menu entry
-
-    configOptions.menues.main.forEach(entry => {
-      const nodeData = processMenuEntry(entry, 'main')
-      createNode(nodeData)
-    })
     resolve()
   })
 }

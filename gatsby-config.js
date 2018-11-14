@@ -31,10 +31,12 @@ module.exports = {
         menues: {
           main: [
             {
+              id: 'home',
               name: 'Home',
               link: '/'
             },
             {
+              id: 'antoher-page',
               name: 'Another Page',
               link: '/another-page/'
             }
