@@ -25,7 +25,23 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-stylus',
-    'gatsby-plugin-navigation',
+    {
+      resolve: 'gatsby-plugin-navigation',
+      options: {
+        menues: {
+          main: [
+            {
+              name: 'Home',
+              link: '/'
+            },
+            {
+              name: 'Another Page',
+              link: '/another-page/'
+            }
+          ]
+        }
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
