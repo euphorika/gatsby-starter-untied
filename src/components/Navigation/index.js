@@ -19,8 +19,8 @@ class Navigation extends React.Component {
   _renderNavigationEntries(entries) {
     return entries.map((entry, key) => (
       <li key={key}>
-        <Link to={entry.to} title={entry.title}>
-          {entry.text}
+        <Link to={entry.node.link}>
+          {entry.node.name}
         </Link>
       </li>
     ))
