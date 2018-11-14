@@ -6,11 +6,11 @@ const postLinkEntry = {
   excerpt: 'excerpt',
   frontmatter: {
     title: 'title',
-    date: 'November 05, 2018'
+    date: 'November 05, 2018',
   },
   fields: {
-    slug: '/slug'
-  }
+    slug: '/slug',
+  },
 }
 
 describe('Post-Link', () => {

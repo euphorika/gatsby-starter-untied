@@ -32,8 +32,8 @@ const Header = props => {
               }
             }
           }
-        }`
-      }
+        }
+      `}
       render={data => <PureHeader {...props} data={data} />}
     />
   )

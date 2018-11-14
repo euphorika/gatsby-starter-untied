@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from "gatsby"
+import { Link } from 'gatsby'
 
 const PostLink = ({ post }) => (
   <div>
@@ -18,7 +18,7 @@ PostLink.propTypes = {
     excerpt: PropTypes.string,
     frontmatter: PropTypes.object,
     fields: PropTypes.object,
-  }).isRequired
+  }).isRequired,
 }
 
 export default PostLink

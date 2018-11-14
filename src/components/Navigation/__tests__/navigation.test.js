@@ -9,15 +9,15 @@ const navigationEntries = [
       name: 'Menu Entry 1',
       link: '#',
       title: 'Title',
-    }
+    },
   },
   {
     node: {
       name: 'Menu Entry 2',
       link: '#',
       target: 'Target',
-    }
-  }
+    },
+  },
 ]
 
 describe('Navigation', () => {

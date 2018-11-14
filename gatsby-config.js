@@ -34,17 +34,17 @@ module.exports = {
               id: 'home',
               name: 'Home',
               link: '/',
-              title: 'Title Home'
+              title: 'Title Home',
             },
             {
               id: 'antoher-page',
               name: 'Another Page',
               link: '/another-page/',
-              target: '_blank'
-            }
-          ]
-        }
-      }
+              target: '_blank',
+            },
+          ],
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
