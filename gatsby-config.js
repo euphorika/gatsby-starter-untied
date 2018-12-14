@@ -41,7 +41,11 @@ module.exports = {
               name: 'Another Page',
               link: '/another-page/',
               target: '_blank',
-            },
+            },{
+              id: 'components',
+              name: 'Components Page',
+              link: '/components/',
+            }
           ],
         },
       },
