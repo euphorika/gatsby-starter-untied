@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TeamMember renders correctly 1`] = `
+<section
+  className="TeamMemberSection"
+>
+  Team Member
+</section>
+`;
