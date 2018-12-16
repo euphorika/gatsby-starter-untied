@@ -7,6 +7,7 @@ import CallToAction from '../components/CallToAction/'
 import Slider from '../components/Slider/'
 import PricingTable from '../components/PricingTable/'
 import Forms from '../components/Forms/'
+import Video from '../components/Video/'
 
 const ComponentsPage = () => (
   <Layout>
@@ -16,6 +17,7 @@ const ComponentsPage = () => (
     <Slider />
     <PricingTable />
     <Forms />
+    <Video />
   </Layout>
 )
 
