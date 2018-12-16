@@ -6,6 +6,7 @@ import TeamMember from '../components/TeamMember/'
 import CallToAction from '../components/CallToAction/'
 import Slider from '../components/Slider/'
 import PricingTable from '../components/PricingTable/'
+import Forms from '../components/Forms/'
 
 const ComponentsPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const ComponentsPage = () => (
     <CallToAction />
     <Slider />
     <PricingTable />
+    <Forms />
   </Layout>
 )
 
