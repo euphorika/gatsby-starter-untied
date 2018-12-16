@@ -5,6 +5,7 @@ import Hero from '../components/Hero/'
 import TeamMember from '../components/TeamMember/'
 import CallToAction from '../components/CallToAction/'
 import Slider from '../components/Slider/'
+import PricingTable from '../components/PricingTable/'
 
 const ComponentsPage = () => (
   <Layout>
@@ -12,6 +13,7 @@ const ComponentsPage = () => (
     <TeamMember />
     <CallToAction />
     <Slider />
+    <PricingTable />
   </Layout>
 )
 
