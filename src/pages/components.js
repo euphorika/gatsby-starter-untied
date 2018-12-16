@@ -9,6 +9,7 @@ import PricingTable from '../components/PricingTable/'
 import Forms from '../components/Forms/'
 import Video from '../components/Video/'
 import Testimonial from '../components/Testimonial/'
+import Callout from '../components/Callout/'
 
 const ComponentsPage = () => (
   <Layout>
@@ -20,6 +21,7 @@ const ComponentsPage = () => (
     <Forms />
     <Video />
     <Testimonial />
+    <Callout />
   </Layout>
 )
 
