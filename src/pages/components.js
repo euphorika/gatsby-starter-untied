@@ -11,10 +11,17 @@ import Video from '../components/Video/'
 import Testimonial from '../components/Testimonial/'
 import Callout from '../components/Callout/'
 
+import TeamMember from '../components/TeamMembers/team-member.js'
+
 const ComponentsPage = () => (
   <Layout>
     <Hero />
-    <TeamMembers />
+    <TeamMembers>
+      <TeamMember />
+      <TeamMember />
+      <TeamMember />
+      <TeamMember />
+    </TeamMembers>
     <CallToAction />
     <Slider />
     <PricingTable />

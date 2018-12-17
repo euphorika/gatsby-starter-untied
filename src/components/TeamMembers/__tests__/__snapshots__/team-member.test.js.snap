@@ -2,8 +2,10 @@
 
 exports[`TeamMember renders correctly 1`] = `
 <section
-  className="TeamMemberSection"
+  className="teamMemberSection"
 >
-  Team Member
+  <div
+    className="innerContainer"
+  />
 </section>
 `;

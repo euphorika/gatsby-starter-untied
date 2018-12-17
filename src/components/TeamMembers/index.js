@@ -2,8 +2,10 @@ import React from 'react'
 
 import styles from './styles.module.styl'
 
-const TeamMembers = () => (
-  <section className={styles.TeamMemberSection}>Team Members</section>
+const TeamMembers = ({ children }) => (
+  <section className={styles.teamMemberSection}>
+    <div className={styles.innerContainer}>{children}</div>
+  </section>
 )
 
 export default TeamMembers
