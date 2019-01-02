@@ -1,6 +1,34 @@
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Starter Untied',
+    components: {
+      teamMembers: [
+        {
+          name: 'Hans Hinrich',
+          position: 'CEO',
+          body:
+            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+        },
+        {
+          name: 'Ulf Knulf',
+          position: 'Person',
+          body:
+            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+        },
+        {
+          name: 'Karla Marla',
+          position: 'Teacher',
+          body:
+            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+        },
+        {
+          name: 'Esta Bester',
+          position: 'User',
+          body:
+            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+        },
+      ],
+    },
   },
   plugins: [
     {
