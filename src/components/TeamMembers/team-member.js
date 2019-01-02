@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 
 const TeamMember = ({ children, name, position, imgFixed }) => (
@@ -11,5 +12,10 @@ const TeamMember = ({ children, name, position, imgFixed }) => (
     <div className="bio">{children}</div>
   </div>
 )
+
+TeamMember.propTypes = {
+  children: PropTypes.node.isRequired,
+  name: PropTypes.string.isRequired,
+}
 
 export default TeamMember
