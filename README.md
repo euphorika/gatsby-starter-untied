@@ -10,6 +10,11 @@ Make sure that you have the Gatsby CLI program installed:
 npm install --global gatsby-cli
 ```
 
+Make sure that you have the dependencies installed:
+```sh
+yarn install
+```
+
 You can run it by:
 ```sh
 gatsby develop
