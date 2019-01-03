@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
 import Hero from '../components/Hero/'
@@ -11,18 +12,38 @@ import Video from '../components/Video/'
 import Testimonial from '../components/Testimonial/'
 import Callout from '../components/Callout/'
 
-const ComponentsPage = () => (
-  <Layout>
-    <Hero />
-    <TeamMember />
-    <CallToAction />
-    <Slider />
-    <PricingTable />
-    <Forms />
-    <Video />
-    <Testimonial />
-    <Callout />
-  </Layout>
-)
+const ComponentsPage = ({ data }) => {
+  const { testimonials } = data.site.siteMetadata.components
+
+  return (
+    <Layout>
+      <Hero />
+      <TeamMember />
+      <CallToAction />
+      <Slider />
+      <PricingTable />
+      <Forms />
+      <Video />
+      <Testimonial />
+      <Callout />
+    </Layout>
+  )
+}
 
 export default ComponentsPage
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        components {
+          testimonials {
+            name
+            img
+            body
+          }
+        }
+      }
+    }
+  }
+`
