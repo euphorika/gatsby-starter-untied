@@ -10,15 +10,34 @@ Make sure that you have the Gatsby CLI program installed:
 npm install --global gatsby-cli
 ```
 
-And run from your CLI:
+Make sure that you have the dependencies installed:
 ```sh
-gatsby new gatsby-example-site
+yarn install
 ```
 
-Then you can run it by:
+You can run it by:
 ```sh
-cd gatsby-example-site
 gatsby develop
+```
+
+You can build it by:
+```sh
+gatsby build
+```
+
+You can run unit tests by:
+```sh
+yarn test
+```
+
+You can run integration tests by:
+```sh
+yarn test:e2e
+```
+
+You can format you code by:
+```sh
+yarn format
 ```
 
 ## Deploy
