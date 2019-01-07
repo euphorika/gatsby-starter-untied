@@ -15,10 +15,7 @@ describe('Testimonial', () => {
     }
 
     const testimonial = (
-      <Testimonial
-        name="Name"
-        imgFixed={imgFixed}
-      >
+      <Testimonial name="Name" imgFixed={imgFixed}>
         Body
       </Testimonial>
     )
