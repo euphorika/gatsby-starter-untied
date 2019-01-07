@@ -6,7 +6,7 @@ module.exports = {
         {
           name: 'Sarah Author',
           img: 'sarah.png',
-          body: 'Sarah my Friend',
+          body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
         }
       ],
       teamMembers: [
