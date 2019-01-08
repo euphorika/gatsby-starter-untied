@@ -16,7 +16,7 @@ import Callout from '../components/Callout/'
 import TeamMember from '../components/TeamMembers/team-member.js'
 
 const ComponentsPage = ({ data }) => {
-  const { teamMembers } = data.site.siteMetadata.components
+  const { teamMembers, pricingTable } = data.site.siteMetadata.components
   const images = ['business', 'person', 'teacher', 'user']
 
   return (
@@ -55,6 +55,16 @@ export const query = graphql`
           teamMembers {
             name
             position
+            body
+          }
+          pricingTable {
+            headline
+            price
+            currency
+            callToAction {
+              text
+              link
+            }
             body
           }
         }
