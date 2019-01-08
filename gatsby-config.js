@@ -3,6 +3,14 @@ module.exports = {
     title: 'Gatsby Starter Untied',
     locales: 'de-DE',
     components: {
+      testimonials: [
+        {
+          name: 'Sarah Author',
+          img: 'sarah.png',
+          body:
+            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+        },
+      ],
       teamMembers: [
         {
           name: 'Hans Hinrich',
