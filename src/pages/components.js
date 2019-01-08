@@ -38,7 +38,10 @@ const ComponentsPage = ({ data }) => {
       <CallToAction />
       <Slider />
       {pricingTable.map((value, key) => {
-        const formattedPrice = new Intl.NumberFormat(locales, { style: 'currency', currency: value.currency }).format(value.price)
+        const formattedPrice = new Intl.NumberFormat(locales, {
+          style: 'currency',
+          currency: value.currency,
+        }).format(value.price)
 
         return (
           <PricingTable

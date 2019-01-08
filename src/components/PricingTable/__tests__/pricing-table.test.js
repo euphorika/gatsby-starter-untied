@@ -6,10 +6,14 @@ describe('PricingTable', () => {
   it('renders correctly', () => {
     const callToAction = {
       text: 'Text',
-      link: '/'
+      link: '/',
     }
     const pricingTable = (
-      <PricingTable headline="headline" price="1.22" callToAction={callToAction}>
+      <PricingTable
+        headline="headline"
+        price="1.22"
+        callToAction={callToAction}
+      >
         Description
       </PricingTable>
     )

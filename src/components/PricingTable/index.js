@@ -8,9 +8,7 @@ const PricingTable = ({ children, headline, price, callToAction }) => (
   <section className={styles.pricingTableSection}>
     <h3>{headline}</h3>
     <p>{price}</p>
-    <div className={styles.description}>
-      {children}
-    </div>
+    <div className={styles.description}>{children}</div>
     <div className={styles.callToAction}>
       <Link to={callToAction.link}>{callToAction.text}</Link>
     </div>
@@ -23,8 +21,8 @@ PricingTable.propTypes = {
   price: PropTypes.string.isRequired,
   callToAction: PropTypes.shape({
     text: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired
-  })
+    link: PropTypes.string.isRequired,
+  }),
 }
 
 export default PricingTable
