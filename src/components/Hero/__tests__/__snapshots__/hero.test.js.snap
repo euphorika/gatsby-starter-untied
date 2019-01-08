@@ -4,6 +4,18 @@ exports[`Hero renders correctly 1`] = `
 <section
   className="heroSection"
 >
-  Hero Section
+  <div
+	    className="bckImg"
+	  >
+  <div
+	  className="headline"
+	>
+	  <strong>
+	    Title
+	  </strong>
+	</div>
+  <blockquote>
+	    Body
+	  </blockquote>
 </section>
 `;
