@@ -16,12 +16,23 @@ import Callout from '../components/Callout/'
 import TeamMember from '../components/TeamMembers/team-member.js'
 
 const ComponentsPage = ({ data }) => {
-  const { teamMembers } = data.site.siteMetadata.components
+  const { teamMembers, hero } = data.site.siteMetadata.components
   const images = ['business', 'person', 'teacher', 'user']
+  const heroImages = ['background']
 
   return (
     <Layout>
       <Hero />
+      {hero.map((value, key) => (
+          <Hero
+            key={key}
+            name={value.name}
+            position={value.position}
+            imgFixed={data[images[key]].childImageSharp.fixed}
+          >
+            {value.body}
+          </Hero>
+        ))}
       <TeamMembers>
         {teamMembers.map((value, key) => (
           <TeamMember

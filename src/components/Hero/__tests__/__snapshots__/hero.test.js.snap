@@ -17,5 +17,6 @@ exports[`Hero renders correctly 1`] = `
   <blockquote>
 	    Body
 	  </blockquote>
+    
 </section>
 `;
