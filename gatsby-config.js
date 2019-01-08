@@ -2,6 +2,14 @@ module.exports = {
   siteMetadata: {
     title: 'Gatsby Starter Untied',
     components: {
+      testimonials: [
+        {
+          name: 'Sarah Author',
+          img: 'sarah.png',
+          body:
+            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+        },
+      ],
       teamMembers: [
         {
           name: 'Hans Hinrich',
