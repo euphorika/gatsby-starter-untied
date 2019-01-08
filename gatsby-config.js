@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Starter Untied',
+    locales: 'de-DE',
     components: {
       teamMembers: [
         {
@@ -35,7 +36,7 @@ module.exports = {
           currency: 'EUR',
           callToAction: {
             text: 'Click Me',
-            link: '#'
+            link: '/components/'
           },
           body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
         }
