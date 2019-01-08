@@ -4,7 +4,13 @@ import Hero from '../'
 
 describe('Hero', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<Hero />).toJSON()
+    //const backImg = {}
+    const hero = (
+      <Hero headline="Title">
+      Body
+      </Hero>
+    )
+    const tree = renderer.create(hero).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })

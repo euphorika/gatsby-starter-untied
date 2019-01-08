@@ -26,9 +26,9 @@ const ComponentsPage = ({ data }) => {
       {hero.map((value, key) => (
           <Hero
             key={key}
-            name={value.name}
-            position={value.position}
-            imgFixed={data[images[key]].childImageSharp.fixed}
+            headline={value.headline}
+            //backImg={data[heroImages[key]].childImageSharp.fluid}
+            //button={}
           >
             {value.body}
           </Hero>
@@ -63,6 +63,12 @@ export const query = graphql`
     site {
       siteMetadata {
         components {
+          hero {
+            headline
+            bckImg
+            body
+            button
+          }
           teamMembers {
             name
             position
@@ -100,4 +106,13 @@ export const query = graphql`
       }
     }
   }
+
 `
+//Need to add a background.png in src/images/  background: file(relativePath: { eq: "background.png" }) {
+//     childImageSharp {
+//       fluid(quality: 100, maxWidth: 4160) {
+//         ...GatsbyImageSharpFluid_withWebp
+//       }
+//     }
+//   }
+

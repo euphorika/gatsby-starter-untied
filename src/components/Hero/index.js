@@ -2,18 +2,17 @@ import React from 'react'
 
 import styles from './styles.module.styl'
 import PropTypes from 'prop-types'
-import { graphql, StaticQuery } from 'gatsby'
-import BackgroundImage from 'gatsby-background-image'
+//import { graphql, StaticQuery } from 'gatsby'
+//import BackgroundImage from 'gatsby-background-image'
 
 const Hero = ({ children, headline, button, backImg}) => (
   <section className={styles.heroSection}>
-    <div className = {styles.bckImg}>
-      <BackgroundImage fluid={backImg}/>
+    {/* <div className = {styles.bckImg}>
+      <BackgroundImage fluid={backImg}/> */}
       <div className={styles.headline}>
 	      <strong>{headline}</strong>
       </div>
       <blockquote>{children}</blockquote>
-    </div>
 
     {/* <StaticQuery query={graphql`
     query {
@@ -45,11 +44,11 @@ const Hero = ({ children, headline, button, backImg}) => (
 
 
 )
-Hero.PropTypes = {
+Hero.propTypes = {
   children: PropTypes.node.isRequired,
   headline: PropTypes.string.isRequired,
-  backImg: PropTypes.object.isRequired,
-  button: PropTypes.button.isRequired,
+  // backImg: PropTypes.object.isRequired,
+  // button: PropTypes.button.isRequired,
 }
 
 export default Hero
