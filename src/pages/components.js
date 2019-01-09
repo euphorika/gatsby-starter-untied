@@ -22,17 +22,16 @@ const ComponentsPage = ({ data }) => {
 
   return (
     <Layout>
-      <Hero />
       {hero.map((value, key) => (
-          <Hero
-            key={key}
-            headline={value.headline}
-            //backImg={data[heroImages[key]].childImageSharp.fluid}
-            //button={}
-          >
-            {value.body}
-          </Hero>
-        ))}
+        <Hero
+          key={key}
+          headline={value.headline}
+          //backImg={data[heroImages[key]].childImageSharp.fluid}
+          //button={}
+        >
+          {value.body}
+        </Hero>
+      ))}
       <TeamMembers>
         {teamMembers.map((value, key) => (
           <TeamMember

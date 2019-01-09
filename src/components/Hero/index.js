@@ -9,10 +9,10 @@ const Hero = ({ children, headline, button, backImg}) => (
   <section className={styles.heroSection}>
     {/* <div className = {styles.bckImg}>
       <BackgroundImage fluid={backImg}/> */}
-      <div className={styles.headline}>
-	      <strong>{headline}</strong>
-      </div>
-      <blockquote>{children}</blockquote>
+	      <h2>{headline}</h2>
+        <p>{children}</p>
+
+      
 
     {/* <StaticQuery query={graphql`
     query {
