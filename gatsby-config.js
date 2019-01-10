@@ -5,9 +5,12 @@ module.exports = {
       hero: [
         {
         headline: 'Hero Block',
-        bckImg: 'background.png',
+        //backImg: 'background.jpg',
         body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
-        button: 'click here'
+        button: {
+          text: 'Click Here',
+          link: '/',
+        } 
         },
       ],
 

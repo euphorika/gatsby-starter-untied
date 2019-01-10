@@ -10,5 +10,20 @@ exports[`Hero renders correctly 1`] = `
   <p>
     Body
   </p>
+  <div>
+    <button
+      className="button"
+    >
+      <Link
+        to="/"
+      >
+        <text
+          className="text"
+        >
+          Text
+        </text>
+      </Link>
+    </button>
+  </div>
 </section>
 `;

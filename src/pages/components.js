@@ -18,7 +18,7 @@ import TeamMember from '../components/TeamMembers/team-member.js'
 const ComponentsPage = ({ data }) => {
   const { teamMembers, hero } = data.site.siteMetadata.components
   const images = ['business', 'person', 'teacher', 'user']
-  const heroImages = ['background']
+  //const heroImages = ['background']
 
   return (
     <Layout>
@@ -26,8 +26,8 @@ const ComponentsPage = ({ data }) => {
         <Hero
           key={key}
           headline={value.headline}
+          button={value.button}
           //backImg={data[heroImages[key]].childImageSharp.fluid}
-          //button={}
         >
           {value.body}
         </Hero>
@@ -64,9 +64,11 @@ export const query = graphql`
         components {
           hero {
             headline
-            bckImg
             body
-            button
+            button{
+              text
+              link
+            }
           }
           teamMembers {
             name
@@ -105,13 +107,11 @@ export const query = graphql`
       }
     }
   }
-
-`
-//Need to add a background.png in src/images/  background: file(relativePath: { eq: "background.png" }) {
-//     childImageSharp {
-//       fluid(quality: 100, maxWidth: 4160) {
-//         ...GatsbyImageSharpFluid_withWebp
-//       }
-//     }
-//   }
-
+  `
+    // background: file(relativePath: { eq: "background.jpg" }) {
+    //   childImageSharp {
+    //     fluid(quality: 100, maxWidth: 4160) {
+    //       ...GatsbyImageSharpFluid_withWebp
+    //     }
+    //  }
+    // }

@@ -2,11 +2,19 @@ import React from 'React'
 import renderer from 'react-test-renderer'
 import Hero from '../'
 
+
 describe('Hero', () => {
   it('renders correctly', () => {
-    //const backImg = {}
+    // const backImg = {
+    // }
+
+    const button = {
+      text: 'Text',
+      link: '/',
+    }
+
     const hero = (
-      <Hero headline="Title">
+      <Hero headline="Title" button={button}>
       Body
       </Hero>
     )

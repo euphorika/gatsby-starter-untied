@@ -1,6 +1,29 @@
 @require '../../themes/standard/config/breakpoints'
 @require '../../themes/standard/config/colors'
 
+:root
+  --section-bg-color bg-color
+
 .hero-section
-  margin 0
+  background-color var(--section-bg-color)
+  height 250px
+  line-height 25px
+  margin 20px
+  max-width 3000px
+  padding 40px 100px
+
+  .button
+    background-color primary-color
+    display inline-block
+    borderRadius 3px
+    border 0
+    cursor pointer
+    fontSize 18px
+    padding 16px 24px
+    minWidth 200px
+
+.text
+  color button-color
+
+
 
