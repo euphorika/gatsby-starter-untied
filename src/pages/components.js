@@ -15,7 +15,8 @@ import Testimonial from '../components/Testimonial/'
 import Callout from '../components/Callout/'
 
 const ComponentsPage = ({ data }) => {
-  const { teamMembers, testimonials } = data.site.siteMetadata.components
+  const { locales, components } = data.site.siteMetadata
+  const { teamMembers, testimonials, pricingTable } = components
   const teamMemberImages = ['business', 'person', 'teacher', 'user']
   const testimonialImages = ['teacher']
 
@@ -36,7 +37,23 @@ const ComponentsPage = ({ data }) => {
       </TeamMembers>
       <CallToAction />
       <Slider />
-      <PricingTable />
+      {pricingTable.map((value, key) => {
+        const formattedPrice = new Intl.NumberFormat(locales, {
+          style: 'currency',
+          currency: value.currency,
+        }).format(value.price)
+
+        return (
+          <PricingTable
+            key={key}
+            headline={value.headline}
+            price={formattedPrice}
+            callToAction={value.callToAction}
+          >
+            {value.body}
+          </PricingTable>
+        )
+      })}
       <Forms />
       <Video />
       {testimonials.map((value, key) => (
@@ -59,6 +76,7 @@ export const query = graphql`
   query {
     site {
       siteMetadata {
+        locales
         components {
           testimonials {
             name
@@ -68,6 +86,16 @@ export const query = graphql`
           teamMembers {
             name
             position
+            body
+          }
+          pricingTable {
+            headline
+            price
+            currency
+            callToAction {
+              text
+              link
+            }
             body
           }
         }
