@@ -1,5 +1,32 @@
 @require '../../themes/standard/config/breakpoints'
 @require '../../themes/standard/config/colors'
 
+:root
+  --section-bg-color callout-color
+
 .callout-section
-  margin 0
+  color secondary-color
+  background-color callout-color
+  border-radius 10px 
+  height 190px
+  text-align center
+  line-height 25px
+  margin-buttom 20px
+  margin-top 70px
+  max-width 3000px
+  padding 20px
+
+  .button
+    background-color callout-button-color
+    borderRadius 15px
+    border 5
+    cursor pointer
+    fontSize 18px
+    padding 20px 
+    minWidth 200px
+    float right
+    margin-right 400px
+    display inline-block
+    
+.text
+    color secondary-color

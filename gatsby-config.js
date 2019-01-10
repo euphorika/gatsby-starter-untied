@@ -3,6 +3,15 @@ module.exports = {
     title: 'Gatsby Starter Untied',
     locales: 'de-DE',
     components: {
+      callout: [
+        {
+          message: 'Hey! Pay attention to this very important message.',
+          button: {
+            text: 'Cick Here',
+            link: '/',
+          }
+        },
+      ],
       testimonials: [
         {
           name: 'Sarah Author',
