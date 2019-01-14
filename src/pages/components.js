@@ -15,14 +15,19 @@ import Testimonial from '../components/Testimonial/'
 import Callout from '../components/Callout/'
 
 const ComponentsPage = ({ data }) => {
+
   const { locales, components } = data.site.siteMetadata
-  const { teamMembers, testimonials, pricingTable } = components
+  const { teamMembers, testimonials, pricingTable, hero } = components
   const teamMemberImages = ['business', 'person', 'teacher', 'user']
   const testimonialImages = ['teacher']
 
   return (
     <Layout>
-      <Hero />
+      {hero.map((value, key) => (
+        <Hero key={key} headline={value.headline} button={value.button}>
+          {value.body}
+        </Hero>
+      ))}
       <TeamMembers>
         {teamMembers.map((value, key) => (
           <TeamMember
@@ -78,10 +83,21 @@ export const query = graphql`
       siteMetadata {
         locales
         components {
+
+          hero {
+            headline
+            body
+            button {
+              text
+              link
+            }
+          }
+
           testimonials {
             name
             img
             body
+
           }
           teamMembers {
             name
