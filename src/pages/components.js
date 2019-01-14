@@ -16,11 +16,8 @@ import Callout from '../components/Callout/'
 
 const ComponentsPage = ({ data }) => {
 
-  const { teamMembers, hero } = data.site.siteMetadata.components
-  const images = ['business', 'person', 'teacher', 'user']
-
   const { locales, components } = data.site.siteMetadata
-  const { teamMembers, testimonials, pricingTable } = components
+  const { teamMembers, testimonials, pricingTable, hero } = components
   const teamMemberImages = ['business', 'person', 'teacher', 'user']
   const testimonialImages = ['teacher']
 
@@ -94,6 +91,7 @@ export const query = graphql`
               text
               link
             }
+          }
 
           testimonials {
             name
