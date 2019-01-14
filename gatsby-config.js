@@ -12,6 +12,17 @@ module.exports = {
           },
         },
       ],
+      hero: [
+        {
+          headline: 'Hero Block',
+          body:
+            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+          button: {
+            text: 'Click Here',
+            link: '/',
+          },
+        },
+      ],
       testimonials: [
         {
           name: 'Sarah Author',
@@ -20,6 +31,7 @@ module.exports = {
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
         },
       ],
+
       teamMembers: [
         {
           name: 'Hans Hinrich',

@@ -4,6 +4,26 @@ exports[`Hero renders correctly 1`] = `
 <section
   className="heroSection"
 >
-  Hero Section
+  <h2>
+    Title
+  </h2>
+  <p>
+    Body
+  </p>
+  <div>
+    <button
+      className="button"
+    >
+      <Link
+        to="/"
+      >
+        <span
+          className="text"
+        >
+          Text
+        </span>
+      </Link>
+    </button>
+  </div>
 </section>
 `;
