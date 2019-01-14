@@ -2,8 +2,20 @@
 
 exports[`CallToAction renders correctly 1`] = `
 <section
-  className="CallToActionSection"
+  className="callToActionSection"
 >
-  Call To Action
+  <button
+    className="button"
+  >
+    <Link
+      to="/"
+    >
+      <span>
+         
+        Text
+         
+      </span>
+    </Link>
+  </button>
 </section>
 `;

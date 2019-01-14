@@ -1,5 +1,40 @@
 @require '../../themes/standard/config/breakpoints'
 @require '../../themes/standard/config/colors'
 
-.call-to-action-section
+.call-to-action-section 
   margin 0
+
+.button
+  display block
+  border-radius 4px
+  background-color callout-button-color
+  text-align center
+  font-size 22px
+  padding 20px
+  width 250px
+  margin-top 20px
+  margin-bottom 20px
+  margin-left auto
+  margin-right auto
+
+.button span 
+  display inline-block
+  position relative
+  transition 0.5s
+  color secondary-color
+
+.button span:after 
+  content '\00bb'
+  position absolute
+  opacity 0
+  top 0
+  right -20px
+  transition 0.5s
+
+.button:hover span 
+  padding-right 25px
+
+.button:hover span:after 
+  opacity 1
+  right 0
+

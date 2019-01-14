@@ -1,9 +1,23 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 import styles from './styles.module.styl'
+import { Link } from 'gatsby'
 
-const CallToAction = () => (
-  <section className={styles.CallToActionSection}>Call To Action</section>
+const CallToAction = ({ button }) => (
+  <section className={styles.callToActionSection}>
+    <button className={styles.button}>
+      <Link to={button.link}>
+        <span> {button.text} </span>
+      </Link>
+    </button>
+  </section>
 )
+
+CallToAction.propTypes = {
+  button: PropTypes.shape({
+    text: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+  }),
+}
 
 export default CallToAction
