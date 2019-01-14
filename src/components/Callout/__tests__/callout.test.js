@@ -9,10 +9,8 @@ describe('Callout', () => {
       link: '/',
     }
 
-    const callout = (
-      <Callout message="Message" button={button}></Callout>
-    )
-    const tree = renderer.create(callout).toJSON()    
+    const callout = <Callout message="Message" button={button} />
+    const tree = renderer.create(callout).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })

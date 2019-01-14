@@ -9,7 +9,7 @@ module.exports = {
           button: {
             text: 'Cick Here',
             link: '/',
-          }
+          },
         },
       ],
       testimonials: [

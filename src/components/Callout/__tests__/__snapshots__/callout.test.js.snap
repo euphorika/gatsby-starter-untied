@@ -4,24 +4,26 @@ exports[`Callout renders correctly 1`] = `
 <section
   className="calloutSection"
 >
-  <h1>
-    Message
-  </h1>
-  <div>
-    <button
-      className="button"
+  <button
+    className="button"
+  >
+    <Link
+      to="/"
     >
-      <Link
-        to="/"
+      <span
+        className="text"
       >
-        <text
-          className="text"
-        >
-           
-          Text
-        </text>
-      </Link>
-    </button>
-  </div>
+         
+        Text
+      </span>
+    </Link>
+  </button>
+  <h2
+    className="message"
+  >
+     
+    Message
+     
+  </h2>
 </section>
 `;

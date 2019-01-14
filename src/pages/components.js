@@ -66,11 +66,7 @@ const ComponentsPage = ({ data }) => {
         </Testimonial>
       ))}
       {callout.map((value, key) => (
-        <Callout
-          key={key}
-          message={value.message}
-          button={value.button}
-        ></Callout>
+        <Callout key={key} message={value.message} button={value.button} />
       ))}
     </Layout>
   )
