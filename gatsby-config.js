@@ -3,7 +3,6 @@ module.exports = {
     title: 'Gatsby Starter Untied',
     locales: 'de-DE',
     components: {
-
       hero: [
         {
           headline: 'Hero Block',

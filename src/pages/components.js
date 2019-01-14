@@ -15,7 +15,6 @@ import Testimonial from '../components/Testimonial/'
 import Callout from '../components/Callout/'
 
 const ComponentsPage = ({ data }) => {
-
   const { locales, components } = data.site.siteMetadata
   const { teamMembers, testimonials, pricingTable, hero } = components
   const teamMemberImages = ['business', 'person', 'teacher', 'user']
@@ -83,7 +82,6 @@ export const query = graphql`
       siteMetadata {
         locales
         components {
-
           hero {
             headline
             body
@@ -97,7 +95,6 @@ export const query = graphql`
             name
             img
             body
-
           }
           teamMembers {
             name
