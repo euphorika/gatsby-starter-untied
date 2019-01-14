@@ -2,8 +2,27 @@
 
 exports[`PricingTable renders correctly 1`] = `
 <section
-  className="pricingTable"
+  className="pricingTableSection"
 >
-  Pricing Table
+  <h3>
+    headline
+  </h3>
+  <p>
+    1.22
+  </p>
+  <div
+    className="description"
+  >
+    Description
+  </div>
+  <div
+    className="callToAction"
+  >
+    <Link
+      to="/"
+    >
+      Text
+    </Link>
+  </div>
 </section>
 `;

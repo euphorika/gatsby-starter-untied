@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Starter Untied',
+    locales: 'de-DE',
     components: {
+
       hero: [
         {
           headline: 'Hero Block',
@@ -11,6 +13,15 @@ module.exports = {
             text: 'Click Here',
             link: '/',
           },
+        },
+      ],
+
+      testimonials: [
+        {
+          name: 'Sarah Author',
+          img: 'sarah.png',
+          body:
+            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
         },
       ],
 
@@ -36,6 +47,19 @@ module.exports = {
         {
           name: 'Esta Bester',
           position: 'User',
+          body:
+            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+        },
+      ],
+      pricingTable: [
+        {
+          headline: 'Product 1',
+          price: 12.99,
+          currency: 'EUR',
+          callToAction: {
+            text: 'Click Me',
+            link: '/components/',
+          },
           body:
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
         },
