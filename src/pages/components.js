@@ -18,17 +18,11 @@ import TeamMember from '../components/TeamMembers/team-member.js'
 const ComponentsPage = ({ data }) => {
   const { teamMembers, hero } = data.site.siteMetadata.components
   const images = ['business', 'person', 'teacher', 'user']
-  //const heroImages = ['background']
 
   return (
     <Layout>
       {hero.map((value, key) => (
-        <Hero
-          key={key}
-          headline={value.headline}
-          button={value.button}
-          //backImg={data[heroImages[key]].childImageSharp.fluid}
-        >
+        <Hero key={key} headline={value.headline} button={value.button}>
           {value.body}
         </Hero>
       ))}
@@ -65,7 +59,7 @@ export const query = graphql`
           hero {
             headline
             body
-            button{
+            button {
               text
               link
             }
@@ -107,11 +101,4 @@ export const query = graphql`
       }
     }
   }
-  `
-    // background: file(relativePath: { eq: "background.jpg" }) {
-    //   childImageSharp {
-    //     fluid(quality: 100, maxWidth: 4160) {
-    //       ...GatsbyImageSharpFluid_withWebp
-    //     }
-    //  }
-    // }
+`

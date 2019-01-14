@@ -4,13 +4,13 @@ module.exports = {
     components: {
       hero: [
         {
-        headline: 'Hero Block',
-        //backImg: 'background.jpg',
-        body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
-        button: {
-          text: 'Click Here',
-          link: '/',
-        } 
+          headline: 'Hero Block',
+          body:
+            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+          button: {
+            text: 'Click Here',
+            link: '/',
+          },
         },
       ],
 

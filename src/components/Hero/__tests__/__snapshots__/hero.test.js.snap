@@ -17,11 +17,11 @@ exports[`Hero renders correctly 1`] = `
       <Link
         to="/"
       >
-        <text
+        <span
           className="text"
         >
           Text
-        </text>
+        </span>
       </Link>
     </button>
   </div>
