@@ -3,6 +3,14 @@ module.exports = {
     title: 'Gatsby Starter Untied',
     locales: 'de-DE',
     components: {
+      callToAction: [
+        {
+          button: {
+            text: 'GET STARTED',
+            link: '/',
+          },
+        },
+      ],
       callout: [
         {
           message: 'Hey! Pay attention to this very important message.',
