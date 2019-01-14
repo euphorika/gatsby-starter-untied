@@ -16,7 +16,7 @@ import Callout from '../components/Callout/'
 
 const ComponentsPage = ({ data }) => {
   const { locales, components } = data.site.siteMetadata
-  const { teamMembers, testimonials, pricingTable, hero } = components
+  const { teamMembers, testimonials, pricingTable, hero, callout } = components
   const teamMemberImages = ['business', 'person', 'teacher', 'user']
   const testimonialImages = ['teacher']
 
@@ -69,7 +69,9 @@ const ComponentsPage = ({ data }) => {
           {value.body}
         </Testimonial>
       ))}
-      <Callout />
+      {callout.map((value, key) => (
+        <Callout key={key} message={value.message} button={value.button} />
+      ))}
     </Layout>
   )
 }
@@ -110,6 +112,13 @@ export const query = graphql`
               link
             }
             body
+          }
+          callout {
+            message
+            button {
+              text
+              link
+            }
           }
         }
       }

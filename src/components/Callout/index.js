@@ -1,9 +1,24 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 import styles from './styles.module.styl'
 
-const Callout = () => (
-  <section className={styles.calloutSection}>Callout</section>
+const Callout = ({ message, button }) => (
+  <section className={styles.calloutSection}>
+    <button className={styles.button}>
+      <Link to={button.link}>
+        <span className={styles.text}> {button.text}</span>
+      </Link>
+    </button>
+    <h2 className={styles.message}> {message} </h2>
+  </section>
 )
 
+Callout.propTypes = {
+  message: PropTypes.string.isRequired,
+  button: PropTypes.shape({
+    text: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+  }),
+}
 export default Callout
