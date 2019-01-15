@@ -9,7 +9,11 @@ import styles from './styles.module.styl'
 const Hero = ({ children, headline, button, imgFluid }) => (
   <section className={styles.heroSection}>
     <div className={styles.background}>
-      <Img fluid={imgFluid} style={{height: '100%'}} imgStyle={{objectFit: 'cover'}} />
+      <Img
+        fluid={imgFluid}
+        style={{ height: '100%' }}
+        imgStyle={{ objectFit: 'cover' }}
+      />
     </div>
     <div className={styles.info}>
       <h2>{headline}</h2>

@@ -31,7 +31,12 @@ const ComponentsPage = ({ data }) => {
   return (
     <Layout>
       {hero.map((value, key) => (
-        <Hero key={key} headline={value.headline} imgFluid={heroImage.childImageSharp.fluid} button={value.button}>
+        <Hero
+          key={key}
+          headline={value.headline}
+          imgFluid={heroImage.childImageSharp.fluid}
+          button={value.button}
+        >
           {value.body}
         </Hero>
       ))}

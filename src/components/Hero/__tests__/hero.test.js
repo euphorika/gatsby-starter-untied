@@ -7,9 +7,9 @@ describe('Hero', () => {
     const imgFluid = {
       aspectRatio: 1.0,
       basde64: 'String',
-      sizes: "(max-width: 4928px) 100vw, 4928px",
+      sizes: '(max-width: 4928px) 100vw, 4928px',
       src: 'image.jpg',
-      srcSet: 'srcSet.image.jpg'
+      srcSet: 'srcSet.image.jpg',
     }
 
     const button = {
