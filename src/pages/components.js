@@ -13,6 +13,7 @@ import Forms from '../components/Forms/'
 import Video from '../components/Video/'
 import Testimonial from '../components/Testimonial/'
 import Callout from '../components/Callout/'
+import OneSlide from '../components/Slider/one-slide'
 
 const ComponentsPage = ({ data }) => {
   const { locales, components } = data.site.siteMetadata
@@ -23,9 +24,11 @@ const ComponentsPage = ({ data }) => {
     hero,
     callout,
     callToAction,
+    slider,
   } = components
   const teamMemberImages = ['business', 'person', 'teacher', 'user']
   const testimonialImages = ['teacher']
+  const sliderImages = ['nature', 'mountains', 'beach']
 
   return (
     <Layout>
@@ -49,7 +52,17 @@ const ComponentsPage = ({ data }) => {
       {callToAction.map((value, key) => (
         <CallToAction key={key} button={value.button} />
       ))}
-      <Slider />
+      <Slider>
+        {slider.map((value, key) => (
+          <OneSlide
+            key={key}
+            image={data[sliderImages[key]].childImageSharp.fixed}
+          >
+            {value.body}
+          </OneSlide>
+        ))}
+      </Slider>
+
       {pricingTable.map((value, key) => {
         const formattedPrice = new Intl.NumberFormat(locales, {
           style: 'currency',
@@ -101,7 +114,9 @@ export const query = graphql`
               link
             }
           }
-
+          slider {
+            title
+          }
           testimonials {
             name
             img
@@ -162,6 +177,27 @@ export const query = graphql`
     user: file(relativePath: { eq: "team-members/user.png" }) {
       childImageSharp {
         fixed(width: 50, height: 50) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    nature: file(relativePath: { eq: "slider/nature.png" }) {
+      childImageSharp {
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    mountains: file(relativePath: { eq: "slider/mountains.png" }) {
+      childImageSharp {
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    beach: file(relativePath: { eq: "slider/beach.png" }) {
+      childImageSharp {
+        fixed(width: 250, height: 250) {
           ...GatsbyImageSharpFixed
         }
       }

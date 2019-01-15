@@ -4,6 +4,10 @@ exports[`Slider renders correctly 1`] = `
 <section
   className="sliderSection"
 >
-  Slider
+  <div
+    className="innerContainer"
+  >
+     
+  </div>
 </section>
 `;
