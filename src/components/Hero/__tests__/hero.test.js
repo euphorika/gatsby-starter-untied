@@ -4,8 +4,13 @@ import Hero from '../'
 
 describe('Hero', () => {
   it('renders correctly', () => {
-    // const backImg = {
-    // }
+    const imgFluid = {
+      aspectRatio: 1.0,
+      basde64: 'String',
+      sizes: '(max-width: 4928px) 100vw, 4928px',
+      src: 'image.jpg',
+      srcSet: 'srcSet.image.jpg',
+    }
 
     const button = {
       text: 'Text',
@@ -13,7 +18,7 @@ describe('Hero', () => {
     }
 
     const hero = (
-      <Hero headline="Title" button={button}>
+      <Hero headline="Title" button={button} imgFluid={imgFluid}>
         Body
       </Hero>
     )
