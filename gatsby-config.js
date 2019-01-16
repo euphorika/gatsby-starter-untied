@@ -68,10 +68,12 @@ module.exports = {
       ],
       slider: [
         {
-          title: 'Slider',
-        },{
+          title: 'Slider 1',
+        },
+        {
           title: 'Slider 2',
-        },{
+        },
+        {
           title: 'Slider 3',
         },
       ],

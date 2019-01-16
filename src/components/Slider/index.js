@@ -3,9 +3,24 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './styles.module.styl'
 
+const numberOfSlides = 3
+
 const Slider = ({ children }) => (
-  <section className={styles.sliderSection}>
-    <div className={styles.innerContainer}> {children}</div>
+  <section
+    className={styles.sliderSection}
+    style={{ width: '100%', overflow: 'hidden' }}
+  >
+    <div
+      className={styles.innerContainer}
+      style={{
+        width: numberOfSlides * 100 + '%',
+        width: '300%',
+        transition: 'all 1s',
+      }}
+    >
+      {' '}
+      {children}
+    </div>
   </section>
 )
 
@@ -14,3 +29,5 @@ Slider.propTypes = {
 }
 
 export default Slider
+
+// translateX(- ( 100 / numberOfSlides * (currentSlide )) %)

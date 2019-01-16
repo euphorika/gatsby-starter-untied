@@ -3,9 +3,21 @@
 exports[`Slider renders correctly 1`] = `
 <section
   className="sliderSection"
+  style={
+    Object {
+      "overflow": "hidden",
+      "width": "100%",
+    }
+  }
 >
   <div
     className="innerContainer"
+    style={
+      Object {
+        "transition": "all 1s",
+        "width": "300%",
+      }
+    }
   >
      
   </div>
