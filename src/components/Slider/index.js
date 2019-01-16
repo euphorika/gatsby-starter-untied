@@ -16,6 +16,7 @@ const Slider = ({ children }) => (
         width: numberOfSlides * 100 + '%',
         width: '300%',
         transition: 'all 1s',
+        marginLeft: '-250px'
       }}
     >
       {' '}
