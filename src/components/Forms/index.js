@@ -1,15 +1,12 @@
 import React from 'react'
 
 import Input from './input'
+import Checkbox from './Checkbox'
 
 import styles from './styles.module.styl'
 
 const Forms = () => {
-  const inputTypes = [
-    'text',
-    'email',
-    'number',
-  ]
+  const inputTypes = ['text', 'email', 'number']
 
   return (
     <section className={styles.formsSection}>
@@ -22,11 +19,18 @@ const Forms = () => {
               label={value.toUpperCase()}
               options={{
                 placeholder: value.toUpperCase(),
-                required: 'required',
+                required: true,
               }}
             />
           </div>
         ))}
+      </div>
+      <div className={styles.checkboxContainer}>
+        <Checkbox
+          label="Checkbox label"
+          name="checkbox"
+          options={{ required: true }}
+        />
       </div>
     </section>
   )

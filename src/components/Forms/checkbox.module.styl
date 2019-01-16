@@ -1,0 +1,23 @@
+@require '../../themes/standard/config/breakpoints'
+@require '../../themes/standard/config/colors'
+
+.label
+  padding 10px
+
+  .checkbox
+    margin-left 10px
+
+.checkbox
+  padding 10px
+
+  &:required
+    & + .after-checkbox
+      &::before
+        content '*'
+        color red
+
+  &:valid
+    border-color: green
+
+  &:invalid
+    border-color: red
