@@ -6,7 +6,7 @@ const Input = ({ value, name, type = 'text', label, options }) => {
   const input = (
     <>
       <input
-        className={styles.input}
+        className={styles.element}
         {...options}
         value={value}
         name={name}

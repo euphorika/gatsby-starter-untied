@@ -1,23 +1,4 @@
 @require '../../themes/standard/config/breakpoints'
 @require '../../themes/standard/config/colors'
 
-.label
-  padding 10px
-
-  .input
-    margin-left 10px
-
-.input
-  padding 10px
-
-  &:required
-    & + .after-input
-      &::before
-        content '*'
-        color red
-
-  &:valid
-    border-color: green
-
-  &:invalid
-    border-color: red
+@require './element.module.styl'

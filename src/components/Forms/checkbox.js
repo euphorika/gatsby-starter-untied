@@ -6,7 +6,7 @@ const Checkbox = ({ checked, name, label, options }) => {
   const checkbox = (
     <>
       <input
-        className={styles.checkbox}
+        className={styles.element}
         type="checkbox"
         name={name}
         checked={checked}
