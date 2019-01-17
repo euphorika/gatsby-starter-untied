@@ -1,7 +1,10 @@
 @require '../../themes/standard/config/breakpoints'
 @require '../../themes/standard/config/colors'
 
-.slider-section
+.slide
+  transition 0.5s
+
+.slider
   max-width 1000px
   position relative
   margin 0 auto
@@ -9,14 +12,21 @@
   margin-top 20px
   margin-bottom 30px
 
-  .inner-container
-    display flex
-    align-items center
-    justify-content center
-    height 300px
-    transform translateX(-33.66%)
+.slider-arrows
+  position absolute
+  width 100%
+  z-index 3
 
-  .image
-    float left
+.slider-arrows a
+  cursor pointer
+  display block
+  opacity 0.8
 
+
+.slider-arrows > .arrow-right
+  right 0
+
+.inner-container
+  margin-bottom 30px
+  display flex
 

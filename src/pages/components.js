@@ -28,7 +28,7 @@ const ComponentsPage = ({ data }) => {
   } = components
   const teamMemberImages = ['business', 'person', 'teacher', 'user']
   const testimonialImages = ['teacher']
-  const sliderImages = ['nature', 'mountains', 'beach']
+  const sliderImages = ['nature', 'mountains', 'beach', 'nature', 'mountains']
 
   return (
     <Layout>
@@ -52,7 +52,7 @@ const ComponentsPage = ({ data }) => {
       {callToAction.map((value, key) => (
         <CallToAction key={key} button={value.button} />
       ))}
-      <Slider>
+      <Slider sliderImages={sliderImages}>
         {slider.map((value, key) => (
           <OneSlide
             key={key}

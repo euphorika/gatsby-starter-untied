@@ -76,6 +76,12 @@ module.exports = {
         {
           title: 'Slider 3',
         },
+        {
+          title: 'Slider 4',
+        },
+        {
+          title: 'Slider 5',
+        },
       ],
       pricingTable: [
         {
