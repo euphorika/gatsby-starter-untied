@@ -1,7 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import styles from './styles.module.styl'
-import Img from 'gatsby-image'
 
 const OneSlide = ({ image }) => {
   return (
