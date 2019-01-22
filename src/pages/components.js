@@ -13,7 +13,7 @@ import Forms from '../components/Forms/'
 import Video from '../components/Video/'
 import Testimonial from '../components/Testimonial/'
 import Callout from '../components/Callout/'
-import OneSlide from '../components/Slider/one-slide'
+//import OneSlide from '../components/Slider/one-slide'
 
 const ComponentsPage = ({ data }) => {
   const { locales, components } = data.site.siteMetadata
@@ -24,11 +24,11 @@ const ComponentsPage = ({ data }) => {
     hero,
     callout,
     callToAction,
-    slider,
+    //slider,
   } = components
   const teamMemberImages = ['business', 'person', 'teacher', 'user']
   const testimonialImages = ['teacher']
-  const sliderImages = ['nature', 'mountains', 'beach', 'nature', 'mountains']
+  //const sliderImages = ['nature', 'mountains', 'beach', 'nature', 'mountains']
 
   return (
     <Layout>
@@ -52,8 +52,8 @@ const ComponentsPage = ({ data }) => {
       {callToAction.map((value, key) => (
         <CallToAction key={key} button={value.button} />
       ))}
-      <Slider sliderImages={sliderImages}>
-        {slider.map((value, key) => (
+      {/* <Slider sliderImages={sliderImages}>
+        {/* {slider.map((value, key) => (
           <OneSlide
             key={key}
             image={data[sliderImages[key]].childImageSharp.fixed}
@@ -61,7 +61,8 @@ const ComponentsPage = ({ data }) => {
             {value.body}
           </OneSlide>
         ))}
-      </Slider>
+      </Slider> */}
+      <Slider />
 
       {pricingTable.map((value, key) => {
         const formattedPrice = new Intl.NumberFormat(locales, {
@@ -114,9 +115,7 @@ export const query = graphql`
               link
             }
           }
-          slider {
-            title
-          }
+
           testimonials {
             name
             img
@@ -181,26 +180,26 @@ export const query = graphql`
         }
       }
     }
-    nature: file(relativePath: { eq: "slider/nature.png" }) {
-      childImageSharp {
-        fixed(width: 250, height: 250) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    mountains: file(relativePath: { eq: "slider/mountains.png" }) {
-      childImageSharp {
-        fixed(width: 250, height: 250) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    beach: file(relativePath: { eq: "slider/beach.png" }) {
-      childImageSharp {
-        fixed(width: 250, height: 250) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
   }
 `
+// nature: file(relativePath: { eq: "slider/nature.png" }) {
+//   childImageSharp {
+//     fixed(width: 250, height: 250) {
+//       ...GatsbyImageSharpFixed
+//     }
+//   }
+// }
+// mountains: file(relativePath: { eq: "slider/mountains.png" }) {
+//   childImageSharp {
+//     fixed(width: 250, height: 250) {
+//       ...GatsbyImageSharpFixed
+//     }
+//   }
+// }
+// beach: file(relativePath: { eq: "slider/beach.png" }) {
+//   childImageSharp {
+//     fixed(width: 250, height: 250) {
+//       ...GatsbyImageSharpFixed
+//     }
+//   }
+// }

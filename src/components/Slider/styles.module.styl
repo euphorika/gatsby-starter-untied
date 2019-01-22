@@ -1,21 +1,22 @@
 @require '../../themes/standard/config/breakpoints'
 @require '../../themes/standard/config/colors'
 
+
+
 .slide
   transition 0.5s
 
 .slider
-  max-width 1000px
-  position relative
-  margin 0 auto
   width 100%
-  margin-top 20px
-  margin-bottom 30px
+  overflow hidden
 
 .slider-arrows
   position absolute
   width 100%
   z-index 3
+
+.slider-arrows > .arrow
+  margin-top 300px
 
 .slider-arrows a
   cursor pointer
@@ -26,7 +27,7 @@
 .slider-arrows > .arrow-right
   right 0
 
+
 .inner-container
   margin-bottom 30px
   display flex
-

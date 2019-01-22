@@ -8,7 +8,7 @@ exports[`Slider renders correctly 1`] = `
     className="innerContainer"
     style={
       Object {
-        "transition": "all 1s",
+        "width": "calc(6*300px)",
       }
     }
   >
@@ -31,6 +31,88 @@ exports[`Slider renders correctly 1`] = `
           src="test-file-stub"
         />
       </a>
+    </div>
+    <div
+      className="sliderItems"
+    >
+      <div
+        className="slide"
+        style={
+          Object {
+            "backgroundImage": "url(test-file-stub)",
+            "backgroundPosition": "center top",
+            "backgroundRepeat": "no-repeat",
+            "float": "left",
+            "height": "300px",
+            "width": "300px",
+          }
+        }
+      />
+      <div
+        className="slide"
+        style={
+          Object {
+            "backgroundImage": "url(test-file-stub)",
+            "backgroundPosition": "center top",
+            "backgroundRepeat": "no-repeat",
+            "float": "left",
+            "height": "300px",
+            "width": "300px",
+          }
+        }
+      />
+      <div
+        className="slide"
+        style={
+          Object {
+            "backgroundImage": "url(test-file-stub)",
+            "backgroundPosition": "center top",
+            "backgroundRepeat": "no-repeat",
+            "float": "left",
+            "height": "300px",
+            "width": "300px",
+          }
+        }
+      />
+      <div
+        className="slide"
+        style={
+          Object {
+            "backgroundImage": "url(test-file-stub)",
+            "backgroundPosition": "center top",
+            "backgroundRepeat": "no-repeat",
+            "float": "left",
+            "height": "300px",
+            "width": "300px",
+          }
+        }
+      />
+      <div
+        className="slide"
+        style={
+          Object {
+            "backgroundImage": "url(test-file-stub)",
+            "backgroundPosition": "center top",
+            "backgroundRepeat": "no-repeat",
+            "float": "left",
+            "height": "300px",
+            "width": "300px",
+          }
+        }
+      />
+      <div
+        className="slide"
+        style={
+          Object {
+            "backgroundImage": "url(test-file-stub)",
+            "backgroundPosition": "center top",
+            "backgroundRepeat": "no-repeat",
+            "float": "left",
+            "height": "300px",
+            "width": "300px",
+          }
+        }
+      />
     </div>
   </div>
 </div>

@@ -1,23 +1,26 @@
 import React from 'react'
-
+import Slide from './one-slide'
 import styles from './styles.module.styl'
-import PropTypes from 'prop-types'
 
 class Slider extends React.Component {
   constructor(props) {
     super(props)
-    //console.log(props);
-    this.state = {
-      images: props.sliderImages,
-    }
 
-    this.slideLeft = this.slideLeft.bind(this)
-    this.slideRight = this.slideRight.bind(this)
-    this.renderNavigation = this.renderNavigation.bind(this)
+    this.state = {
+      width: 300,
+      height: 300,
+      images: [
+        'nature-1.jpg',
+        'nature-2.jpg',
+        'nature-3.jpg',
+        'nature-4.jpg',
+        'nature-5.jpg',
+        'nature-6.jpg',
+      ],
+    }
   }
 
   slideLeft() {
-    //console.log('left');
     let last = this.state.images.slice(-1)
     let rest = this.state.images.slice(0, -1)
     let images = [last, ...rest]
@@ -25,7 +28,6 @@ class Slider extends React.Component {
   }
 
   slideRight() {
-    //console.log('right');
     let [first, ...rest] = this.state.images
     let images = [...rest, first]
     this.setState({ images: images })
@@ -35,17 +37,31 @@ class Slider extends React.Component {
     return (
       <div className={styles.sliderArrows}>
         <a className={styles.arrowLeft} onClick={() => this.slideLeft()}>
-          <img src={require('./arrows/arrow-left.png')} />
+          <img src={require('./images/arrow-left.png')} />
         </a>
         <a className={styles.arrowRight} onClick={() => this.slideRight()}>
-          <img src={require('./arrows/arrow-right.png')} />
+          <img src={require('./images/arrow-right.png')} />
         </a>
       </div>
     )
   }
 
   renderSlides() {
-    return this.props.children
+    const images = this.state.images
+    return (
+      <div className={styles.sliderItems}>
+        {images.map((image, index) => {
+          return (
+            <Slide
+              image={image}
+              width={this.state.width}
+              height={this.state.height}
+              key={index}
+            />
+          )
+        })}
+      </div>
+    )
   }
 
   render() {
@@ -54,9 +70,7 @@ class Slider extends React.Component {
         <div
           className={styles.innerContainer}
           style={{
-            //width: '300%',
-            transition: 'all 1s',
-            //marginLeft: '-250px'
+            width: 'calc(6*300px)',
           }}
         >
           {this.renderNavigation()}
@@ -68,7 +82,3 @@ class Slider extends React.Component {
 }
 
 export default Slider
-
-Slider.propTypes = {
-  children: PropTypes.node.isRequired,
-}
