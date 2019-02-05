@@ -14,11 +14,6 @@ const OneSlide = ({ image, width, height }) => {
   return <div className="slide" style={styles} />
 }
 
-OneSlide.defaultProps = {
-  width: 300,
-  height: 300,
-}
-
 OneSlide.propTypes = {
   image: PropTypes.string.isRequired,
   width: PropTypes.number.isRequired,

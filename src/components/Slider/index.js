@@ -1,5 +1,9 @@
 import React from 'react'
 import Slide from './one-slide'
+
+import ArrowLeft from './images/arrow-left.png'
+import ArrowRight from './images/arrow-right.png'
+
 import styles from './styles.module.styl'
 
 class Slider extends React.Component {
@@ -9,6 +13,7 @@ class Slider extends React.Component {
     this.state = {
       width: 300,
       height: 300,
+      slideIndex: 0,
       images: [
         'nature-1.jpg',
         'nature-2.jpg',
@@ -21,35 +26,51 @@ class Slider extends React.Component {
   }
 
   slideLeft() {
-    let last = this.state.images.slice(-1)
-    let rest = this.state.images.slice(0, -1)
-    let images = [last, ...rest]
-    this.setState({ images: images })
+    this.setState({
+      slideIndex:
+        this.state.slideIndex === 0
+          ? this.state.images.length - 1
+          : this.state.slideIndex - 1,
+    })
   }
 
   slideRight() {
-    let [first, ...rest] = this.state.images
-    let images = [...rest, first]
-    this.setState({ images: images })
+    this.setState({
+      slideIndex:
+        this.state.slideIndex === this.state.images.length - 1
+          ? 0
+          : this.state.slideIndex + 1,
+    })
   }
 
   renderNavigation() {
     return (
       <div className={styles.sliderArrows}>
-        <a className={styles.arrowLeft} onClick={() => this.slideLeft()}>
-          <img src={require('./images/arrow-left.png')} />
-        </a>
-        <a className={styles.arrowRight} onClick={() => this.slideRight()}>
-          <img src={require('./images/arrow-right.png')} />
-        </a>
+        <div
+          role="button"
+          className={styles.arrowLeft}
+          onClick={() => this.slideLeft()}
+        >
+          <img src={ArrowLeft} alt="" />
+        </div>
+        <div
+          role="button"
+          className={styles.arrowRight}
+          onClick={() => this.slideRight()}
+        >
+          <img src={ArrowRight} alt="" />
+        </div>
       </div>
     )
   }
 
   renderSlides() {
     const images = this.state.images
+    const slideStyles = {
+      marginLeft: `-${this.state.width * this.state.slideIndex}px`,
+    }
     return (
-      <div className={styles.sliderItems}>
+      <div className={styles.sliderItems} style={slideStyles}>
         {images.map((image, index) => {
           return (
             <Slide
@@ -67,13 +88,13 @@ class Slider extends React.Component {
   render() {
     return (
       <div className={styles.slider}>
+        {this.renderNavigation()}
         <div
           className={styles.innerContainer}
           style={{
-            width: 'calc(6*300px)',
+            width: `${this.state.images.length * this.state.width}px`,
           }}
         >
-          {this.renderNavigation()}
           {this.renderSlides()}
         </div>
       </div>

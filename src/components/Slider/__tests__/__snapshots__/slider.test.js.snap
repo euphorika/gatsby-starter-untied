@@ -5,35 +5,44 @@ exports[`Slider renders correctly 1`] = `
   className="slider"
 >
   <div
+    className="sliderArrows"
+  >
+    <div
+      className="arrowLeft"
+      onClick={[Function]}
+      role="button"
+    >
+      <img
+        alt=""
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="arrowRight"
+      onClick={[Function]}
+      role="button"
+    >
+      <img
+        alt=""
+        src="test-file-stub"
+      />
+    </div>
+  </div>
+  <div
     className="innerContainer"
     style={
       Object {
-        "width": "calc(6*300px)",
+        "width": "1800px",
       }
     }
   >
     <div
-      className="sliderArrows"
-    >
-      <a
-        className="arrowLeft"
-        onClick={[Function]}
-      >
-        <img
-          src="test-file-stub"
-        />
-      </a>
-      <a
-        className="arrowRight"
-        onClick={[Function]}
-      >
-        <img
-          src="test-file-stub"
-        />
-      </a>
-    </div>
-    <div
       className="sliderItems"
+      style={
+        Object {
+          "marginLeft": "-0px",
+        }
+      }
     >
       <div
         className="slide"
