@@ -6,7 +6,7 @@ describe('Hero', () => {
   it('renders correctly', () => {
     const imgFluid = {
       aspectRatio: 1.0,
-      basde64: 'String',
+      base64: 'String',
       sizes: '(max-width: 4928px) 100vw, 4928px',
       src: 'image.jpg',
       srcSet: 'srcSet.image.jpg',
