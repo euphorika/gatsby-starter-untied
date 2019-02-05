@@ -2,9 +2,9 @@
 @require '../../themes/standard/config/colors'
 
 .hero-section
+  position relative
   background-color background-hero-color
   padding-top 250px
-  padding-buttom 250px
   margin-bottom 50px
   line-height 2
   padding-top 250px
@@ -17,20 +17,23 @@
   padding-right 20%
   font-size 1.25em
 
+  .background
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
 
-.button
-  background-color primary-color
-  display inline-block
-  border-adius 3px
-  font-size 1em
-  font-weight 500
-  padding .75em 1em
+  .info
+    position relative
+    z-index 10
+    .button
+      background-color primary-color
+      display inline-block
+      border-radius 3px
+      font-size 1em
+      font-weight 500
+      padding .75em 1em
 
-.text
-  color text-button-color
-
-  
-
-
-
-
+      .text
+        color text-button-color

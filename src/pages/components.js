@@ -26,6 +26,7 @@ const ComponentsPage = ({ data }) => {
     callToAction,
     //slider,
   } = components
+  const { heroImage } = data
   const teamMemberImages = ['business', 'person', 'teacher', 'user']
   const testimonialImages = ['teacher']
   //const sliderImages = ['nature', 'mountains', 'beach', 'nature', 'mountains']
@@ -33,7 +34,12 @@ const ComponentsPage = ({ data }) => {
   return (
     <Layout>
       {hero.map((value, key) => (
-        <Hero key={key} headline={value.headline} button={value.button}>
+        <Hero
+          key={key}
+          headline={value.headline}
+          imgFluid={heroImage.childImageSharp.fluid}
+          button={value.button}
+        >
           {value.body}
         </Hero>
       ))}
@@ -149,6 +155,13 @@ export const query = graphql`
               link
             }
           }
+        }
+      }
+    }
+    heroImage: file(relativePath: { eq: "hero/beach-by-frank-mckenna.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 4928) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
