@@ -1,15 +1,14 @@
 import React from 'react'
 
-import styles from './checkbox.module.styl'
+import styles from './textarea.module.styl'
 
-const Checkbox = ({ checked, name, label, options }) => {
-  const checkbox = (
+const Textarea = ({ children, name, label, options }) => {
+  const textarea = (
     <>
-      <input
+      <textarea
         className={styles.element}
-        type="checkbox"
+        value={children}
         name={name}
-        checked={checked}
         {...options}
       />
       <span className={styles.afterFormElement} />
@@ -20,12 +19,12 @@ const Checkbox = ({ checked, name, label, options }) => {
     return (
       <label className={styles.label}>
         {label}
-        {checkbox}
+        {textarea}
       </label>
     )
   }
 
-  return checkbox
+  return textarea
 }
 
-export default Checkbox
+export default Textarea

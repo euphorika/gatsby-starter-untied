@@ -12,7 +12,7 @@ const Checkbox = ({ checked, name, label, options }) => {
         checked={checked}
         {...options}
       />
-      <span className={styles.afterCheckbox} />
+      <span className={styles.afterFormElement} />
     </>
   )
 

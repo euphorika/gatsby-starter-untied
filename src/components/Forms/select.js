@@ -8,6 +8,7 @@ const Select = ({ children, name, label, options }) => {
       <select className={styles.element} name={name} {...options}>
         {children}
       </select>
+      <span className={styles.afterFormElement} />
     </>
   )
 

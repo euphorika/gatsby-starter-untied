@@ -12,7 +12,7 @@ const Input = ({ value, name, type = 'text', label, options }) => {
         name={name}
         type={type}
       />
-      <span className={styles.afterInput} />
+      <span className={styles.afterFormElement} />
     </>
   )
 

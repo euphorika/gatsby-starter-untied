@@ -5,6 +5,7 @@ import Checkbox from './Checkbox'
 import Radio from './Radio'
 import Select from './Select'
 import Button from './Button'
+import Textarea from './textarea'
 
 import styles from './styles.module.styl'
 
@@ -50,6 +51,13 @@ const Forms = () => {
         <Button type="button" options={{ disabled: false }}>
           <span>Click Me</span>
         </Button>
+      </div>
+      <div className={styles.textareaContainer}>
+        <Textarea
+          name="textarea"
+          label="Textarea Label"
+          options={{ required: true, placeholder: 'Placeholder Text', rows: 5 }}
+        />
       </div>
     </section>
   )
