@@ -4,6 +4,7 @@ import Input from './input'
 import Checkbox from './Checkbox'
 import Radio from './Radio'
 import Select from './Select'
+import Button from './Button'
 
 import styles from './styles.module.styl'
 
@@ -44,6 +45,11 @@ const Forms = () => {
           <option value="value1">Option 2</option>
           <option value="value1">Option 3</option>
         </Select>
+      </div>
+      <div className={styles.buttonContainer}>
+        <Button type="button" options={{ disabled: false }}>
+          <span>Click Me</span>
+        </Button>
       </div>
     </section>
   )
