@@ -1,10 +1,10 @@
 import React from 'react'
 
 import Input from './input'
-import Checkbox from './Checkbox'
-import Radio from './Radio'
-import Select from './Select'
-import Button from './Button'
+import Checkbox from './checkbox'
+import Radio from './radio'
+import Select from './select'
+import Button from './button'
 import Textarea from './textarea'
 
 import styles from './styles.module.styl'
