@@ -2,12 +2,13 @@ import React from 'react'
 
 import styles from './checkbox.module.styl'
 
-const Checkbox = ({ checked, name, label, options }) => {
+const Checkbox = ({ value, checked, name, label, options }) => {
   const checkbox = (
     <>
       <input
-        className={styles.element}
+        className={`${styles.element} ${styles.autoWidth}`}
         type="checkbox"
+        value={value}
         name={name}
         checked={checked}
         {...options}
@@ -19,8 +20,8 @@ const Checkbox = ({ checked, name, label, options }) => {
   if (label) {
     return (
       <label className={styles.label}>
-        {label}
         {checkbox}
+        {label}
       </label>
     )
   }

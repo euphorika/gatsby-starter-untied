@@ -9,11 +9,22 @@
 
 .element
   padding 10px
+  width 100%
+
+  &.auto-width
+    width auto
+
+    &:required
+      width auto
 
   &:required
+    width 95%
+
     & + .after-form-element
       &::before
         content '*'
+        display inline-block
+        width 5%
         color red
 
   &:valid

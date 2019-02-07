@@ -2,12 +2,13 @@ import React from 'react'
 
 import styles from './radio.module.styl'
 
-const Checkbox = ({ checked, name, label, options }) => {
+const Radio = ({ value, checked, name, label, options }) => {
   const radio = (
     <>
       <input
-        className={styles.element}
+        className={`${styles.element} ${styles.autoWidth}`}
         type="radio"
+        value={value}
         name={name}
         checked={checked}
         {...options}
@@ -19,8 +20,8 @@ const Checkbox = ({ checked, name, label, options }) => {
   if (label) {
     return (
       <label className={styles.label}>
-        {label}
         {radio}
+        {label}
       </label>
     )
   }
@@ -28,4 +29,4 @@ const Checkbox = ({ checked, name, label, options }) => {
   return radio
 }
 
-export default Checkbox
+export default Radio
