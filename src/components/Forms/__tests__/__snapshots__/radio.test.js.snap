@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio renders correctly 1`] = `
+Array [
+  <input
+    className="element autoWidth"
+    name="Name"
+    type="checkbox"
+    value="Value"
+  />,
+  <span
+    className="afterFormElement"
+  />,
+]
+`;

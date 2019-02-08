@@ -31,5 +31,5 @@ Select.propTypes = {
   children: PropTypes.node.isRequired,
   name: PropTypes.string.isRequired,
   label: PropTypes.string,
-  options: PropTypes.object
+  options: PropTypes.object,
 }

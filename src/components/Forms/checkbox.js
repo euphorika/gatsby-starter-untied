@@ -37,5 +37,5 @@ Checkbox.propTypes = {
   checked: PropTypes.bool,
   name: PropTypes.string.isRequired,
   label: PropTypes.string,
-  options: PropTypes.object
+  options: PropTypes.object,
 }

@@ -34,5 +34,5 @@ Textarea.propTypes = {
   children: PropTypes.node,
   name: PropTypes.string.isRequired,
   label: PropTypes.string,
-  options: PropTypes.object
+  options: PropTypes.object,
 }
