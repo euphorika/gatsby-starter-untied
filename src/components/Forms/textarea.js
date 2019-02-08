@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import styles from './textarea.module.styl'
 
@@ -28,3 +29,10 @@ const Textarea = ({ children, name, label, options }) => {
 }
 
 export default Textarea
+
+Textarea.propTypes = {
+  children: PropTypes.node,
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  options: PropTypes.object
+}

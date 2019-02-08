@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import styles from './select.module.styl'
 
@@ -25,3 +26,10 @@ const Select = ({ children, name, label, options }) => {
 }
 
 export default Select
+
+Select.propTypes = {
+  children: PropTypes.node.isRequired,
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  options: PropTypes.object
+}

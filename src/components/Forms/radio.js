@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import styles from './radio.module.styl'
 
@@ -30,3 +31,11 @@ const Radio = ({ value, checked, name, label, options }) => {
 }
 
 export default Radio
+
+Radio.propTypes = {
+  value: PropTypes.string.isRequired,
+  checked: PropTypes.bool,
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  options: PropTypes.object
+}
