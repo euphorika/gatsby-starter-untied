@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Forms renders correctly 1`] = `
+exports[`Input renders correctly 1`] = `
 <section
   className="formsSection"
 >
