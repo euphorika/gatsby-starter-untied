@@ -35,7 +35,8 @@
     "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run",
     "format": "prettier --write '**/*.js'",
     "test": "jest",
-    "deploy": "yarn test && yarn test:e2e:ci && yarn build"
+    "predeploy": "CI=1 npm i cypress; yarn test; yarn test:e2e:ci",
+    "deploy": "yarn build"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-rc.3",
