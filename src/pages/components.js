@@ -26,10 +26,10 @@ const ComponentsPage = ({ data }) => {
     callToAction,
     //slider,
   } = components
-  const { heroImage } = data
+  const { heroImage, nature, mountains, beach} = data
   const teamMemberImages = ['business', 'person', 'teacher', 'user']
   const testimonialImages = ['teacher']
-  //const sliderImages = ['nature', 'mountains', 'beach', 'nature', 'mountains']
+  const sliderImages = [nature , mountains, beach, nature, mountains]
 
   return (
     <Layout>
@@ -55,20 +55,12 @@ const ComponentsPage = ({ data }) => {
           </TeamMember>
         ))}
       </TeamMembers>
+
       {callToAction.map((value, key) => (
         <CallToAction key={key} button={value.button} />
       ))}
-      {/* <Slider sliderImages={sliderImages}>
-        {/* {slider.map((value, key) => (
-          <OneSlide
-            key={key}
-            image={data[sliderImages[key]].childImageSharp.fixed}
-          >
-            {value.body}
-          </OneSlide>
-        ))}
-      </Slider> */}
-      <Slider />
+
+      <Slider images = {sliderImages} />     
 
       {pricingTable.map((value, key) => {
         const formattedPrice = new Intl.NumberFormat(locales, {
@@ -121,7 +113,6 @@ export const query = graphql`
               link
             }
           }
-
           testimonials {
             name
             img
@@ -193,26 +184,26 @@ export const query = graphql`
         }
       }
     }
+    nature: file(relativePath: { eq: "slider/nature.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 4928) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    mountains: file(relativePath: { eq: "slider/mountains.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 4928){
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    beach: file(relativePath: { eq: "slider/beach.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 4928) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
-// nature: file(relativePath: { eq: "slider/nature.png" }) {
-//   childImageSharp {
-//     fixed(width: 250, height: 250) {
-//       ...GatsbyImageSharpFixed
-//     }
-//   }
-// }
-// mountains: file(relativePath: { eq: "slider/mountains.png" }) {
-//   childImageSharp {
-//     fixed(width: 250, height: 250) {
-//       ...GatsbyImageSharpFixed
-//     }
-//   }
-// }
-// beach: file(relativePath: { eq: "slider/beach.png" }) {
-//   childImageSharp {
-//     fixed(width: 250, height: 250) {
-//       ...GatsbyImageSharpFixed
-//     }
-//   }
-// }

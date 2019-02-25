@@ -11,17 +11,10 @@ class Slider extends React.Component {
     super(props)
 
     this.state = {
-      width: 300,
-      height: 300,
+      images: this.props.images,
+      width: "100%",
+      // height: 300,
       slideIndex: 0,
-      images: [
-        'nature-1.jpg',
-        'nature-2.jpg',
-        'nature-3.jpg',
-        'nature-4.jpg',
-        'nature-5.jpg',
-        'nature-6.jpg',
-      ],
     }
   }
 
@@ -65,27 +58,34 @@ class Slider extends React.Component {
   }
 
   renderSlides() {
-    const images = this.state.images
+    // const images = this.state.images
     const slideStyles = {
       marginLeft: `-${this.state.width * this.state.slideIndex}px`,
     }
     return (
-      <div className={styles.sliderItems} style={slideStyles}>
-        {images.map((image, index) => {
+      <div 
+        className={styles.sliderItems } style={slideStyles}>
+       
+        {/* Compute the width of sliderItems automatically using the #of images * width 100%
+         style={{
+          width: `${this.state.images.length * this.state.width}px`,
+        }}
+      > */} 
+        {this.state.images.map((image, index) => {
           return (
             <Slide
-              image={image}
-              width={this.state.width}
-              height={this.state.height}
+              image={image.childImageSharp.fluid}
+              style={{width: "100%", height: "300px"}}
               key={index}
             />
           )
-        })}
+        })} 
       </div>
     )
   }
 
   render() {
+    console.log(this.state)
     return (
       <div className={styles.slider}>
         {this.renderNavigation()}

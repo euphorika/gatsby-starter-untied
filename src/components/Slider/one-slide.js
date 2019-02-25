@@ -1,23 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Img from 'gatsby-image'
+import styles from './styles.module.styl'
+ 
 
-const OneSlide = ({ image, width, height }) => {
-  const backgroundImage = require(`./images/${image}`)
-  const styles = {
-    backgroundImage: `url(${backgroundImage})`,
-    backgroundPosition: 'center top',
-    backgroundRepeat: 'no-repeat',
-    float: 'left',
-    width: `${width}px`,
-    height: `${height}px`,
-  }
-  return <div className="slide" style={styles} />
-}
+const OneSlide = ({image}) => (
+  <div className={styles.oneSlider}>
+    <Img fluid={image} />
+  </div> 
+)
 
 OneSlide.propTypes = {
-  image: PropTypes.string.isRequired,
-  width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired,
+  image: PropTypes.object.isRequired,
 }
 
 export default OneSlide
