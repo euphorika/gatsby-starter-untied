@@ -68,6 +68,9 @@ exports[`Forms renders correctly 1`] = `
           <span
             className="afterFormElement"
           />
+          <span
+            className="checkmark"
+          />
           Male
         </label>
         <label
@@ -83,6 +86,9 @@ exports[`Forms renders correctly 1`] = `
           <span
             className="afterFormElement"
           />
+          <span
+            className="checkmark"
+          />
           Female
         </label>
         <label
@@ -97,6 +103,9 @@ exports[`Forms renders correctly 1`] = `
           />
           <span
             className="afterFormElement"
+          />
+          <span
+            className="checkmark"
           />
           Other
         </label>
@@ -747,6 +756,9 @@ exports[`Forms renders correctly 1`] = `
           />
           <span
             className="afterFormElement"
+          />
+          <span
+            className="checkmark"
           />
           Accept Requirements
         </label>

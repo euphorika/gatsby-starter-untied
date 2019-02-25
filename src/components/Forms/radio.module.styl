@@ -2,3 +2,16 @@
 @require '../../themes/standard/config/colors'
 
 @require './element.module.styl'
+@require './checkbox-radiobutton.module.styl'
+
+.label
+  .checkmark
+    border-radius 50%
+
+    &::after
+      top 9px
+      left 9px
+      width 8px
+      height 8px
+      border-radius 50%
+      background white

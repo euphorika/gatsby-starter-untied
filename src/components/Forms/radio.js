@@ -15,19 +15,16 @@ const Radio = ({ value, checked, name, label, options }) => {
         {...options}
       />
       <span className={styles.afterFormElement} />
+      <span className={styles.checkmark} />
     </>
   )
 
-  if (label) {
-    return (
-      <label className={styles.label}>
-        {radio}
-        {label}
-      </label>
-    )
-  }
-
-  return radio
+  return (
+    <label className={styles.label}>
+      {radio}
+      {label}
+    </label>
+  )
 }
 
 export default Radio

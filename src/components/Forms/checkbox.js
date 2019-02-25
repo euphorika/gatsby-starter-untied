@@ -15,19 +15,16 @@ const Checkbox = ({ value, checked, name, label, options }) => {
         {...options}
       />
       <span className={styles.afterFormElement} />
+      <span className={styles.checkmark} />
     </>
   )
 
-  if (label) {
-    return (
-      <label className={styles.label}>
-        {checkbox}
-        {label}
-      </label>
-    )
-  }
-
-  return checkbox
+  return (
+    <label className={styles.label}>
+      {checkbox}
+      {label}
+    </label>
+  )
 }
 
 export default Checkbox
