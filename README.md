@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/11d9611d-d28c-4ae7-b1cc-5913ba4aae22/deploy-status)](https://app.netlify.com/sites/competent-sinoussi-a46fc9/deploys)
+[![Build Status](https://travis-ci.com/euphorika/gatsby-starter-untied.svg?branch=master)](https://travis-ci.com/euphorika/gatsby-starter-untied)
+
 # gatsby-starter-untied
 The untied Gatsby starter.
 
