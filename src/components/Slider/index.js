@@ -65,6 +65,7 @@ class Slider extends React.Component {
         style={{
           width: `${this.state.images.length * this.state.width}%`,
           marginLeft: `-${this.state.width * this.state.slideIndex}%`,
+          display: `flex`,
         }}
       > 
         {this.state.images.map((image, index) => {
