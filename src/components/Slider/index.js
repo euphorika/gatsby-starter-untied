@@ -12,7 +12,7 @@ class Slider extends React.Component {
 
     this.state = {
       images: this.props.images,
-      width: "100%",
+      width: 100,
       // height: 300,
       slideIndex: 0,
     }
@@ -59,23 +59,18 @@ class Slider extends React.Component {
 
   renderSlides() {
     // const images = this.state.images
-    const slideStyles = {
-      marginLeft: `-${this.state.width * this.state.slideIndex}px`,
-    }
     return (
       <div 
-        className={styles.sliderItems } style={slideStyles}>
-       
-        {/* Compute the width of sliderItems automatically using the #of images * width 100%
-         style={{
-          width: `${this.state.images.length * this.state.width}px`,
+        className={styles.sliderItems }
+        style={{
+          width: `${this.state.images.length * this.state.width}%`,
+          marginLeft: `-${this.state.width * this.state.slideIndex}%`,
         }}
-      > */} 
+      > 
         {this.state.images.map((image, index) => {
           return (
             <Slide
               image={image.childImageSharp.fluid}
-              style={{width: "100%", height: "300px"}}
               key={index}
             />
           )
@@ -91,9 +86,6 @@ class Slider extends React.Component {
         {this.renderNavigation()}
         <div
           className={styles.innerContainer}
-          style={{
-            width: `${this.state.images.length * this.state.width}px`,
-          }}
         >
           {this.renderSlides()}
         </div>
