@@ -2,15 +2,21 @@
 @require '../../themes/standard/config/colors'
 
 @require './element.module.styl'
-@require './checkbox-radiobutton.module.styl'
+@require './checkable.module.styl'
+
+:root
+  --checkmark-width: checkbox.checkmark-width
+  --checkmark-height: checkbox.checkmark-height
+  --checkmark-padding-top: checkbox.checkmark-padding-top
+  --checkmark-padding-left: checkbox.checkmark-padding-left
 
 .label
   .checkmark
     &::after
-      left 9px
-      top 5px
-      width 5px
-      height 10px
-      border solid white
+      left var(--checkmark-padding-left)
+      top var(--checkmark-padding-top)
+      width var(--checkmark-width)
+      height var(--checkmark-height)
+      border solid var(--checkmark-color)
       border-width 0 3px 3px 0
       transform rotate(45deg)

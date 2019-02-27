@@ -2,16 +2,22 @@
 @require '../../themes/standard/config/colors'
 
 @require './element.module.styl'
-@require './checkbox-radiobutton.module.styl'
+@require './checkable.module.styl'
+
+:root
+  --bubble-width: radio.bubble-dimensions
+  --bubble-height: radio.bubble-dimensions
+  --bubble-padding-top: radio.bubble-padding
+  --bubble-padding-left: radio.bubble-padding
 
 .label
   .checkmark
     border-radius 50%
 
     &::after
-      top 9px
-      left 9px
-      width 8px
-      height 8px
+      top var(--bubble-padding-top)
+      left var(--bubble-padding-left)
+      width var(--bubble-width)
+      height var(--bubble-height)
       border-radius 50%
-      background white
+      background var(--checkmark-color)
