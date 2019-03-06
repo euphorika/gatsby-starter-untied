@@ -1,4 +1,48 @@
 @require '../../themes/standard/config/breakpoints'
 @require '../../themes/standard/config/colors'
+@require '../../themes/standard/components/select'
 
 @require './element.module.styl'
+
+:root
+  --width: select.width
+  --background-color: select.background
+  --hover-background-color: select.hover-background
+  --focus-background-color: select.focus-background
+  --active-background-color: select.active-background
+  --arrow-color: select.arrow-color
+  --arrow-thickness: select.arrow-thickness
+  --arrow-padding: select.arrow-padding
+
+.select-box
+  position relative
+  width var(--width)
+
+  &::after
+    content ""
+    position absolute
+    top "calc(50% - %s)" % (select.arrow-thickness + select.arrow-padding)
+    right 25px
+    -webkit-transform rotate(45deg)
+    transform rotate(45deg)
+    border solid var(--arrow-color)
+    border-width 0 var(--arrow-thickness) var(--arrow-thickness) 0
+    display inline-block
+    padding var(--arrow-padding)
+    pointer-events none
+
+  select
+    width 100%
+    -moz-appearance none
+    -webkit-appearance none
+    appearance none
+    background var(--background-color)
+
+    &:hover
+      background var(--hover-background-color)
+
+    &:focus
+      background var(--focus-background-color)
+
+    &:active
+      background var(--active-background-color)

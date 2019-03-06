@@ -5,12 +5,12 @@ import styles from './select.module.styl'
 
 const Select = ({ children, name, label, options }) => {
   const select = (
-    <>
+    <div className={styles.selectBox}>
       <select className={styles.element} name={name} {...options}>
         {children}
       </select>
       <span className={styles.afterFormElement} />
-    </>
+    </div>
   )
 
   if (label) {
