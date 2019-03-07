@@ -12,7 +12,7 @@ import PricingTable from '../components/PricingTable/'
 import Forms from '../components/Forms/'
 import Video from '../components/Video/'
 import Testimonial from '../components/Testimonial/'
-import Callout from '../components/Callout/'
+import CalloutExample from '../components/examples/callout'
 
 const ComponentsPage = ({ data }) => {
   const { locales, components } = data.site.siteMetadata
@@ -21,7 +21,6 @@ const ComponentsPage = ({ data }) => {
     testimonials,
     pricingTable,
     hero,
-    callout,
     callToAction,
   } = components
   const { heroImage } = data
@@ -84,9 +83,7 @@ const ComponentsPage = ({ data }) => {
           {value.body}
         </Testimonial>
       ))}
-      {callout.map((value, key) => (
-        <Callout key={key} message={value.message} button={value.button} />
-      ))}
+      <CalloutExample />
     </Layout>
   )
 }
@@ -133,13 +130,6 @@ export const query = graphql`
               link
             }
             body
-          }
-          callout {
-            message
-            button {
-              text
-              link
-            }
           }
         }
       }
