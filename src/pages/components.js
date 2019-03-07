@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 import HeroExample from '../components/examples/hero'
 import TeamMembers from '../components/TeamMembers/'
 import TeamMember from '../components/TeamMembers/team-member'
-import CallToAction from '../components/CallToAction/'
+import CallToActionExample from '../components/examples/callToAction'
 import Slider from '../components/Slider/'
 import PricingTable from '../components/PricingTable/'
 import Forms from '../components/Forms/'
@@ -16,7 +16,7 @@ import CalloutExample from '../components/examples/callout'
 
 const ComponentsPage = ({ data }) => {
   const { locales, components } = data.site.siteMetadata
-  const { teamMembers, testimonials, pricingTable, callToAction } = components
+  const { teamMembers, testimonials, pricingTable } = components
   const teamMemberImages = ['business', 'person', 'teacher', 'user']
   const testimonialImages = ['teacher']
 
@@ -35,9 +35,7 @@ const ComponentsPage = ({ data }) => {
           </TeamMember>
         ))}
       </TeamMembers>
-      {callToAction.map((value, key) => (
-        <CallToAction key={key} button={value.button} />
-      ))}
+      <CallToActionExample />
       <Slider />
       {pricingTable.map((value, key) => {
         const formattedPrice = new Intl.NumberFormat(locales, {
@@ -89,12 +87,6 @@ export const query = graphql`
             name
             position
             body
-          }
-          callToAction {
-            button {
-              text
-              link
-            }
           }
           pricingTable {
             headline
