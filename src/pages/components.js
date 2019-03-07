@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 
-import Hero from '../components/Hero/'
+import HeroExample from '../components/examples/hero'
 import TeamMembers from '../components/TeamMembers/'
 import TeamMember from '../components/TeamMembers/team-member'
 import CallToAction from '../components/CallToAction/'
@@ -16,29 +16,13 @@ import CalloutExample from '../components/examples/callout'
 
 const ComponentsPage = ({ data }) => {
   const { locales, components } = data.site.siteMetadata
-  const {
-    teamMembers,
-    testimonials,
-    pricingTable,
-    hero,
-    callToAction,
-  } = components
-  const { heroImage } = data
+  const { teamMembers, testimonials, pricingTable, callToAction } = components
   const teamMemberImages = ['business', 'person', 'teacher', 'user']
   const testimonialImages = ['teacher']
 
   return (
     <Layout>
-      {hero.map((value, key) => (
-        <Hero
-          key={key}
-          headline={value.headline}
-          imgFluid={heroImage.childImageSharp.fluid}
-          button={value.button}
-        >
-          {value.body}
-        </Hero>
-      ))}
+      <HeroExample />
       <TeamMembers>
         {teamMembers.map((value, key) => (
           <TeamMember
@@ -96,15 +80,6 @@ export const query = graphql`
       siteMetadata {
         locales
         components {
-          hero {
-            headline
-            body
-            button {
-              text
-              link
-            }
-          }
-
           testimonials {
             name
             img
@@ -131,13 +106,6 @@ export const query = graphql`
             }
             body
           }
-        }
-      }
-    }
-    heroImage: file(relativePath: { eq: "hero/beach-by-frank-mckenna.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 4928) {
-          ...GatsbyImageSharpFluid
         }
       }
     }
