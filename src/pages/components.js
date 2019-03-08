@@ -10,13 +10,12 @@ import Slider from '../components/Slider/'
 import PricingTable from '../components/PricingTable/'
 import Forms from '../components/Forms/'
 import Video from '../components/Video/'
-import Testimonial from '../components/Testimonial/'
+import TestimonialsExample from '../components/examples/testimonial'
 import CalloutExample from '../components/examples/callout'
 
 const ComponentsPage = ({ data }) => {
   const { locales, components } = data.site.siteMetadata
-  const { testimonials, pricingTable } = components
-  const testimonialImages = ['teacher']
+  const { pricingTable } = components
 
   return (
     <Layout>
@@ -43,15 +42,7 @@ const ComponentsPage = ({ data }) => {
       })}
       <Forms />
       <Video />
-      {testimonials.map((value, key) => (
-        <Testimonial
-          key={key}
-          name={value.name}
-          imgFixed={data[testimonialImages[key]].childImageSharp.fixed}
-        >
-          {value.body}
-        </Testimonial>
-      ))}
+      <TestimonialsExample />
       <CalloutExample />
     </Layout>
   )
@@ -65,11 +56,6 @@ export const query = graphql`
       siteMetadata {
         locales
         components {
-          testimonials {
-            name
-            img
-            body
-          }
           pricingTable {
             headline
             price
@@ -80,13 +66,6 @@ export const query = graphql`
             }
             body
           }
-        }
-      }
-    }
-    teacher: file(relativePath: { eq: "team-members/teacher.png" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
         }
       }
     }
