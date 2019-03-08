@@ -4,8 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
 import HeroExample from '../components/examples/hero'
-import TeamMembers from '../components/TeamMembers/'
-import TeamMember from '../components/TeamMembers/team-member'
+import TeamMembersExample from '../components/examples/teamMembers'
 import CallToActionExample from '../components/examples/callToAction'
 import Slider from '../components/Slider/'
 import PricingTable from '../components/PricingTable/'
@@ -16,25 +15,13 @@ import CalloutExample from '../components/examples/callout'
 
 const ComponentsPage = ({ data }) => {
   const { locales, components } = data.site.siteMetadata
-  const { teamMembers, testimonials, pricingTable } = components
-  const teamMemberImages = ['business', 'person', 'teacher', 'user']
+  const { testimonials, pricingTable } = components
   const testimonialImages = ['teacher']
 
   return (
     <Layout>
       <HeroExample />
-      <TeamMembers>
-        {teamMembers.map((value, key) => (
-          <TeamMember
-            key={key}
-            name={value.name}
-            position={value.position}
-            imgFixed={data[teamMemberImages[key]].childImageSharp.fixed}
-          >
-            {value.body}
-          </TeamMember>
-        ))}
-      </TeamMembers>
+      <TeamMembersExample />
       <CallToActionExample />
       <Slider />
       {pricingTable.map((value, key) => {
@@ -83,11 +70,6 @@ export const query = graphql`
             img
             body
           }
-          teamMembers {
-            name
-            position
-            body
-          }
           pricingTable {
             headline
             price
@@ -101,28 +83,7 @@ export const query = graphql`
         }
       }
     }
-    business: file(relativePath: { eq: "team-members/business.png" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    person: file(relativePath: { eq: "team-members/person.png" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
     teacher: file(relativePath: { eq: "team-members/teacher.png" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    user: file(relativePath: { eq: "team-members/user.png" }) {
       childImageSharp {
         fixed(width: 50, height: 50) {
           ...GatsbyImageSharpFixed
