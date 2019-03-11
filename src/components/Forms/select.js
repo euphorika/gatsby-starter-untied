@@ -4,8 +4,9 @@ import PropTypes from 'prop-types'
 import styles from './select.module.styl'
 
 const Select = ({ children, name, label, options }) => {
+  const requiredClass = options && options.required ? ` ${styles.required}` : ''
   const select = (
-    <div className={styles.selectBox}>
+    <div className={`${styles.selectBox}${requiredClass}`}>
       <select className={styles.element} name={name} {...options}>
         {children}
       </select>

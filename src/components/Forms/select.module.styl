@@ -22,7 +22,7 @@
     content ""
     position absolute
     top "calc(50% - %s)" % (select.arrow-thickness + select.arrow-padding)
-    right 25px
+    right 10px
     -webkit-transform rotate(45deg)
     transform rotate(45deg)
     border solid var(--arrow-color)
@@ -30,6 +30,10 @@
     display inline-block
     padding var(--arrow-padding)
     pointer-events none
+
+  &.required
+    &::after
+      right calc(5% + 10px)
 
   select
     width 100%
