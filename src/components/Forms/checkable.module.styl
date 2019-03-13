@@ -30,6 +30,11 @@
         &::after
           display block
 
+    &:required
+      & + .after-form-element
+        &::before
+          padding-left: calc(var(--width) + 3px)
+
   .checkmark
     position absolute
     top 0

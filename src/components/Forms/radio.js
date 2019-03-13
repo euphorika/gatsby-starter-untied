@@ -7,7 +7,7 @@ const Radio = ({ value, checked, name, label, options }) => {
   const radio = (
     <>
       <input
-        className={`${styles.element} ${styles.autoWidth}`}
+        className={styles.element}
         type="radio"
         value={value}
         name={name}

@@ -7,7 +7,7 @@ const Checkbox = ({ value, checked, name, label, options }) => {
   const checkbox = (
     <>
       <input
-        className={`${styles.element} ${styles.autoWidth}`}
+        className={styles.element}
         type="checkbox"
         value={value}
         name={name}

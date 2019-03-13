@@ -5,7 +5,7 @@ exports[`Checkbox renders correctly 1`] = `
   className="label"
 >
   <input
-    className="element autoWidth"
+    className="element"
     name="Name"
     type="checkbox"
     value="Value"
