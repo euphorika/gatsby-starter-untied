@@ -55,66 +55,78 @@ exports[`Forms renders correctly 1`] = `
       <div
         className="gridItem firstCol"
       >
-        <label
-          className="label"
+        <span
+          className="checkable"
         >
-          <input
-            className="element"
-            name="gender"
-            required={true}
-            type="radio"
-            value="male"
-          />
-          <span
-            className="afterFormElement"
-          />
-          <span
-            className="checkmark"
-          />
-          Male
-        </label>
-        <label
-          className="label"
+          <label
+            className="label"
+          >
+            <input
+              className="element"
+              name="gender"
+              required={true}
+              type="radio"
+              value="male"
+            />
+            <span
+              className="afterFormElement"
+            />
+            <span
+              className="checkmark"
+            />
+            Male
+          </label>
+        </span>
+        <span
+          className="checkable"
         >
-          <input
-            className="element"
-            name="gender"
-            required={true}
-            type="radio"
-            value="female"
-          />
-          <span
-            className="afterFormElement"
-          />
-          <span
-            className="checkmark"
-          />
-          Female
-        </label>
-        <label
-          className="label"
+          <label
+            className="label"
+          >
+            <input
+              className="element"
+              name="gender"
+              required={true}
+              type="radio"
+              value="female"
+            />
+            <span
+              className="afterFormElement"
+            />
+            <span
+              className="checkmark"
+            />
+            Female
+          </label>
+        </span>
+        <span
+          className="checkable"
         >
-          <input
-            className="element"
-            name="gender"
-            required={true}
-            type="radio"
-            value="other"
-          />
-          <span
-            className="afterFormElement"
-          />
-          <span
-            className="checkmark"
-          />
-          Other
-        </label>
+          <label
+            className="label"
+          >
+            <input
+              className="element"
+              name="gender"
+              required={true}
+              type="radio"
+              value="other"
+            />
+            <span
+              className="afterFormElement"
+            />
+            <span
+              className="checkmark"
+            />
+            Other
+          </label>
+        </span>
       </div>
       <div
         className="gridItem sndCol"
       >
         <div
-          className="selectBox"
+          className="selectBox required"
         >
           <select
             className="element"
@@ -748,24 +760,28 @@ exports[`Forms renders correctly 1`] = `
       <div
         className="gridItem fullsize"
       >
-        <label
-          className="label"
+        <span
+          className="checkable"
         >
-          <input
-            className="element"
-            name="requirements"
-            required={true}
-            type="checkbox"
-            value="accept"
-          />
-          <span
-            className="afterFormElement"
-          />
-          <span
-            className="checkmark"
-          />
-          Accept Requirements
-        </label>
+          <label
+            className="label"
+          >
+            <input
+              className="element"
+              name="requirements"
+              required={true}
+              type="checkbox"
+              value="accept"
+            />
+            <span
+              className="afterFormElement"
+            />
+            <span
+              className="checkmark"
+            />
+            Accept Requirements
+          </label>
+        </span>
       </div>
       <div
         className="gridItem fullsize"

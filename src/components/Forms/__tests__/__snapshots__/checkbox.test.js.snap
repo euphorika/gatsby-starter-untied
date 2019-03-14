@@ -1,20 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox renders correctly 1`] = `
-<label
-  className="label"
+<span
+  className="checkable"
 >
-  <input
-    className="element"
-    name="Name"
-    type="checkbox"
-    value="Value"
-  />
-  <span
-    className="afterFormElement"
-  />
-  <span
-    className="checkmark"
-  />
-</label>
+  <label
+    className="label"
+  >
+    <input
+      className="element"
+      name="Name"
+      type="checkbox"
+      value="Value"
+    />
+    <span
+      className="afterFormElement"
+    />
+    <span
+      className="checkmark"
+    />
+  </label>
+</span>
 `;

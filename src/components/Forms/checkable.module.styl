@@ -1,6 +1,6 @@
 @require '../../themes/standard/components/checkable.styl'
 
-:root
+.checkable
   --checkmark-color: checkable.checkmark-color
   --background-color: checkable.background
   --hover-background-color: checkable.hover-background
@@ -8,42 +8,42 @@
   --width: checkable.dimensions
   --height: checkable.dimensions
 
-.label
-  position relative
+  .label
+    position relative
 
-  &:hover
+    &:hover
+      .element
+        & ~ .checkmark
+          background var(--hover-background-color)
+
     .element
-      & ~ .checkmark
-        background var(--hover-background-color)
-
-  .element
-    position absolute
-    opacity 0
-    cursor pointer
-    height 0
-    width 0
-
-    &:checked
-      & ~ .checkmark
-        background var(--checked-background-color)
-
-        &::after
-          display block
-
-    &:required
-      & + .after-form-element
-        &::before
-          padding-left: calc(var(--width) + 3px)
-
-  .checkmark
-    position absolute
-    top 0
-    left 0
-    height var(--height)
-    width var(--width)
-    background-color var(--background-color)
-
-    &::after
-      content ""
       position absolute
-      display none
+      opacity 0
+      cursor pointer
+      height 0
+      width 0
+
+      &:checked
+        & ~ .checkmark
+          background var(--checked-background-color)
+
+          &::after
+            display block
+
+      &:required
+        & + .after-form-element
+          &::before
+            padding-left: calc(var(--width) + 3px)
+
+    .checkmark
+      position absolute
+      top 0
+      left 0
+      height var(--height)
+      width var(--width)
+      background-color var(--background-color)
+
+      &::after
+        content ""
+        position absolute
+        display none

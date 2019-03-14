@@ -20,10 +20,12 @@ const Checkbox = ({ value, checked, name, label, options }) => {
   )
 
   return (
-    <label className={styles.label}>
-      {checkbox}
-      {label}
-    </label>
+    <span className={styles.checkable}>
+      <label className={styles.label}>
+        {checkbox}
+        {label}
+      </label>
+    </span>
   )
 }
 

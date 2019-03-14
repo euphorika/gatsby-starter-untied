@@ -20,10 +20,12 @@ const Radio = ({ value, checked, name, label, options }) => {
   )
 
   return (
-    <label className={styles.label}>
-      {radio}
-      {label}
-    </label>
+    <span className={styles.checkable}>
+      <label className={styles.label}>
+        {radio}
+        {label}
+      </label>
+    </span>
   )
 }
 
