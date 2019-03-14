@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Input from '../'
+import Input from '../input'
 
 describe('Input', () => {
   it('renders correctly', () => {

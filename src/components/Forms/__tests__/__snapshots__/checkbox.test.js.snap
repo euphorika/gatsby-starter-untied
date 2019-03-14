@@ -1,15 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox renders correctly 1`] = `
-Array [
-  <input
-    className="element autoWidth"
-    name="Name"
-    type="checkbox"
-    value="Value"
-  />,
-  <span
-    className="afterFormElement"
-  />,
-]
+<span
+  className="checkable"
+>
+  <label
+    className="label"
+  >
+    <input
+      className="element"
+      name="Name"
+      type="checkbox"
+      value="Value"
+    />
+    <span
+      className="afterFormElement"
+    />
+    <span
+      className="checkmark"
+    />
+  </label>
+</span>
 `;
