@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select renders correctly 1`] = `
-Array [
+<div
+  className="selectBox"
+>
   <select
     className="element"
     name="Select"
@@ -9,9 +11,9 @@ Array [
     <option
       value=""
     />
-  </select>,
+  </select>
   <span
     className="afterFormElement"
-  />,
-]
+  />
+</div>
 `;
