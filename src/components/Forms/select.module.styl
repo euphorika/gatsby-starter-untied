@@ -3,8 +3,9 @@
 @require '../../themes/standard/components/select'
 
 @require './element.module.styl'
+@require './input.module.styl'
 
-:root
+.select-box
   --width: select.width
   --background-color: select.background
   --hover-background-color: select.hover-background
@@ -14,7 +15,6 @@
   --arrow-thickness: select.arrow-thickness
   --arrow-padding: select.arrow-padding
 
-.select-box
   position relative
   width var(--width)
 

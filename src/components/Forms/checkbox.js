@@ -7,7 +7,7 @@ const Checkbox = ({ value, checked, name, label, options }) => {
   const checkbox = (
     <>
       <input
-        className={`${styles.element} ${styles.autoWidth}`}
+        className={styles.element}
         type="checkbox"
         value={value}
         name={name}
@@ -15,19 +15,18 @@ const Checkbox = ({ value, checked, name, label, options }) => {
         {...options}
       />
       <span className={styles.afterFormElement} />
+      <span className={styles.checkmark} />
     </>
   )
 
-  if (label) {
-    return (
+  return (
+    <span className={styles.checkable}>
       <label className={styles.label}>
         {checkbox}
         {label}
       </label>
-    )
-  }
-
-  return checkbox
+    </span>
+  )
 }
 
 export default Checkbox

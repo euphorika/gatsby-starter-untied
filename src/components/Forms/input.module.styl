@@ -2,3 +2,20 @@
 @require '../../themes/standard/config/colors'
 
 @require './element.module.styl'
+
+.label
+  padding 10px
+
+  .element
+    margin-left 10px
+
+.element
+  padding 10px
+  width 100%
+
+  &:required
+    width 95%
+
+    & + .after-form-element
+      &::before
+        width 5%
