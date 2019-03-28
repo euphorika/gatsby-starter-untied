@@ -26,10 +26,10 @@ const ComponentsPage = ({ data }) => {
     callToAction,
     //slider,
   } = components
-  const { heroImage, nature, mountains, beach} = data
+  const { heroImage, forest, clouds, autumn} = data
   const teamMemberImages = ['business', 'person', 'teacher', 'user']
   const testimonialImages = ['teacher']
-  const sliderImages = [beach, beach, beach, beach]
+  const sliderImages = [forest, clouds, autumn]
 
   return (
     <Layout>
@@ -184,21 +184,21 @@ export const query = graphql`
         }
       }
     }
-    nature: file(relativePath: { eq: "slider/nature.png" }) {
+    autumn: file(relativePath: { eq: "slider/autumn.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 4928) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    mountains: file(relativePath: { eq: "slider/mountains.png" }) {
+    clouds: file(relativePath: { eq: "slider/clouds.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 4928){
+        fluid(maxWidth: 4928) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    beach: file(relativePath: { eq: "slider/beach.png" }) {
+    forest: file(relativePath: { eq: "slider/forest.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 4928) {
           ...GatsbyImageSharpFluid
