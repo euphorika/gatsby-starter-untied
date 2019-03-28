@@ -13,17 +13,17 @@ class Slider extends React.Component {
     this.state = {
       images: this.props.images,
       width: 100,
-      // height: 300,
       slideIndex: 0,
     }
   }
 
   slideLeft() {
+    //const totalSlides = this.state.images.length;
     this.setState({
       slideIndex:
         this.state.slideIndex === 0
           ? this.state.images.length - 1
-          : this.state.slideIndex - 1,
+          : (this.state.slideIndex - 1) % (this.state.images.length),
     })
   }
 
@@ -32,7 +32,7 @@ class Slider extends React.Component {
       slideIndex:
         this.state.slideIndex === this.state.images.length - 1
           ? 0
-          : this.state.slideIndex + 1,
+          : (this.state.slideIndex + 1) % (this.state.images.length),
     })
   }
 
@@ -84,11 +84,12 @@ class Slider extends React.Component {
     console.log(this.state)
     return (
       <div className={styles.slider}>
-        {this.renderNavigation()}
+        
         <div
           className={styles.innerContainer}
         >
           {this.renderSlides()}
+          {this.renderNavigation()}
         </div>
       </div>
     )

@@ -29,7 +29,7 @@ const ComponentsPage = ({ data }) => {
   const { heroImage, nature, mountains, beach} = data
   const teamMemberImages = ['business', 'person', 'teacher', 'user']
   const testimonialImages = ['teacher']
-  const sliderImages = [nature , mountains, beach, nature, mountains]
+  const sliderImages = [beach, beach, beach, beach]
 
   return (
     <Layout>

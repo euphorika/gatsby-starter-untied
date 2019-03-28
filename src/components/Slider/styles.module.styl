@@ -5,10 +5,11 @@
   width 100%
   overflow hidden
   position relative
+  margin-bottom 50px
 
   .slider-arrows
     position absolute
-    top 40%
+    top calc(50% - 10px)
     left 0
     right 0
     z-index 3
@@ -21,8 +22,12 @@
       &.arrow-right
         right 0
 
+@media only screen and (max-width: 500px) 
+    & > [role="button"]
+      width 20px
+
   .inner-container
-    margin-bottom 30px
+    margin-bottom 0px
 
     .slider-items
       transition margin-left 0.5s
