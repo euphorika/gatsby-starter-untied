@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Forms from '../'
+import Radio from '../checkbox'
 
-describe('Forms', () => {
+describe('Radio', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<Forms />).toJSON()
+    const tree = renderer.create(<Radio value="Value" name="Name" />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })

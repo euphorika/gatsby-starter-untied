@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Forms from '../'
+import Textarea from '../textarea'
 
-describe('Forms', () => {
+describe('Textarea', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<Forms />).toJSON()
+    const tree = renderer.create(<Textarea name="Name" />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })

@@ -3,3 +3,24 @@
 
 .forms-section
   margin 0
+
+  .form-wrapper
+    display grid
+    grid-template-columns auto auto
+    grid-template-areas \
+      'leftcol .' \
+      '. rightcol' \
+      'firstcol sndcol' \
+      'fullsize fullsize'
+
+    .grid-item
+      padding 5px
+
+      &.first-col
+        grid-column 1 / span 1
+
+      &.snd-col
+        grid-column 2 / span 1
+
+      &.fullsize
+        grid-column 1 / span 2

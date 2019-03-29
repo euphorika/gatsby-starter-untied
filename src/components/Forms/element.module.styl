@@ -1,0 +1,16 @@
+@require '../../themes/standard/config/breakpoints'
+@require '../../themes/standard/config/colors'
+
+.element
+  &:required
+    & + .after-form-element
+      &::before
+        content '*'
+        display inline-block
+        color red
+
+  &:valid
+    border-color: green
+
+  &:invalid
+    border-color: red

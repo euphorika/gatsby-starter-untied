@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Forms from '../'
+import Input from '../input'
 
-describe('Forms', () => {
+describe('Input', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<Forms />).toJSON()
+    const tree = renderer.create(<Input name="Name" />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })

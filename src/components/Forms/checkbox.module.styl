@@ -1,0 +1,22 @@
+@require '../../themes/standard/config/breakpoints'
+@require '../../themes/standard/config/colors'
+
+@require './element.module.styl'
+@require './checkable.module.styl'
+
+.checkable
+  --checkmark-width: checkbox.checkmark-width
+  --checkmark-height: checkbox.checkmark-height
+  --checkmark-padding-top: checkbox.checkmark-padding-top
+  --checkmark-padding-left: checkbox.checkmark-padding-left
+
+  .label
+    .checkmark
+      &::after
+        left var(--checkmark-padding-left)
+        top var(--checkmark-padding-top)
+        width var(--checkmark-width)
+        height var(--checkmark-height)
+        border solid var(--checkmark-color)
+        border-width 0 3px 3px 0
+        transform rotate(45deg)

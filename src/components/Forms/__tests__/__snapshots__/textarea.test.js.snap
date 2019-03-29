@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textarea renders correctly 1`] = `
+Array [
+  <textarea
+    className="element"
+    name="Name"
+  />,
+  <span
+    className="afterFormElement"
+  />,
+]
+`;
