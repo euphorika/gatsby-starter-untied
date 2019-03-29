@@ -1,9 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Slider renders correctly 1`] = `
-<section
-  className="sliderSection"
+<div
+  className="slider"
 >
-  Slider
-</section>
+  <div
+    className="innerContainer"
+  >
+    <div
+      className="sliderItems"
+      style={
+        Object {
+          "display": "flex",
+          "marginLeft": "-0%",
+          "width": "0%",
+        }
+      }
+    />
+    <div
+      className="sliderArrows"
+    >
+      <div
+        className="arrowLeft"
+        onClick={[Function]}
+        role="button"
+      >
+        <img
+          alt=""
+          src="test-file-stub"
+        />
+      </div>
+      <div
+        className="arrowRight"
+        onClick={[Function]}
+        role="button"
+      >
+        <img
+          alt=""
+          src="test-file-stub"
+        />
+      </div>
+    </div>
+  </div>
+</div>
 `;

@@ -1,5 +1,37 @@
 @require '../../themes/standard/config/breakpoints'
 @require '../../themes/standard/config/colors'
 
-.slider-section
-  margin 0
+.slider
+  width 100%
+  overflow hidden
+  position relative
+  margin-bottom 50px
+
+  .slider-arrows
+    position absolute
+    top calc(50% - 10px)
+    left 0
+    right 0
+    z-index 3
+
+    & > [role="button"]
+      cursor pointer
+      opacity 0.8
+      position absolute
+
+      &.arrow-right
+        right 0
+
+@media only screen and (max-width: 500px) 
+    & > [role="button"]
+      width 20px
+
+  .inner-container
+    margin-bottom 0px
+
+    .slider-items
+      transition margin-left 0.5s
+
+      .one-slider
+        float left
+        width 100%
