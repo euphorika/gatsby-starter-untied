@@ -2,12 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 import styles from './styles.module.styl'
- 
 
-const OneSlide = ({image}) => (
+const OneSlide = ({ image }) => (
   <div className={styles.oneSlider}>
     <Img fluid={image} />
-  </div> 
+  </div>
 )
 
 OneSlide.propTypes = {

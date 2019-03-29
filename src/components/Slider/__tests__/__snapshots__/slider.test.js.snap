@@ -5,123 +5,41 @@ exports[`Slider renders correctly 1`] = `
   className="slider"
 >
   <div
-    className="sliderArrows"
-  >
-    <div
-      className="arrowLeft"
-      onClick={[Function]}
-      role="button"
-    >
-      <img
-        alt=""
-        src="test-file-stub"
-      />
-    </div>
-    <div
-      className="arrowRight"
-      onClick={[Function]}
-      role="button"
-    >
-      <img
-        alt=""
-        src="test-file-stub"
-      />
-    </div>
-  </div>
-  <div
     className="innerContainer"
-    style={
-      Object {
-        "width": "1800px",
-      }
-    }
   >
     <div
       className="sliderItems"
       style={
         Object {
-          "marginLeft": "-0px",
+          "display": "flex",
+          "marginLeft": "-0%",
+          "width": "0%",
         }
       }
+    />
+    <div
+      className="sliderArrows"
     >
       <div
-        className="slide"
-        style={
-          Object {
-            "backgroundImage": "url(test-file-stub)",
-            "backgroundPosition": "center top",
-            "backgroundRepeat": "no-repeat",
-            "float": "left",
-            "height": "300px",
-            "width": "300px",
-          }
-        }
-      />
+        className="arrowLeft"
+        onClick={[Function]}
+        role="button"
+      >
+        <img
+          alt=""
+          src="test-file-stub"
+        />
+      </div>
       <div
-        className="slide"
-        style={
-          Object {
-            "backgroundImage": "url(test-file-stub)",
-            "backgroundPosition": "center top",
-            "backgroundRepeat": "no-repeat",
-            "float": "left",
-            "height": "300px",
-            "width": "300px",
-          }
-        }
-      />
-      <div
-        className="slide"
-        style={
-          Object {
-            "backgroundImage": "url(test-file-stub)",
-            "backgroundPosition": "center top",
-            "backgroundRepeat": "no-repeat",
-            "float": "left",
-            "height": "300px",
-            "width": "300px",
-          }
-        }
-      />
-      <div
-        className="slide"
-        style={
-          Object {
-            "backgroundImage": "url(test-file-stub)",
-            "backgroundPosition": "center top",
-            "backgroundRepeat": "no-repeat",
-            "float": "left",
-            "height": "300px",
-            "width": "300px",
-          }
-        }
-      />
-      <div
-        className="slide"
-        style={
-          Object {
-            "backgroundImage": "url(test-file-stub)",
-            "backgroundPosition": "center top",
-            "backgroundRepeat": "no-repeat",
-            "float": "left",
-            "height": "300px",
-            "width": "300px",
-          }
-        }
-      />
-      <div
-        className="slide"
-        style={
-          Object {
-            "backgroundImage": "url(test-file-stub)",
-            "backgroundPosition": "center top",
-            "backgroundRepeat": "no-repeat",
-            "float": "left",
-            "height": "300px",
-            "width": "300px",
-          }
-        }
-      />
+        className="arrowRight"
+        onClick={[Function]}
+        role="button"
+      >
+        <img
+          alt=""
+          src="test-file-stub"
+        />
+      </div>
     </div>
   </div>
 </div>
