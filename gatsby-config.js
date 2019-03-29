@@ -66,23 +66,6 @@ module.exports = {
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
         },
       ],
-      // slider: [
-      //   {
-      //     title: 'Slider 1',
-      //   },
-      //   {
-      //     title: 'Slider 2',
-      //   },
-      //   {
-      //     title: 'Slider 3',
-      //   },
-      //   {
-      //     title: 'Slider 4',
-      //   },
-      //   {
-      //     title: 'Slider 5',
-      //   },
-      // ],
       pricingTable: [
         {
           headline: 'Product 1',
