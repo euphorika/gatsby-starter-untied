@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import HeroExample from '../components/examples/hero'
 import TeamMembersExample from '../components/examples/teamMembers'
 import CallToActionExample from '../components/examples/callToAction'
-import Slider from '../components/Slider/'
+import SliderExample from '../components/examples/slider/'
 import PricingTableExample from '../components/examples/pricingTable'
 import Forms from '../components/Forms/'
 import Video from '../components/Video/'
@@ -18,7 +18,7 @@ const ComponentsPage = () => {
       <HeroExample />
       <TeamMembersExample />
       <CallToActionExample />
-      <Slider />
+      <SliderExample />
       <PricingTableExample />
       <Forms />
       <Video />
