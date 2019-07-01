@@ -11,3 +11,16 @@ Array [
   />,
 ]
 `;
+
+exports[`Textarea renders required correctly 1`] = `
+Array [
+  <textarea
+    className="element"
+    name="Name"
+    required={true}
+  />,
+  <span
+    className="afterFormElement"
+  />,
+]
+`;

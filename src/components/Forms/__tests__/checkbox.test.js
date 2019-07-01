@@ -9,4 +9,13 @@ describe('Checkbox', () => {
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
+
+  it('renders required correctly', () => {
+    const tree = renderer
+      .create(
+        <Checkbox value="Value" name="Name" options={{ required: true }} />
+      )
+      .toJSON()
+    expect(tree).toMatchSnapshot()
+  })
 })

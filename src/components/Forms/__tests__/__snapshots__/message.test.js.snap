@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Message renders error message correctly 1`] = `
+<div
+  className="formMessage error"
+>
+  Error Message
+</div>
+`;
+
+exports[`Message renders info message correctly 1`] = `
+<div
+  className="formMessage info"
+>
+  Error Message
+</div>
+`;
+
+exports[`Message renders warn message correctly 1`] = `
+<div
+  className="formMessage warn"
+>
+  Error Message
+</div>
+`;

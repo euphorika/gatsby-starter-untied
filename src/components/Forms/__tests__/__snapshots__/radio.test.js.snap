@@ -22,3 +22,27 @@ exports[`Radio renders correctly 1`] = `
   </label>
 </span>
 `;
+
+exports[`Radio renders required correctly 1`] = `
+<span
+  className="checkable"
+>
+  <label
+    className="label"
+  >
+    <input
+      className="element"
+      name="Name"
+      required={true}
+      type="checkbox"
+      value="Value"
+    />
+    <span
+      className="afterFormElement"
+    />
+    <span
+      className="checkmark"
+    />
+  </label>
+</span>
+`;

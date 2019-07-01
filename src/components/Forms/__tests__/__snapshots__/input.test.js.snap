@@ -14,3 +14,19 @@ exports[`Input renders correctly 1`] = `
   />
 </div>
 `;
+
+exports[`Input renders required input correctly 1`] = `
+<div
+  className="elementContainer"
+>
+  <input
+    className="element"
+    name="Name"
+    required={true}
+    type="text"
+  />
+  <span
+    className="afterFormElement"
+  />
+</div>
+`;

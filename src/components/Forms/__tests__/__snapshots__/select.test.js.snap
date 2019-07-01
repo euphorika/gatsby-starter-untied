@@ -17,3 +17,22 @@ exports[`Select renders correctly 1`] = `
   />
 </div>
 `;
+
+exports[`Select renders required correctly 1`] = `
+<div
+  className="selectBox required"
+>
+  <select
+    className="element"
+    name="Select"
+    required={true}
+  >
+    <option
+      value=""
+    />
+  </select>
+  <span
+    className="afterFormElement"
+  />
+</div>
+`;
