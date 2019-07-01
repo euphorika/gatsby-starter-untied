@@ -13,44 +13,65 @@ exports[`Forms renders correctly 1`] = `
       <div
         className="gridItem firstCol"
       >
-        <input
-          className="element"
-          name="firstname"
-          placeholder="Firstname"
-          required={true}
-          type="text"
-        />
-        <span
-          className="afterFormElement"
-        />
+        <div>
+          <div
+            className="formMessage info"
+          >
+            Hier ist alles in Ordnung!
+          </div>
+          <input
+            className="element"
+            name="firstname"
+            placeholder="Firstname"
+            required={true}
+            type="text"
+          />
+          <span
+            className="afterFormElement"
+          />
+        </div>
       </div>
       <div
         className="gridItem sndCol"
       >
-        <input
-          className="element"
-          name="lastname"
-          placeholder="Lastname"
-          required={true}
-          type="text"
-        />
-        <span
-          className="afterFormElement"
-        />
+        <div>
+          <div
+            className="formMessage info"
+          >
+            Hier ist alles in Ordnung!
+          </div>
+          <input
+            className="element"
+            name="lastname"
+            placeholder="Lastname"
+            required={true}
+            type="text"
+          />
+          <span
+            className="afterFormElement"
+          />
+        </div>
       </div>
       <div
         className="gridItem fullsize"
       >
-        <input
-          className="element"
-          name="email"
-          placeholder="Email"
-          required={true}
-          type="email"
-        />
-        <span
-          className="afterFormElement"
-        />
+        <div>
+          <div
+            className="formMessage info"
+          >
+            Hier ist alles in Ordnung!
+          </div>
+          <input
+            className="element"
+            name="email"
+            placeholder="Email"
+            required={true}
+            type="email"
+          />
+          <span
+            className="afterFormElement"
+          />
+        </div>
       </div>
       <div
         className="gridItem firstCol"
