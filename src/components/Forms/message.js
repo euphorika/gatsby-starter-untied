@@ -18,6 +18,10 @@ const FormMessage = ({ type, children }) => {
     }
   }
 
+  if (!children) {
+    return null
+  }
+
   return (
     <div className={`${styles.formMessage} ${makeClassName(type)}`}>
       {children}
@@ -27,7 +31,7 @@ const FormMessage = ({ type, children }) => {
 
 FormMessage.propTypes = {
   type: PropTypes.oneOf(['info', 'warn', 'error']),
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 }
 
 export default FormMessage

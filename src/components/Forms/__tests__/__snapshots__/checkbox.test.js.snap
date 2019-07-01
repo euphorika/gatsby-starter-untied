@@ -1,48 +1,56 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox renders correctly 1`] = `
-<span
-  className="checkable"
+<div
+  className="elementContainer"
 >
-  <label
-    className="label"
+  <span
+    className="checkable"
   >
-    <input
-      className="element"
-      name="Name"
-      type="checkbox"
-      value="Value"
-    />
-    <span
-      className="afterFormElement"
-    />
-    <span
-      className="checkmark"
-    />
-  </label>
-</span>
+    <label
+      className="label"
+    >
+      <input
+        className="element"
+        name="Name"
+        type="checkbox"
+        value="Value"
+      />
+      <span
+        className="afterFormElement"
+      />
+      <span
+        className="checkmark"
+      />
+    </label>
+  </span>
+</div>
 `;
 
 exports[`Checkbox renders required correctly 1`] = `
-<span
-  className="checkable"
+<div
+  className="elementContainer"
 >
-  <label
-    className="label"
+  <span
+    className="checkable"
   >
-    <input
-      className="element"
-      name="Name"
-      required={true}
-      type="checkbox"
-      value="Value"
-    />
-    <span
-      className="afterFormElement"
-    />
-    <span
-      className="checkmark"
-    />
-  </label>
-</span>
+    <label
+      className="label"
+    >
+      <input
+        className="element"
+        name="Name"
+        required={true}
+        type="checkbox"
+        value="Value"
+      />
+      <span
+        className="afterFormElement"
+      />
+      <span
+        className="checkmark"
+      />
+    </label>
+  </span>
+</div>
 `;

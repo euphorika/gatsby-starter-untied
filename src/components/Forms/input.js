@@ -5,7 +5,14 @@ import FormMessage from './message'
 
 import styles from './input.module.styl'
 
-const Input = ({ value, name, type = 'text', label, message, options }) => {
+const Input = ({
+  value,
+  name,
+  type = 'text',
+  label,
+  message = {},
+  options,
+}) => {
   const input = (
     <>
       <input
@@ -18,14 +25,6 @@ const Input = ({ value, name, type = 'text', label, message, options }) => {
       <span className={styles.afterFormElement} />
     </>
   )
-
-  const renderMessage = message => {
-    if (!message) {
-      return
-    }
-
-    return <FormMessage type={message.type}>{message.text}</FormMessage>
-  }
 
   if (label) {
     return (
@@ -40,7 +39,7 @@ const Input = ({ value, name, type = 'text', label, message, options }) => {
 
   return (
     <div className={styles.elementContainer}>
-      {renderMessage(message)}
+      <FormMessage type={message.type}>{message.text}</FormMessage>
       {input}
     </div>
   )

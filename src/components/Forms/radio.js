@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import FormMessage from './message'
+
 import styles from './radio.module.styl'
 
-const Radio = ({ value, checked, name, label, options }) => {
+const Radio = ({ value, checked, name, label, message = {}, options }) => {
   const radio = (
     <>
       <input
@@ -20,12 +22,15 @@ const Radio = ({ value, checked, name, label, options }) => {
   )
 
   return (
-    <span className={styles.checkable}>
-      <label className={styles.label}>
-        {radio}
-        {label}
-      </label>
-    </span>
+    <div className={styles.elementContainer}>
+      <FormMessage type={message.type}>{message.text}</FormMessage>
+      <span className={styles.checkable}>
+        <label className={styles.label}>
+          {radio}
+          {label}
+        </label>
+      </span>
+    </div>
   )
 }
 
@@ -36,5 +41,6 @@ Radio.propTypes = {
   checked: PropTypes.bool,
   name: PropTypes.string.isRequired,
   label: PropTypes.string,
+  message: PropTypes.object,
   options: PropTypes.object,
 }
