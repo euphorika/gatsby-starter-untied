@@ -13,11 +13,13 @@ exports[`Forms renders correctly 1`] = `
       <div
         className="gridItem firstCol"
       >
-        <div>
+        <div
+          className="elementContainer"
+        >
           <div
             className="formMessage info"
           >
-            Hier ist alles in Ordnung!
+            Ich bin ein Infotext
           </div>
           <input
             className="element"
@@ -25,6 +27,7 @@ exports[`Forms renders correctly 1`] = `
             placeholder="Firstname"
             required={true}
             type="text"
+            value="John"
           />
           <span
             className="afterFormElement"
@@ -34,11 +37,13 @@ exports[`Forms renders correctly 1`] = `
       <div
         className="gridItem sndCol"
       >
-        <div>
+        <div
+          className="elementContainer"
+        >
           <div
-            className="formMessage info"
+            className="formMessage error"
           >
-            Hier ist alles in Ordnung!
+            Ich bin eine Fehlermeldung
           </div>
           <input
             className="element"
@@ -55,12 +60,9 @@ exports[`Forms renders correctly 1`] = `
       <div
         className="gridItem fullsize"
       >
-        <div>
-          <div
-            className="formMessage info"
-          >
-            Hier ist alles in Ordnung!
-          </div>
+        <div
+          className="elementContainer"
+        >
           <input
             className="element"
             name="email"

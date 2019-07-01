@@ -1,12 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input renders correctly 1`] = `
-<div>
-  <div
-    className="formMessage info"
-  >
-    Hier ist alles in Ordnung!
-  </div>
+<div
+  className="elementContainer"
+>
   <input
     className="element"
     name="Name"

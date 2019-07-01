@@ -5,7 +5,7 @@ import FormMessage from './message'
 
 import styles from './input.module.styl'
 
-const Input = ({ value, name, type = 'text', label, options }) => {
+const Input = ({ value, name, type = 'text', label, message, options }) => {
   const input = (
     <>
       <input
@@ -19,18 +19,28 @@ const Input = ({ value, name, type = 'text', label, options }) => {
     </>
   )
 
+  const renderMessage = message => {
+    if (!message) {
+      return
+    }
+
+    return <FormMessage type={message.type}>{message.text}</FormMessage>
+  }
+
   if (label) {
     return (
-      <label>
-        {label}
-        {input}
-      </label>
+      <div className={styles.elementContainer}>
+        <label>
+          {label}
+          {input}
+        </label>
+      </div>
     )
   }
 
   return (
-    <div>
-      <FormMessage>Hier ist alles in Ordnung!</FormMessage>
+    <div className={styles.elementContainer}>
+      {renderMessage(message)}
       {input}
     </div>
   )
@@ -43,6 +53,6 @@ Input.propTypes = {
   name: PropTypes.string.isRequired,
   type: PropTypes.string,
   label: PropTypes.string,
-  messages: PropTypes.array,
+  message: PropTypes.object,
   options: PropTypes.object,
 }
