@@ -13,4 +13,15 @@ describe('Select', () => {
     const tree = renderer.create(select).toJSON()
     expect(tree).toMatchSnapshot()
   })
+
+  it('renders required correctly', () => {
+    const select = (
+      <Select name="Select" options={{ required: true }}>
+        <option value="" />
+      </Select>
+    )
+
+    const tree = renderer.create(select).toJSON()
+    expect(tree).toMatchSnapshot()
+  })
 })

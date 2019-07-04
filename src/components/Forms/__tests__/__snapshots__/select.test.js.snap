@@ -2,18 +2,45 @@
 
 exports[`Select renders correctly 1`] = `
 <div
-  className="selectBox"
+  className="elementContainer"
 >
-  <select
-    className="element"
-    name="Select"
+  <div
+    className="selectBox"
   >
-    <option
-      value=""
+    <select
+      className="element"
+      name="Select"
+    >
+      <option
+        value=""
+      />
+    </select>
+    <span
+      className="afterFormElement"
     />
-  </select>
-  <span
-    className="afterFormElement"
-  />
+  </div>
+</div>
+`;
+
+exports[`Select renders required correctly 1`] = `
+<div
+  className="elementContainer"
+>
+  <div
+    className="selectBox required"
+  >
+    <select
+      className="element"
+      name="Select"
+      required={true}
+    >
+      <option
+        value=""
+      />
+    </select>
+    <span
+      className="afterFormElement"
+    />
+  </div>
 </div>
 `;

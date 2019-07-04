@@ -1,13 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Textarea renders correctly 1`] = `
-Array [
+<div
+  className="elementContainer"
+>
   <textarea
     className="element"
     name="Name"
-  />,
+  />
   <span
     className="afterFormElement"
-  />,
-]
+  />
+</div>
+`;
+
+exports[`Textarea renders required correctly 1`] = `
+<div
+  className="elementContainer"
+>
+  <textarea
+    className="element"
+    name="Name"
+    required={true}
+  />
+  <span
+    className="afterFormElement"
+  />
+</div>
 `;

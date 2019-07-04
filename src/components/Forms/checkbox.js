@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import FormMessage from './message'
+
 import styles from './checkbox.module.styl'
 
-const Checkbox = ({ value, checked, name, label, options }) => {
+const Checkbox = ({ value, checked, name, label, message = {}, options }) => {
   const checkbox = (
     <>
       <input
@@ -20,12 +22,15 @@ const Checkbox = ({ value, checked, name, label, options }) => {
   )
 
   return (
-    <span className={styles.checkable}>
-      <label className={styles.label}>
-        {checkbox}
-        {label}
-      </label>
-    </span>
+    <div className={styles.elementContainer}>
+      <FormMessage type={message.type}>{message.text}</FormMessage>
+      <span className={styles.checkable}>
+        <label className={styles.label}>
+          {checkbox}
+          {label}
+        </label>
+      </span>
+    </div>
   )
 }
 
@@ -36,5 +41,6 @@ Checkbox.propTypes = {
   checked: PropTypes.bool,
   name: PropTypes.string.isRequired,
   label: PropTypes.string,
+  message: PropTypes.object,
   options: PropTypes.object,
 }
