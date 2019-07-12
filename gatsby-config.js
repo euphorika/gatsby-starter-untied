@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Untied',
+    title: 'Gatsby Theme Untied',
     locales: 'de-DE',
     components: {
       callToAction: [
@@ -94,6 +94,12 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages`,
         name: 'pages',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/pages`,
       },
     },
     {
