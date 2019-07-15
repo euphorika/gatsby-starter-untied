@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Theme Untied',
@@ -82,11 +84,19 @@ module.exports = {
     },
   },
   plugins: [
+    'gatsby-transformer-yaml',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/images`,
         name: 'images',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/navigation`,
+        name: 'navigation',
       },
     },
     {
@@ -118,32 +128,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-stylus',
     {
-      resolve: 'gatsby-plugin-navigation',
-      options: {
-        menues: {
-          main: [
-            {
-              id: 'home',
-              name: 'Home',
-              link: '/',
-              title: 'Title Home',
-            },
-            {
-              id: 'antoher-page',
-              name: 'Another Page',
-              link: '/another-page/',
-              target: '_blank',
-            },
-            {
-              id: 'components',
-              name: 'Components Page',
-              link: '/components/',
-            },
-          ],
-        },
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'gatsby-starter-untied',
@@ -152,13 +136,13 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: path.resolve(__dirname, 'src/images/gatsby-icon.png'),
       },
     },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        pathToConfigModule: path.resolve(__dirname, `src/utils/typography`),
       },
     },
     `gatsby-plugin-sharp`,

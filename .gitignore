@@ -4,9 +4,9 @@ node_modules
 yarn-error.log
 
 # Build directory
-/public
+**/public
 .DS_Store
 
 # cypress
-/cypress/fixtures/example.json
-/cypress/videos
+**/cypress/fixtures/example.json
+**/cypress/videos
