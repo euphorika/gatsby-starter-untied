@@ -34,7 +34,16 @@ const ComponentsPage = () => {
       <SliderExample />
       <PricingTableExample />
       <Forms />
-      <Video videos={videos} poster='/videos/big_buck_bunny.jpg' preload='auto' playsInline={true} loop={false} muted={true} />
+      <Video
+        videos={videos}
+        poster="/videos/big_buck_bunny.jpg"
+        preload="auto"
+        playsInline={true}
+        loop={false}
+        muted={true}
+        autoPlay={false}
+        controls={true}
+      />
       <TestimonialsExample />
       <CalloutExample />
     </Layout>
