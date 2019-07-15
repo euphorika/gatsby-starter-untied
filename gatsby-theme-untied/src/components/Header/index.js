@@ -11,7 +11,7 @@ export const PureHeader = ({ siteTitle, data }) => (
       <h1>
         <Link to="/">{siteTitle}</Link>
       </h1>
-      <Navigation entries={data.allMenuEntryMain.edges} />
+      <Navigation entries={data.allMainNavigationYaml.edges} />
     </header>
   </div>
 )
@@ -21,7 +21,7 @@ const Header = props => {
     <StaticQuery
       query={graphql`
         query MainNavigationQuery {
-          allMenuEntryMain {
+          allMainNavigationYaml {
             edges {
               node {
                 id
