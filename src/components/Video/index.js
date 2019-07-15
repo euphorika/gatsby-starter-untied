@@ -4,16 +4,16 @@ import PropTypes from 'prop-types'
 class Video extends React.Component {
   render() {
     const options = {
-      poster: [],
-      preload: [],
-      playsInline: true,
-      autoPlay: false,
-      muted: true,
-      loop: false,
-      controls: true,
+      poster: this.props.poster,
+      preload: this.props.preload,
+      playsInline: this.props.playsInline,
+      autoPlay: this.props.autoPlay,
+      muted: this.props.muted,
+      loop: this.props.loop,
+      controls: this.props.controls,
     }
     const displayVideos = this.props.videos.map((video, id) => (
-      <source key={video.id} src={video.src} type={video.type} poster={video.poster} />
+      <source key={video.id} src={video.src} type={video.type} />
     ))
     return (
       <div>

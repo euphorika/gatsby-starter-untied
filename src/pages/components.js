@@ -17,7 +17,6 @@ const videos = [
     id: 0,
     src: '/videos/sample-video-1.mp4',
     type: 'video/mp4',
-    poster: '/videos/big_buck_bunny.jpg',
   },
   {
     id: 1,
@@ -36,7 +35,8 @@ const ComponentsPage = () => {
       <SliderExample />
       <PricingTableExample />
       <Forms />
-      <Video videos={videos} />
+      <Video videos={videos} poster='/videos/big_buck_bunny.jpg' preload='auto' playsInline={true} autoPlay={false} loop={false} controls={true} muted={true} />
+      <Video videos={videos} playsInline={true} autoPlay={true} loop={true} controls={true} muted={true} />
       <TestimonialsExample />
       <CalloutExample />
     </Layout>
