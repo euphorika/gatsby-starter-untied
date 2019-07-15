@@ -22,7 +22,6 @@ const videos = [
     id: 1,
     src: '/videos/sample-video-1.webm',
     type: 'videos/webm',
-    poster: '/videos/big_buck_bunny.jpg',
   },
 ]
 
@@ -35,8 +34,7 @@ const ComponentsPage = () => {
       <SliderExample />
       <PricingTableExample />
       <Forms />
-      <Video videos={videos} poster='/videos/big_buck_bunny.jpg' preload='auto' playsInline={true} autoPlay={false} loop={false} controls={true} muted={true} />
-      <Video videos={videos} playsInline={true} autoPlay={true} loop={true} controls={true} muted={true} />
+      <Video videos={videos} poster='/videos/big_buck_bunny.jpg' preload='auto' playsInline={true} loop={false} muted={true} />
       <TestimonialsExample />
       <CalloutExample />
     </Layout>
