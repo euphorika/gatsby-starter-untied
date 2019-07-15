@@ -5,7 +5,7 @@ import { PureHeader as Header } from '../'
 describe('Header', () => {
   it('renders correctly', () => {
     const data = {
-      allMenuEntryMain: {
+      allMainNavigationYaml: {
         edges: [
           {
             node: {
