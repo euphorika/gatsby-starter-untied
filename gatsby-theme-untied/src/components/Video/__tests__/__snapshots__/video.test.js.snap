@@ -1,9 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Video renders correctly 1`] = `
-<section
-  className="videoSection"
->
-  Video
-</section>
+exports[`video renders correctly 1`] = `
+<video
+  entries={
+    Array [
+      Object {
+        "node": Object {
+          "name": "video 1",
+          "src": "#",
+          "type": "type",
+        },
+      },
+      Object {
+        "node": Object {
+          "name": "video 1",
+          "src": "#",
+          "type": "type",
+        },
+      },
+    ]
+  }
+/>
+`;
+
+exports[`video renders correctly 2`] = `
+<video
+  entries={
+    Array [
+      Object {
+        "node": Object {
+          "name": "video 1",
+          "src": "#",
+          "type": "type",
+        },
+      },
+      Object {
+        "node": Object {
+          "name": "video 1",
+          "src": "#",
+          "type": "type",
+        },
+      },
+    ]
+  }
+/>
 `;

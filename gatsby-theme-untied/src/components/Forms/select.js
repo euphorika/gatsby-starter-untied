@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import FormMessage from './message'
+
 import styles from './select.module.styl'
 
-const Select = ({ children, name, label, options }) => {
+const Select = ({ children, name, label, message = {}, options }) => {
   const requiredClass = options && options.required ? ` ${styles.required}` : ''
   const select = (
     <div className={`${styles.selectBox}${requiredClass}`}>
@@ -16,14 +18,22 @@ const Select = ({ children, name, label, options }) => {
 
   if (label) {
     return (
-      <label className={styles.label}>
-        {label}
-        {select}
-      </label>
+      <div className={styles.elementContainer}>
+        <FormMessage type={message.type}>{message.text}</FormMessage>
+        <label className={styles.label}>
+          {label}
+          {select}
+        </label>
+      </div>
     )
   }
 
-  return select
+  return (
+    <div className={styles.elementContainer}>
+      <FormMessage type={message.type}>{message.text}</FormMessage>
+      {select}
+    </div>
+  )
 }
 
 export default Select
@@ -32,5 +42,6 @@ Select.propTypes = {
   children: PropTypes.node.isRequired,
   name: PropTypes.string.isRequired,
   label: PropTypes.string,
+  message: PropTypes.object,
   options: PropTypes.object,
 }
