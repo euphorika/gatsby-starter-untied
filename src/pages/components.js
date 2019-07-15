@@ -12,6 +12,21 @@ import Video from '../components/Video/'
 import TestimonialsExample from '../components/examples/testimonial'
 import CalloutExample from '../components/examples/callout'
 
+const videos = [
+  {
+    id: 0,
+    src: '/videos/sample-video-1.mp4',
+    type: 'video/mp4',
+    poster: '/videos/big_buck_bunny.jpg',
+  },
+  {
+    id: 1,
+    src: '/videos/sample-video-1.webm',
+    type: 'videos/webm',
+    poster: '/videos/big_buck_bunny.jpg',
+  },
+]
+
 const ComponentsPage = () => {
   return (
     <Layout>
@@ -21,7 +36,7 @@ const ComponentsPage = () => {
       <SliderExample />
       <PricingTableExample />
       <Forms />
-      <Video />
+      <Video videos={videos} />
       <TestimonialsExample />
       <CalloutExample />
     </Layout>

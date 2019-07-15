@@ -1,53 +1,38 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styles from './styles.module.styl'
-
-const videos = [
-  { name: 'video 1', src: '/videos/sample-video-1.webm', type: 'video/webm' },
-  { name: 'video 2', src: '/videos/sample-video-2.mp4', type: 'video/mp4' },
-]
 
 class Video extends React.Component {
-  constructor(props) {
-    super(props)
-    this.videoRefs = []
-  }
-
-  componentDidMount() {
-    this.videoRefs[0] && this.videoRefs[0].focus()
-  }
-
   render() {
+    const options = {
+      poster: [],
+      preload: [],
+      playsInline: true,
+      autoPlay: false,
+      muted: true,
+      loop: false,
+      controls: true,
+    }
+    const displayVideos = this.props.videos.map((video, id) => (
+      <source key={video.id} src={video.src} type={video.type} poster={video.poster} />
+    ))
     return (
-      <section className={styles.videoSection}>
-        <div className={styles.videoContainer}>
-          {videos.map((video, index) => (
-            <video
-              className={styles.video}
-              key={index}
-              value={video.name}
-              ref={ref => (this.videoRefs[index] = ref)}
-              src={video.src}
-              type={video.type}
-              playsInline
-              controls
-              allowFullScreen
-              muted
-            />
-          ))}
-        </div>
-      </section>
+      <div>
+        <video {...options}>{displayVideos}</video>
+      </div>
     )
   }
 }
 
 Video.propTypes = {
-  src: PropTypes.string,
+  poster: PropTypes.string,
+  preload: PropTypes.oneOf(['none', 'preload', 'auto']),
   playsInline: PropTypes.bool,
-  controls: PropTypes.bool,
-  allowFullScreen: PropTypes.bool,
+  autoPlay: PropTypes.bool,
   muted: PropTypes.bool,
-  children: PropTypes.node,
+  loop: PropTypes.bool,
+  controls: PropTypes.bool,
+  src: PropTypes.string,
+  type: PropTypes.string,
 }
 
 export default Video
