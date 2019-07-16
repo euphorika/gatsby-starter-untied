@@ -81,6 +81,23 @@ module.exports = {
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
         },
       ],
+      video: [
+        {
+          poster: '/videos/big_buck_bunny.jpg',
+          source: [
+            {
+              id: 0,
+              src: '/videos/sample-video-1.mp4',
+              type: 'video/mp4',
+            },
+            {
+              id: 1,
+              src: '/videos/sample-video-1.webm',
+              type: 'videos/webm',
+            },
+          ],
+        },
+      ],
     },
   },
   plugins: [
