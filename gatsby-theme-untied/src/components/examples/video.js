@@ -22,8 +22,6 @@ export default () => {
     }
   `)
 
-  console.log(data)
-
   return (
     <div>
       {data.site.siteMetadata.components.video.map((value, key) => (
