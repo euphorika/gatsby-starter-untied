@@ -5,7 +5,7 @@ import Video from '../Video/'
 
 export default () => {
   const data = useStaticQuery(graphql`
-    query Video {
+    query VideoExample {
       site {
         siteMetadata {
           components {

@@ -8,7 +8,7 @@ import CallToActionExample from '../components/examples/callToAction'
 import SliderExample from '../components/examples/slider'
 import PricingTableExample from '../components/examples/pricingTable'
 import Forms from '../components/Forms/'
-import Video from '../components/examples/video'
+import VideoExample from '../components/examples/video'
 import TestimonialsExample from '../components/examples/testimonial'
 import CalloutExample from '../components/examples/callout'
 
@@ -21,7 +21,7 @@ const ComponentsPage = () => {
       <SliderExample />
       <PricingTableExample />
       <Forms />
-      <Video />
+      <VideoExample />
       <TestimonialsExample />
       <CalloutExample />
     </Layout>
