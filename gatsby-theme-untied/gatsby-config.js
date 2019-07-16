@@ -84,17 +84,18 @@ module.exports = {
       video: [
         {
           poster: '/videos/big_buck_bunny.jpg',
-          source:[ {
-            id: 0,
-            src: '/videos/sample-video-1.mp4',
-            type: 'video/mp4',
-          },
-          {
-            id: 1,
-            src: '/videos/sample-video-1.webm',
-            type: 'videos/webm',
-          },
-        ],
+          source: [
+            {
+              id: 0,
+              src: '/videos/sample-video-1.mp4',
+              type: 'video/mp4',
+            },
+            {
+              id: 1,
+              src: '/videos/sample-video-1.webm',
+              type: 'videos/webm',
+            },
+          ],
         },
       ],
     },

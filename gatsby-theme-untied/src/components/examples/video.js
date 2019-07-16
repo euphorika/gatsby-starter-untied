@@ -1,9 +1,11 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
+import Video from '../Video/'
+
 export default () => {
   const data = useStaticQuery(graphql`
-    query video {
+    query Video {
       site {
         siteMetadata {
           components {
@@ -19,10 +21,13 @@ export default () => {
       }
     }
   `)
+
+  console.log(data)
+
   return (
     <div>
       {data.site.siteMetadata.components.video.map((value, key) => (
-        <Video key={key} src={value.src} type={value.type} />
+        <Video key={key} videos={value.source} />
       ))}
     </div>
   )
