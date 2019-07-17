@@ -3,62 +3,52 @@
 @require '../../themes/standard/global/container'
 
 .team-member-section
-  margin 0
-  max-width 100vw
-  overflow hidden
+  margin: 0
 
   .inner-container
-    display flex
-    flex-direction column
-    justify-content space-between
+    display: block
 
     .team-member
-      padding 10px
+      padding: 20px 10px
 
-    .img-container
-      float: left
-
-    .member-info
-      display flex
-      flex-direction column
-      margin-top 25px
-      padding-left 30px
-
-      .member-name
-        font-size 20px
-        font-weight 700
-        margin-bottom 5px
-
-      .member-position
-        font-size 16px
-        font-weight 300
-
-    .member-bio
-      font-size 14px
-      line-height 26px
-      margin-top 20px
-
-@media (min-width: 768px)
-  .team-member-section
-    max-width 100vw
-    overflow hidden
-
-    .inner-container
-      display block
-
-      .team-member
-        width 50%
-        display inline-block
-        margin-bottom 45px
-        padding 30px
-
+      .img-container
+        position: absolute
 
       .member-info
-        display flex
-        flex-direction column
-        margin-top 25px
-        padding-left 30px
+        display: block
+        margin-top: 25px
+        margin-left: 40%
+        position: relative
+
+        .member-name
+          font-size: 20px
+          font-weight: 700
+          margin-bottom: 5px
+
+        .member-position
+          font-size: 16px
+          font-weight: 300
+
       .member-bio
-        font-size 14px
-        line-height 26px
-        margin-top 15px
+        font-size: 14px
+        line-height: 26px
+        margin-top: 20px
+
+@media (min-width: 768px)
+
+    .team-member
+      width: 50%
+      display: inline-block
+      margin-bottom: 45px
+      padding: 30px
+
+      .member-info
+        display: flex
+        flex-direction: column
+        margin-top: 25px
+        margin-left: 30%
+
+      .member-bio
+        font-size: 14px
+        line-height: 26px
+        margin-top: 15px

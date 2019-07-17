@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 
 import styles from './styles.module.styl'
 
-const TeamMembers = ({ children }) => (
+const TeamMembers = ({ headline, children }) => (
   <section className={styles.teamMemberSection}>
+    <h2 className={styles.headline}>{'Our Team'}</h2>
     <div className={styles.innerContainer}>{children}</div>
   </section>
 )
