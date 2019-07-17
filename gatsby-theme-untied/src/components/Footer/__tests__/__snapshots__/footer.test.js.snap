@@ -5,11 +5,16 @@ exports[`Footer renders correctly 1`] = `
   className="footerContainer"
 >
   <footer>
-    <span
+    <div
+      className="brand"
+    >
+      Gatsby Theme Untied
+    </div>
+    <div
       className="copyright"
     >
       © 2018
-    </span>
+    </div>
   </footer>
 </div>
 `;

@@ -16,21 +16,21 @@ class Navigation extends React.Component {
     }
   }
 
-  _renderNavigationEntries(entries) {
-    return entries.map((entry, key) => (
+  renderNavigationEntries = entries =>
+    entries.map((entry, key) => (
       <li key={key}>
         <Link
           to={entry.node.link}
           {...(!!entry.node.title ? { title: entry.node.title } : {})}
           {...(!!entry.node.target ? { target: entry.node.target } : {})}
+          activeClassName={styles.active}
         >
           {entry.node.name}
         </Link>
       </li>
     ))
-  }
 
-  _calculateHorizontalPosition(horizontalAlignment) {
+  calculateHorizontalPosition = horizontalAlignment => {
     switch (horizontalAlignment) {
       case 'right':
         return styles.horizontalAlignRight
@@ -42,7 +42,7 @@ class Navigation extends React.Component {
     }
   }
 
-  _calculateVerticalPosition(verticalAlignment) {
+  calculateVerticalPosition = verticalAlignment => {
     switch (verticalAlignment) {
       case 'top':
         return styles.verticalAlignTop
@@ -58,10 +58,10 @@ class Navigation extends React.Component {
     const toggleVisibilityClass = this.state.navigationVisible
       ? `${styles.menu} ${styles.open}`
       : styles.menu
-    const horizontalAlignmentClass = this._calculateHorizontalPosition(
+    const horizontalAlignmentClass = this.calculateHorizontalPosition(
       this.state.horizontalAlignment
     )
-    const verticalAlignmentClass = this._calculateVerticalPosition(
+    const verticalAlignmentClass = this.calculateVerticalPosition(
       this.state.verticalAlignment
     )
 
@@ -90,7 +90,7 @@ class Navigation extends React.Component {
             ×
           </button>
           <nav>
-            <ul>{this._renderNavigationEntries(this.state.entries)}</ul>
+            <ul>{this.renderNavigationEntries(this.state.entries)}</ul>
           </nav>
         </div>
       </div>

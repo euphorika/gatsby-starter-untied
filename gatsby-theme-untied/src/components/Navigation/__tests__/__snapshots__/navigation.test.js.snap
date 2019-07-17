@@ -24,6 +24,7 @@ exports[`Navigation renders correctly - navigation bottom center 1`] = `
       <ul>
         <li>
           <Link
+            activeClassName="active"
             title="Title"
             to="#"
           >
@@ -32,6 +33,7 @@ exports[`Navigation renders correctly - navigation bottom center 1`] = `
         </li>
         <li>
           <Link
+            activeClassName="active"
             target="Target"
             to="#"
           >
@@ -68,6 +70,7 @@ exports[`Navigation renders correctly - navigation center center 1`] = `
       <ul>
         <li>
           <Link
+            activeClassName="active"
             title="Title"
             to="#"
           >
@@ -76,6 +79,7 @@ exports[`Navigation renders correctly - navigation center center 1`] = `
         </li>
         <li>
           <Link
+            activeClassName="active"
             target="Target"
             to="#"
           >
@@ -112,6 +116,7 @@ exports[`Navigation renders correctly - navigation center left 1`] = `
       <ul>
         <li>
           <Link
+            activeClassName="active"
             title="Title"
             to="#"
           >
@@ -120,6 +125,7 @@ exports[`Navigation renders correctly - navigation center left 1`] = `
         </li>
         <li>
           <Link
+            activeClassName="active"
             target="Target"
             to="#"
           >
@@ -156,6 +162,7 @@ exports[`Navigation renders correctly - navigation center right 1`] = `
       <ul>
         <li>
           <Link
+            activeClassName="active"
             title="Title"
             to="#"
           >
@@ -164,6 +171,7 @@ exports[`Navigation renders correctly - navigation center right 1`] = `
         </li>
         <li>
           <Link
+            activeClassName="active"
             target="Target"
             to="#"
           >
@@ -200,6 +208,7 @@ exports[`Navigation renders correctly - navigation top center 1`] = `
       <ul>
         <li>
           <Link
+            activeClassName="active"
             title="Title"
             to="#"
           >
@@ -208,6 +217,7 @@ exports[`Navigation renders correctly - navigation top center 1`] = `
         </li>
         <li>
           <Link
+            activeClassName="active"
             target="Target"
             to="#"
           >
