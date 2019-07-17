@@ -11,11 +11,9 @@ const TeamMember = ({ children, name, position, imgFixed }) => (
     </div>
     <div className={styles.memberInfo}>
       <h3 className={styles.memberName}>{name}</h3>
-      <p className={styles.memberPosition}>
-        {position}
-      </p>
+      <p className={styles.memberPosition}>{position}</p>
     </div>
-      <div className={styles.memberBio}>{children}</div>
+    <div className={styles.memberBio}>{children}</div>
   </div>
 )
 
