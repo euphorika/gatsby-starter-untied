@@ -3,49 +3,57 @@
 @require '../../themes/standard/components/navigation'
 
 :root
-  --menu-bg-color secondary-color
-  --menu-padding menu-padding
+  --menu-bg-color: primary-color
+  --menu-link-color: link-color
+  --menu-padding: menu-padding
 
 .nav-link
-  cursor pointer
-  text-rendering geometricPrecision
+  cursor: pointer
+  text-rendering: geometricPrecision
+  color: var(--menu-link-color)
 
 .menu
-  display none
-  z-index 100
-  background var(--menu-bg-color)
-  position fixed
-  top 0
-  right 0
-  bottom 0
-  left 0
-  padding var(--menu-padding)
+  display: none
+  z-index: 100
+  background: var(--menu-bg-color)
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  padding: var(--menu-padding)
 
   .nav-close
-    position absolute
-    top 10px
-    right 10px
+    position: absolute
+    top: 10px
+    right: 10px
+    color: var(--menu-link-color)
 
   &.open
-    display flex
+    display: flex
 
   &.horizontal-align-left
-    justify-content flex-start
+    justify-content: flex-start
 
   &.horizontal-align-right
-    justify-content flex-end
+    justify-content: flex-end
 
   &.horizontal-align-center
-    justify-content center
+    justify-content: center
 
   &.vertical-align-top
-    align-items flex-start
+    align-items: flex-start
 
   &.vertical-align-center
-    align-items center
+    align-items: center
 
   &.vertical-align-bottom
-    align-items flex-end
+    align-items: flex-end
 
   a
-    color link-color
+    color: var(--menu-link-color)
+    text-decoration: none
+
+    &:hover,
+    &.active
+      text-decoration: underline

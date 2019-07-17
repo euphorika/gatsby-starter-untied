@@ -9,6 +9,15 @@ exports[`Header renders correctly 1`] = `
       <Link
         to="/"
       >
+        <div
+          className="logoContainer"
+        >
+          O
+        </div>
+      </Link>
+      <Link
+        to="/"
+      >
         Site Title
       </Link>
     </h1>
@@ -35,6 +44,7 @@ exports[`Header renders correctly 1`] = `
           <ul>
             <li>
               <Link
+                activeClassName="active"
                 title="Title"
                 to="#"
               >
@@ -43,6 +53,7 @@ exports[`Header renders correctly 1`] = `
             </li>
             <li>
               <Link
+                activeClassName="active"
                 target="_blank"
                 to="#"
               >
