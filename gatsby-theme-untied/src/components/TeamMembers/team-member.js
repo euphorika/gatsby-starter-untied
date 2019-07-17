@@ -2,14 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 
+import styles from './styles.module.styl'
+
 const TeamMember = ({ children, name, position, imgFixed }) => (
-  <div className="team-member">
-    <Img fixed={imgFixed} />
-    <h3>{name}</h3>
-    <p>
-      <strong>{position}</strong>
-    </p>
-    <div className="bio">{children}</div>
+  <div className={styles.teamMember}>
+    <div className={styles.imgContainer}>
+      <Img className={styles.memberAvatar} fixed={imgFixed} />
+    </div>
+    <div className={styles.memberInfo}>
+      <h3 className={styles.memberName}>{name}</h3>
+      <p className={styles.memberPosition}>
+        {position}
+      </p>
+    </div>
+      <div className={styles.memberBio}>{children}</div>
   </div>
 )
 

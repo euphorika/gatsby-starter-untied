@@ -18,30 +18,34 @@ export default () => {
           }
         }
       }
-      business: file(relativePath: { eq: "team-members/business.png" }) {
+      business: file(
+        relativePath: { eq: "team-members/Gatsby-Hans-Hinrich.png" }
+      ) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 100, height: 100) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      person: file(relativePath: { eq: "team-members/person.png" }) {
+      person: file(relativePath: { eq: "team-members/Gatsby-Ulf-Knulf.png" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 100, height: 100) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      teacher: file(relativePath: { eq: "team-members/teacher.png" }) {
+      teacher: file(
+        relativePath: { eq: "team-members/Gatsby-Karla-Marla.png" }
+      ) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 100, height: 100) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      user: file(relativePath: { eq: "team-members/user.png" }) {
+      user: file(relativePath: { eq: "team-members/Gatsby-Esta-Bester.png" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 100, height: 100) {
             ...GatsbyImageSharpFixed
           }
         }
