@@ -10,10 +10,13 @@ export default () => {
       site {
         siteMetadata {
           components {
-            teamMembers {
-              name
-              position
-              body
+            team {
+              headline
+              teamMembers {
+                name
+                position
+                body
+              }
             }
           }
         }
@@ -56,17 +59,19 @@ export default () => {
 
   return (
     <div>
-      <TeamMembers>
-        {data.site.siteMetadata.components.teamMembers.map((value, key) => (
-          <TeamMember
-            key={key}
-            name={value.name}
-            position={value.position}
-            imgFixed={data[teamMemberImages[key]].childImageSharp.fixed}
-          >
-            {value.body}
-          </TeamMember>
-        ))}
+      <TeamMembers headline={data.site.siteMetadata.components.team.headline}>
+        {data.site.siteMetadata.components.team.teamMembers.map(
+          (value, key) => (
+            <TeamMember
+              key={key}
+              name={value.name}
+              position={value.position}
+              imgFixed={data[teamMemberImages[key]].childImageSharp.fixed}
+            >
+              {value.body}
+            </TeamMember>
+          )
+        )}
       </TeamMembers>
     </div>
   )

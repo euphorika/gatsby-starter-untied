@@ -5,7 +5,7 @@ import styles from './styles.module.styl'
 
 const TeamMembers = ({ headline, children }) => (
   <section className={styles.teamMemberSection}>
-    <h2 className={styles.headline}>{'Our Team'}</h2>
+    <h2 className={styles.headline}>{headline}</h2>
     <div className={styles.innerContainer}>{children}</div>
   </section>
 )

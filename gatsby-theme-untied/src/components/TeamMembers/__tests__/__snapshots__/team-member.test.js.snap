@@ -6,9 +6,7 @@ exports[`TeamMember renders correctly 1`] = `
 >
   <h2
     className="headline"
-  >
-    Our Team
-  </h2>
+  />
   <div
     className="innerContainer"
   >
