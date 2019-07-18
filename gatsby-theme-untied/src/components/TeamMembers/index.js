@@ -5,14 +5,20 @@ import styles from './styles.module.styl'
 
 const TeamMembers = ({ headline, children }) => (
   <section className={styles.teamMemberSection}>
-    <h2 className={styles.headline}>{headline}</h2>
-    <div className={styles.innerContainer}>{children}</div>
+    <div className={styles.innerContainer}>
+      <h2 className={styles.headline}>{headline}</h2>
+      {children}
+    </div>
   </section>
 )
 
+TeamMembers.defaultProps = {
+  headline: 'Our Team',
+}
+
 TeamMembers.propTypes = {
   children: PropTypes.node.isRequired,
-  headline: PropTypes.string,
+  headline: PropTypes.string.isRequired,
 }
 
 export default TeamMembers

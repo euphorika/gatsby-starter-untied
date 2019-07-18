@@ -4,12 +4,14 @@ exports[`TeamMember renders correctly 1`] = `
 <section
   className="teamMemberSection"
 >
-  <h2
-    className="headline"
-  />
   <div
     className="innerContainer"
   >
+    <h2
+      className="headline"
+    >
+      Our Team
+    </h2>
     <div
       className="teamMember"
     >
