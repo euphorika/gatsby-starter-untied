@@ -18,7 +18,7 @@ module.exports = {
         {
           message: 'Hey! Pay attention to this very important message.',
           button: {
-            text: 'Cick Here',
+            text: 'Click Here',
             link: '/',
           },
         },
