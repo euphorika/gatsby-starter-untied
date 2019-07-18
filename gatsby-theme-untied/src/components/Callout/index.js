@@ -6,7 +6,7 @@ import styles from './styles.module.styl'
 const Callout = ({ message, button }) => (
   <section className={styles.calloutSection}>
     <button className={styles.button}>
-      <Link to={button.link}>
+      <Link to={button.link} className={styles.buttonLink}>
         <span className={styles.text}> {button.text}</span>
       </Link>
     </button>

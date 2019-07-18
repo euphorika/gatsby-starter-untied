@@ -8,6 +8,7 @@ exports[`Callout renders correctly 1`] = `
     className="button"
   >
     <Link
+      className="buttonLink"
       to="/"
     >
       <span
