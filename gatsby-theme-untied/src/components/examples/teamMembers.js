@@ -10,38 +10,45 @@ export default () => {
       site {
         siteMetadata {
           components {
-            teamMembers {
-              name
-              position
-              body
+            team {
+              headline
+              teamMembers {
+                name
+                position
+                body
+              }
             }
           }
         }
       }
-      business: file(relativePath: { eq: "team-members/business.png" }) {
+      business: file(
+        relativePath: { eq: "team-members/Gatsby-Hans-Hinrich.png" }
+      ) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 100, height: 100) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      person: file(relativePath: { eq: "team-members/person.png" }) {
+      person: file(relativePath: { eq: "team-members/Gatsby-Ulf-Knulf.png" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 100, height: 100) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      teacher: file(relativePath: { eq: "team-members/teacher.png" }) {
+      teacher: file(
+        relativePath: { eq: "team-members/Gatsby-Karla-Marla.png" }
+      ) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 100, height: 100) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      user: file(relativePath: { eq: "team-members/user.png" }) {
+      user: file(relativePath: { eq: "team-members/Gatsby-Esta-Bester.png" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 100, height: 100) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -52,17 +59,19 @@ export default () => {
 
   return (
     <div>
-      <TeamMembers>
-        {data.site.siteMetadata.components.teamMembers.map((value, key) => (
-          <TeamMember
-            key={key}
-            name={value.name}
-            position={value.position}
-            imgFixed={data[teamMemberImages[key]].childImageSharp.fixed}
-          >
-            {value.body}
-          </TeamMember>
-        ))}
+      <TeamMembers headline={data.site.siteMetadata.components.team.headline}>
+        {data.site.siteMetadata.components.team.teamMembers.map(
+          (value, key) => (
+            <TeamMember
+              key={key}
+              name={value.name}
+              position={value.position}
+              imgFixed={data[teamMemberImages[key]].childImageSharp.fixed}
+            >
+              {value.body}
+            </TeamMember>
+          )
+        )}
       </TeamMembers>
     </div>
   )

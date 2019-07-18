@@ -41,33 +41,35 @@ module.exports = {
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
         },
       ],
-
-      teamMembers: [
-        {
-          name: 'Hans Hinrich',
-          position: 'CEO',
-          body:
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
-        },
-        {
-          name: 'Ulf Knulf',
-          position: 'Person',
-          body:
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
-        },
-        {
-          name: 'Karla Marla',
-          position: 'Teacher',
-          body:
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
-        },
-        {
-          name: 'Esta Bester',
-          position: 'User',
-          body:
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
-        },
-      ],
+      team: {
+        headline: 'Our Team',
+        teamMembers: [
+          {
+            name: 'Hans Hinrich',
+            position: 'CEO',
+            body:
+              'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+          },
+          {
+            name: 'Ulf Knulf',
+            position: 'Person',
+            body:
+              'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+          },
+          {
+            name: 'Karla Marla',
+            position: 'Teacher',
+            body:
+              'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+          },
+          {
+            name: 'Esta Bester',
+            position: 'User',
+            body:
+              'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+          },
+        ],
+      },
       pricingTable: [
         {
           headline: 'Product 1',
