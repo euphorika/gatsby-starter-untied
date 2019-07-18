@@ -34,11 +34,11 @@ const Video = ({
 
 Video.defaultProps = {
   preload: 'auto',
-  playsInline: 'true',
-  muted: 'true',
-  loop: 'true',
-  controls: 'true',
-  autoPlay: 'true',
+  playsInline: true,
+  muted: true,
+  loop: true,
+  controls: true,
+  autoPlay: true,
 }
 
 Video.propTypes = {
