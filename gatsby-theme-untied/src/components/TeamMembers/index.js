@@ -12,6 +12,7 @@ const TeamMembers = ({ headline, children }) => (
 
 TeamMembers.propTypes = {
   children: PropTypes.node.isRequired,
+  headline: PropTypes.string,
 }
 
 export default TeamMembers
