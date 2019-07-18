@@ -3,22 +3,20 @@ import PropTypes from 'prop-types'
 
 import styles from './styles.module.styl'
 
-const TeamMembers = ({ headline, children }) => (
+const TeamMembers = ({ headline, children }) => {
+  const headlineElement = headline ? <h2 className={styles.headline}>{headline}</h2> : null
+  return (
   <section className={styles.teamMemberSection}>
     <div className={styles.innerContainer}>
-      <h2 className={styles.headline}>{headline}</h2>
+      <div>{headlineElement}</div>
       {children}
     </div>
-  </section>
-)
-
-TeamMembers.defaultProps = {
-  headline: 'Our Team',
+  </section>)
 }
 
 TeamMembers.propTypes = {
   children: PropTypes.node.isRequired,
-  headline: PropTypes.string.isRequired,
+  headline: PropTypes.string,
 }
 
 export default TeamMembers
