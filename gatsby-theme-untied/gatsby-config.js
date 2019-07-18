@@ -76,6 +76,31 @@ module.exports = {
           headline: 'Product 1',
           price: 12.99,
           currency: 'EUR',
+          img: 'product-1.jpg',
+          callToAction: {
+            text: 'Click Me',
+            link: '/components/',
+          },
+          body:
+            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+        },
+        {
+          headline: 'Product 2',
+          price: 13.99,
+          currency: 'EUR',
+          img: 'product-2.jpg',
+          callToAction: {
+            text: 'Click Me',
+            link: '/components/',
+          },
+          body:
+            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+        },
+        {
+          headline: 'Product 3',
+          price: 14.99,
+          currency: 'EUR',
+          img: 'product-3.jpg',
           callToAction: {
             text: 'Click Me',
             link: '/components/',
