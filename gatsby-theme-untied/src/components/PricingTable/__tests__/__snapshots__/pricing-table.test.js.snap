@@ -4,10 +4,14 @@ exports[`PricingTable renders correctly 1`] = `
 <section
   className="pricingTableSection"
 >
-  <h3>
+  <h3
+    className="headline"
+  >
     headline
   </h3>
-  <p>
+  <p
+    className="price"
+  >
     1.22
   </p>
   <div

@@ -78,7 +78,7 @@ module.exports = {
           currency: 'EUR',
           img: 'product-1.jpg',
           callToAction: {
-            text: 'Click Me',
+            text: 'Buy',
             link: '/components/',
           },
           body:
@@ -90,7 +90,7 @@ module.exports = {
           currency: 'EUR',
           img: 'product-2.jpg',
           callToAction: {
-            text: 'Click Me',
+            text: 'Buy',
             link: '/components/',
           },
           body:
@@ -102,7 +102,7 @@ module.exports = {
           currency: 'EUR',
           img: 'product-3.jpg',
           callToAction: {
-            text: 'Click Me',
+            text: 'Buy',
             link: '/components/',
           },
           body:

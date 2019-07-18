@@ -3,6 +3,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import PricingTable from '../PricingTable/'
 
+import styles from './pricing-table.module.styl'
+
 export default () => {
   const data = useStaticQuery(graphql`
     query PricingTableExampleQuery {
@@ -55,7 +57,7 @@ export default () => {
   ]
 
   return (
-    <div>
+    <div className={styles.pricingTableExampleContainer}>
       {data.site.siteMetadata.components.pricingTable.map((value, key) => {
         const formattedPrice = new Intl.NumberFormat(locales, {
           style: 'currency',

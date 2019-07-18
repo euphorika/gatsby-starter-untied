@@ -14,8 +14,8 @@ const PricingTable = ({
   callToAction,
 }) => (
   <section className={styles.pricingTableSection}>
-    <h3>{headline}</h3>
-    <p>{price}</p>
+    <h3 className={styles.headline}>{headline}</h3>
+    <p className={styles.price}>{price}</p>
     <Img fluid={imgFluid} alt={headline} />
     <div className={styles.description}>{children}</div>
     <div className={styles.callToAction}>
