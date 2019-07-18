@@ -20,7 +20,7 @@ export default () => {
           }
         }
       }
-      heroImage: file(relativePath: { eq: "hero/beach-by-frank-mckenna.jpg" }) {
+      heroImage: file(relativePath: { eq: "hero/example.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 4928) {
             ...GatsbyImageSharpFluid

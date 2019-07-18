@@ -36,6 +36,7 @@ Hero.propTypes = {
     text: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
   }),
+  imgFluid: PropTypes.object.isRequired,
 }
 
 export default Hero
