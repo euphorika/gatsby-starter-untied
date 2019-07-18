@@ -1,4 +1,5 @@
 const path = require('path')
+const rupture = require('rupture')
 
 module.exports = {
   siteMetadata: {
@@ -143,7 +144,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-stylus',
+    {
+      resolve: 'gatsby-plugin-stylus',
+      options: {
+        use: [rupture()],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
