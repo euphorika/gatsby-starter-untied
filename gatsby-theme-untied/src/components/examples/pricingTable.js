@@ -3,6 +3,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import PricingTable from '../PricingTable/'
 
+import styles from './pricing-table.module.styl'
+
 export default () => {
   const data = useStaticQuery(graphql`
     query PricingTableExampleQuery {
@@ -14,6 +16,7 @@ export default () => {
               headline
               price
               currency
+              img
               callToAction {
                 text
                 link
@@ -23,12 +26,38 @@ export default () => {
           }
         }
       }
+      productImage1: file(relativePath: { eq: "product/product-1.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 4928) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      productImage2: file(relativePath: { eq: "product/product-2.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 4928) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      productImage3: file(relativePath: { eq: "product/product-3.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 4928) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   const { locales } = data.site.siteMetadata
+  const productImages = [
+    data.productImage1,
+    data.productImage2,
+    data.productImage3,
+  ]
 
   return (
-    <div>
+    <div className={styles.pricingTableExampleContainer}>
       {data.site.siteMetadata.components.pricingTable.map((value, key) => {
         const formattedPrice = new Intl.NumberFormat(locales, {
           style: 'currency',
@@ -40,6 +69,7 @@ export default () => {
             key={key}
             headline={value.headline}
             price={formattedPrice}
+            imgFluid={productImages[key].childImageSharp.fluid}
             callToAction={value.callToAction}
           >
             {value.body}
