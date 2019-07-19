@@ -1,13 +1,13 @@
 import React from 'react'
 
-import Input from './input'
-import Checkbox from './checkbox'
-import Radio from './radio'
-import Select from './select'
-import Button from './button'
-import Textarea from './textarea'
+import Input from '../Forms/input'
+import Checkbox from '../Forms/checkbox'
+import Radio from '../Forms/radio'
+import Select from '../Forms/select'
+import Button from '../Forms/button'
+import Textarea from '../Forms/textarea'
 
-import styles from './styles.module.styl'
+import styles from './forms.module.styl'
 
 const Forms = () => {
   const startYear = 1900
