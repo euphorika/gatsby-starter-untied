@@ -4,6 +4,8 @@ import { graphql } from 'gatsby'
 import PostLink from '../components/post-link'
 import Layout from '../components/layout'
 
+import styles from './styles.module.styl'
+
 const IndexPage = ({
   data: {
     allMarkdownRemark: { edges },
@@ -13,7 +15,14 @@ const IndexPage = ({
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 
-  return <Layout>{posts}</Layout>
+  return (
+    <Layout>
+      <div className={styles.blogPostsMainContainer}>
+        <h1 className={styles.blogPostsHeadline}>Blog</h1>
+        {posts}
+      </div>
+    </Layout>
+  )
 }
 
 export default IndexPage

@@ -1,19 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Post-Link renders correctly 1`] = `
-<div>
-  <h2>
+<div
+  className="postLinkMainContainer"
+>
+  <h2
+    className="postLinkTitle"
+  >
     <Link
+      className="postLinkSlug"
       to="/slug"
     >
       title
-       (
-      November 05, 2018
-      )
     </Link>
   </h2>
-  <p>
+  <h3
+    className="postLinkDate"
+  >
+    <Link
+      className="postLinkSlug"
+      to="/slug"
+    >
+      November 05, 2018
+    </Link>
+  </h3>
+  <p
+    className="postLinkExcerpt"
+  >
     excerpt
   </p>
+  <div
+    className="buttonContainer"
+  />
 </div>
 `;
