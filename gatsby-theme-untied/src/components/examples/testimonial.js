@@ -17,9 +17,9 @@ export default () => {
           }
         }
       }
-      teacher: file(relativePath: { eq: "testimonial/teacher.png" }) {
+      sarah: file(relativePath: { eq: "testimonial/sarah.png" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 100, height: 100) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -33,7 +33,7 @@ export default () => {
         <Testimonial
           key={key}
           name={value.name}
-          imgFixed={data.teacher.childImageSharp.fixed}
+          imgFixed={data.sarah.childImageSharp.fixed}
         >
           {value.body}
         </Testimonial>
