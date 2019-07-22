@@ -36,7 +36,7 @@
       &:required
         & + .after-form-element
           &::before
-            padding-left: calc(var(--width) + 3px)
+            padding-left: calc(var(--width) + 6px)
 
     .checkmark
       position absolute
@@ -45,6 +45,7 @@
       height var(--height)
       width var(--width)
       background-color var(--background-color)
+      border: solid 1px var(--checkmark-color)
 
       &::after
         content ""

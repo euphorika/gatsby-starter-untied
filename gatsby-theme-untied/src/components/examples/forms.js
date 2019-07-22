@@ -44,6 +44,11 @@ const Forms = () => {
             <Input
               type="email"
               name="email"
+              value="invalid Email"
+              message={{
+                type: 'error',
+                text: "Please enter a valid email address.",
+              }}
               options={{
                 placeholder: 'Email',
                 required: true,
@@ -51,24 +56,26 @@ const Forms = () => {
             />
           </div>
           <div className={`${styles.gridItem} ${styles.firstCol}`}>
-            <Radio
-              value="male"
-              label="Male"
-              name="gender"
-              options={{ required: true }}
-            />
-            <Radio
-              value="female"
-              label="Female"
-              name="gender"
-              options={{ required: true }}
-            />
-            <Radio
-              value="other"
-              label="Other"
-              name="gender"
-              options={{ required: true }}
-            />
+            <div role="group">
+              <Radio
+                value="male"
+                label="Male"
+                name="gender"
+                options={{ required: true }}
+              />
+              <Radio
+                value="female"
+                label="Female"
+                name="gender"
+                options={{ required: true }}
+              />
+              <Radio
+                value="other"
+                label="Other"
+                name="gender"
+                options={{ required: true }}
+              />
+            </div>
           </div>
           <div className={`${styles.gridItem} ${styles.sndCol}`}>
             <Select name="select" options={{ required: true }}>
