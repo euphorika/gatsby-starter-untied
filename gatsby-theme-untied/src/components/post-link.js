@@ -3,31 +3,28 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import styles from './post-link.module.styl'
 
-const PostLink = ({ post, button }) => {
-  const buttonElement = button ? (
-    <button className={styles.button}>
-      <Link to={post.fields.slug} className={styles.buttonText}>
-        {button}
+const PostLink = ({ post, button }) => (
+  <div className={styles.postLinkMainContainer}>
+    <h2 className={styles.postLinkTitle}>
+      <Link to={post.fields.slug} className={styles.postLinkSlug}>
+        {post.frontmatter.title}
       </Link>
-    </button>
-  ) : null
-  return (
-    <div className={styles.postLinkMainContainer}>
-      <h2 className={styles.postLinkTitle}>
-        <Link to={post.fields.slug} className={styles.postLinkSlug}>
-          {post.frontmatter.title}
+    </h2>
+    <h3 className={styles.postLinkDate}>
+      <Link to={post.fields.slug} className={styles.postLinkSlug}>
+        {post.frontmatter.date}
+      </Link>
+    </h3>
+    <p className={styles.postLinkExcerpt}>{post.excerpt}</p>
+    <div className={styles.buttonContainer}>
+      <button className={styles.button}>
+        <Link to={post.fields.slug}>
+          <span className={styles.buttonText}>Read more</span>
         </Link>
-      </h2>
-      <h3 className={styles.postLinkDate}>
-        <Link to={post.fields.slug} className={styles.postLinkSlug}>
-          {post.frontmatter.date}
-        </Link>
-      </h3>
-      <p className={styles.postLinkExcerpt}>{post.excerpt}</p>
-      <div className={styles.buttonContainer}>{buttonElement}</div>
+      </button>
     </div>
-  )
-}
+  </div>
+)
 
 PostLink.propTypes = {
   post: PropTypes.shape({
