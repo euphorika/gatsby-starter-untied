@@ -1,0 +1,52 @@
+@require '../themes/standard/config/breakpoints'
+@require '../themes/standard/config/colors'
+
+.post-link-main-container
+  margin-top: 50px
+
+  .post-link-title
+    font-size: 20px
+    margin-bottom: 10px
+
+    .post-link-slug
+      text-decoration: none
+      color: primary-color
+      font-weight: 800
+
+  .post-link-date
+    font-size: 20px
+    margin-bottom: 34px
+
+    .post-link-slug
+      text-decoration: none
+      color: primary-color
+      font-weight: 300
+
+  .post-link-excerpt
+    font-size: 13px
+    line-height: 24px
+
+  .button-container
+    text-align: center
+
+    +above('m')
+      text-align: left
+
+    .button
+      background-color: primary-color
+      width: 100%
+      max-width: 100%
+      border: 0
+      display: inline-block
+      border-radius: 5px
+      font-size: 12px
+      padding: 15px
+
+      +above('m')
+        width: 23%
+      .button-slug
+        text-decoration: none
+        
+        .button-text
+          color: secondary-color
+          text-decoration: none
