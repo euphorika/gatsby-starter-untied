@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import FormMessage from './message'
+import Icon from './icon'
 
 import styles from './input.module.styl'
 
@@ -13,6 +14,13 @@ const Input = ({
   message = {},
   options,
 }) => {
+  const renderIcon =
+    message.type && message.text ? (
+      <div className={styles.icon}>
+        <Icon type={message.type} />
+      </div>
+    ) : null
+
   const input = (
     <>
       <input
@@ -23,6 +31,8 @@ const Input = ({
         type={type}
       />
       <span className={styles.afterFormElement} />
+      {renderIcon}
+      <FormMessage type={message.type}>{message.text}</FormMessage>
     </>
   )
 
@@ -37,12 +47,7 @@ const Input = ({
     )
   }
 
-  return (
-    <div className={styles.elementContainer}>
-      <FormMessage type={message.type}>{message.text}</FormMessage>
-      {input}
-    </div>
-  )
+  return <div className={styles.elementContainer}>{input}</div>
 }
 
 export default Input

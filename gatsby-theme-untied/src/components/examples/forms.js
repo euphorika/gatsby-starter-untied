@@ -20,10 +20,9 @@ const Forms = () => {
           <div className={`${styles.gridItem} ${styles.firstCol}`}>
             <Input
               name="firstname"
-              value="John"
               message={{
-                type: 'info',
-                text: 'Ich bin ein Infotext',
+                type: 'error',
+                text: "What's your first name?",
               }}
               options={{
                 placeholder: 'Firstname',
@@ -34,10 +33,7 @@ const Forms = () => {
           <div className={`${styles.gridItem} ${styles.sndCol}`}>
             <Input
               name="lastname"
-              message={{
-                type: 'error',
-                text: 'Ich bin eine Fehlermeldung',
-              }}
+              value="Mustermann"
               options={{
                 placeholder: 'Lastname',
                 required: true,

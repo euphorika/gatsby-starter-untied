@@ -5,15 +5,20 @@
   position: relative
 
 .element
+  border-width: 1px
+
   &:required
     & + .after-form-element
       &::before
-        content '*'
-        display inline-block
-        color red
+        content: '*'
+        display: inline-block
+        color: #000
 
   &:valid
-    border-color: green
+    border-color: success-color
+    background-color: light-success-color
+
 
   &:invalid
-    border-color: red
+    border-color: alert-color
+    background-color: light-alert-color
