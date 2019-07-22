@@ -16,6 +16,7 @@ const Video = ({
   <section className={styles.videoContainer}>
     <div className={styles.innerContainer}>
       <video
+        className={styles.videoElement}
         poster={poster}
         preload={preload}
         playsInline={playsInline}
