@@ -18,7 +18,7 @@ const PostLink = ({ post, button }) => (
     <p className={styles.postLinkExcerpt}>{post.excerpt}</p>
     <div className={styles.buttonContainer}>
       <button className={styles.button}>
-        <Link to={post.fields.slug}>
+        <Link to={post.fields.slug} className={styles.buttonSlug}>
           <span className={styles.buttonText}>Read more</span>
         </Link>
       </button>

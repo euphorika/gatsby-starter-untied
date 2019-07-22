@@ -36,6 +36,7 @@ exports[`Post-Link renders correctly 1`] = `
       className="button"
     >
       <Link
+        className="buttonSlug"
         to="/slug"
       >
         <span
