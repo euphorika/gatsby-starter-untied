@@ -2,6 +2,7 @@
 @require '../../themes/standard/config/colors'
 
 .video-container
+  position: relative
   margin: 0
   padding: 0
   width: 100%
@@ -11,15 +12,14 @@
     padding: 0
 
     .overlay
-      position: relative
       img
         width: 100px
         height: 100px
         position: absolute
         top: 50%
         left: 50%
-        margin-left: calc(-100% / 2)
-        margin-top: calc(-100% / 2)
+        margin-left: calc(-100px / 2)
+        margin-top: calc(-100px / 2)
 
 
     .video-element
