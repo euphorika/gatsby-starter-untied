@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import img from './Gatsby-video-icon.svg'
+import img from './video-play-icon.svg'
 
 import styles from './styles.module.styl'
 
@@ -17,7 +17,7 @@ const Video = ({
   <section className={styles.videoContainer}>
     <div className={styles.innerContainer}>
       <span className={styles.overlay}>
-        <img src={img} alt="overlay" />
+        <img src={img} alt="Play Video" />
       </span>
       <video
         className={styles.videoElement}
