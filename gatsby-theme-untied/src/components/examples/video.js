@@ -10,6 +10,7 @@ export default () => {
         siteMetadata {
           components {
             video {
+              poster
               source {
                 id
                 src
@@ -25,7 +26,7 @@ export default () => {
   return (
     <div>
       {data.site.siteMetadata.components.video.map((value, key) => (
-        <Video key={key} videos={value.source} />
+        <Video key={key} poster={value.poster} videos={value.source} />
       ))}
     </div>
   )
