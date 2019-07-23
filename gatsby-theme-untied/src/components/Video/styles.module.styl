@@ -13,13 +13,20 @@
 
     .overlay
       img
-        width: 100px
-        height: 100px
         position: absolute
         top: 50%
         left: 50%
-        margin-left: calc(-100px / 2)
-        margin-top: calc(-100px / 2)
+        width: 50px
+        height: 50px
+        margin-left: calc(-50px / 2)
+        margin-top: calc(-50px / 2)
+
+        +above('m')
+          width: 100px
+          height: 100px
+          margin-left: calc(-100px / 2)
+          margin-top: calc(-100px / 2)
+
 
 
     .video-element
