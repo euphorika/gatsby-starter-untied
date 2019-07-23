@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import img from './video-play-icon.svg'
 
 import styles from './styles.module.styl'
 
@@ -15,7 +16,11 @@ const Video = ({
 }) => (
   <section className={styles.videoContainer}>
     <div className={styles.innerContainer}>
+      <span className={styles.overlay}>
+        <img src={img} alt="Play Video" />
+      </span>
       <video
+        className={styles.videoElement}
         poster={poster}
         preload={preload}
         playsInline={playsInline}
@@ -36,9 +41,9 @@ Video.defaultProps = {
   preload: 'auto',
   playsInline: true,
   muted: true,
-  loop: true,
+  loop: false,
   controls: true,
-  autoPlay: true,
+  autoPlay: false,
 }
 
 Video.propTypes = {

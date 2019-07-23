@@ -1,13 +1,34 @@
 @require '../../themes/standard/config/breakpoints'
 @require '../../themes/standard/config/colors'
 
-.video-section
-  margin 0
+.video-container
+  position: relative
+  margin: 0
+  padding: 0
   width: 100%
-  height: 100%
   text-align: center;
 
-  .video-container
-    width: 50%
-    height: 100%
-    display: flex
+  .inner-container
+    padding: 0
+
+    .overlay
+      img
+        position: absolute
+        top: 50%
+        left: 50%
+        width: 50px
+        height: 50px
+        margin-left: calc(-50px / 2)
+        margin-top: calc(-50px / 2)
+
+        +above('m')
+          width: 100px
+          height: 100px
+          margin-left: calc(-100px / 2)
+          margin-top: calc(-100px / 2)
+
+
+
+    .video-element
+      width: 100%
+      height: auto
