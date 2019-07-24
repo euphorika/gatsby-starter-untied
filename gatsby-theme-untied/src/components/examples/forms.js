@@ -47,7 +47,7 @@ const Forms = () => {
               value="invalid Email"
               message={{
                 type: 'error',
-                text: "Please enter a valid email address.",
+                text: 'Please enter a valid email address.',
               }}
               options={{
                 placeholder: 'Email',
@@ -78,7 +78,14 @@ const Forms = () => {
             </div>
           </div>
           <div className={`${styles.gridItem} ${styles.sndCol}`}>
-            <Select name="select" options={{ required: true }}>
+            <Select
+              name="select"
+              message={{
+                type: 'info',
+                text: 'Choose your date of birth.',
+              }}
+              options={{ required: true }}
+            >
               <option value="">Year of Birth</option>
               {Array(endYear - startYear + 1)
                 .fill()

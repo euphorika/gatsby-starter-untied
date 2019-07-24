@@ -8,18 +8,20 @@ import styles from './select.module.styl'
 const Select = ({ children, name, label, message = {}, options }) => {
   const requiredClass = options && options.required ? ` ${styles.required}` : ''
   const select = (
-    <div className={`${styles.selectBox}${requiredClass}`}>
-      <select className={styles.element} name={name} {...options}>
-        {children}
-      </select>
-      <span className={styles.afterFormElement} />
-    </div>
+    <>
+      <div className={`${styles.selectBox}${requiredClass}`}>
+        <select className={styles.element} name={name} {...options}>
+          {children}
+        </select>
+        <span className={styles.afterFormElement} />
+      </div>
+      <FormMessage type={message.type}>{message.text}</FormMessage>
+    </>
   )
 
   if (label) {
     return (
       <div className={styles.elementContainer}>
-        <FormMessage type={message.type}>{message.text}</FormMessage>
         <label className={styles.label}>
           {label}
           {select}
@@ -28,12 +30,7 @@ const Select = ({ children, name, label, message = {}, options }) => {
     )
   }
 
-  return (
-    <div className={styles.elementContainer}>
-      <FormMessage type={message.type}>{message.text}</FormMessage>
-      {select}
-    </div>
-  )
+  return <div className={styles.elementContainer}>{select}</div>
 }
 
 export default Select
