@@ -9,7 +9,7 @@ module.exports = {
       callToAction: [
         {
           button: {
-            text: 'GET STARTED',
+            text: 'Get Started',
             link: '/',
           },
         },
