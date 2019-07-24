@@ -9,13 +9,15 @@ class Video extends React.Component {
     this.state = {
       showOverlay: true,
     }
-    this.operation = this.operation.bind(this)
+    this.handleOverlay = this.handleOverlay.bind(this)
   }
-  operation() {
+
+  handleOverlay() {
     this.setState({
       showOverlay: !this.state.showOverlay,
     })
   }
+
   render() {
     const {
       videos,
@@ -37,8 +39,8 @@ class Video extends React.Component {
             </div>
           ) : null}
           <video
-            onPlay={() => this.operation()}
-            onPause={() => this.operation()}
+            onPlay={() => this.handleOverlay()}
+            onPause={() => this.handleOverlay()}
             className={styles.videoElement}
             poster={poster}
             preload={preload}
