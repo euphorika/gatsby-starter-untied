@@ -26,7 +26,17 @@ export default () => {
   return (
     <div>
       {data.site.siteMetadata.components.video.map((value, key) => (
-        <Video key={key} poster={value.poster} videos={value.source} />
+        <Video
+          preload={'auto'}
+          playsInline={true}
+          muted={true}
+          loop={false}
+          controls={true}
+          autoPlay={false}
+          key={key}
+          poster={value.poster}
+          videos={value.source}
+        />
       ))}
     </div>
   )
