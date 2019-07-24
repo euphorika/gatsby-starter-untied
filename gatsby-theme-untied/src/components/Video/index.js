@@ -1,41 +1,62 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import img from './video-play-icon.svg'
-
+import imgSrc from './video-play-icon.svg'
 import styles from './styles.module.styl'
 
-const Video = ({
-  videos,
-  poster,
-  playsInline,
-  autoPlay,
-  preload,
-  loop,
-  muted,
-  controls,
-}) => (
-  <section className={styles.videoContainer}>
-    <div className={styles.innerContainer}>
-      <span className={styles.overlay}>
-        <img src={img} alt="Play Video" />
-      </span>
-      <video
-        className={styles.videoElement}
-        poster={poster}
-        preload={preload}
-        playsInline={playsInline}
-        muted={muted}
-        loop={loop}
-        controls={controls}
-        autoPlay={autoPlay}
-      >
-        {videos.map((video, id) => (
-          <source key={video.id} src={video.src} type={video.type} />
-        ))}
-      </video>
-    </div>
-  </section>
-)
+class Video extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      showOverlay: true,
+    }
+    this.operation = this.operation.bind(this)
+  }
+  operation() {
+    this.setState({
+      showOverlay: !this.state.showOverlay,
+    })
+  }
+  render() {
+    const {
+      videos,
+      poster,
+      playsInline,
+      autoPlay,
+      preload,
+      loop,
+      muted,
+      controls,
+    } = this.props
+
+    return (
+      <section className={styles.videoContainer}>
+        <div className={styles.innerContainer}>
+          {this.state.showOverlay ? (
+            <div className={styles.overlay}>
+              <img src={imgSrc} alt="Play Video" />
+            </div>
+          ) : null}
+          <video
+            onPlay={() => this.operation()}
+            onPause={() => this.operation()}
+            className={styles.videoElement}
+            poster={poster}
+            preload={preload}
+            playsInline={playsInline}
+            muted={muted}
+            loop={loop}
+            controls={controls}
+            autoPlay={autoPlay}
+          >
+            {videos.map((video, id) => (
+              <source key={video.id} src={video.src} type={video.type} />
+            ))}
+          </video>
+        </div>
+      </section>
+    )
+  }
+}
 
 Video.defaultProps = {
   preload: 'auto',
