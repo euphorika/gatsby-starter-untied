@@ -10,12 +10,17 @@ class Video extends React.Component {
       showOverlay: true,
     }
     this.handleOverlay = this.handleOverlay.bind(this)
+    this.handlePlayPause = this.handlePlayPause.bind(this)
   }
 
   handleOverlay() {
     this.setState({
       showOverlay: !this.state.showOverlay,
     })
+  }
+
+  handlePlayPause() {
+    this.refs.vidRef.play()
   }
 
   render() {
@@ -35,12 +40,18 @@ class Video extends React.Component {
         <div className={styles.innerContainer}>
           {this.state.showOverlay ? (
             <div className={styles.overlay}>
-              <img src={imgSrc} alt="Play Video" />
+              <img
+                src={imgSrc}
+                alt="Play Video"
+                onClick={() => this.handlePlayPause()}
+              />
             </div>
           ) : null}
+
           <video
             onPlay={() => this.handleOverlay()}
             onPause={() => this.handleOverlay()}
+            ref="vidRef"
             className={styles.videoElement}
             poster={poster}
             preload={preload}
