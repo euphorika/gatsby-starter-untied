@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styles from './styles.module.styl'
 
-const MenuIcon = ({ svg, fill, viewBox, xmlns, xmlnsXlink, path }) => (
+const Icon = ({ svg, className, fill, viewBox, xmlns, xmlnsXlink, path }) => (
   <svg
-    className={styles.menuIcon}
+    className={className}
     viewBox={viewBox}
     xmlns={xmlns}
     xmlnsXlink={xmlnsXlink}
@@ -13,12 +12,12 @@ const MenuIcon = ({ svg, fill, viewBox, xmlns, xmlnsXlink, path }) => (
   </svg>
 )
 
-MenuIcon.defaultProps = {
+Icon.defaultProps = {
   xmlns: 'http://www.w3.org/2000/svg',
   xmlnsXlink: 'http://www.w3.org/1999/xlink',
 }
 
-MenuIcon.propTypes = {
+Icon.propTypes = {
   svg: PropTypes.node,
   fill: PropTypes.string,
   viewBox: PropTypes.string,
@@ -26,4 +25,4 @@ MenuIcon.propTypes = {
   xmlnsXlink: PropTypes.string,
 }
 
-export default MenuIcon
+export default Icon
