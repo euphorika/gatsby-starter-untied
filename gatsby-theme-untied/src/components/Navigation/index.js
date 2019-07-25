@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import Icon from '../Icon/index.js'
+import MenuOpen from './menu-open.js'
+import MenuClose from './menu-close.js'
 
 import styles from './styles.module.styl'
 
@@ -75,12 +76,7 @@ class Navigation extends React.Component {
             this.setState({ navigationVisible: !this.state.navigationVisible })
           }}
         >
-          <Icon
-            className={styles.menuIcon}
-            fill="#f1f1f1"
-            path="M0 0h17.91v1H0zM0 7.2h17.91v1H0zM0 14.39h17.91v1H0z"
-            viewBox="0 0 13.37 13.37"
-          />
+          <MenuOpen />
         </button>
         <div
           className={`${toggleVisibilityClass} ${horizontalAlignmentClass} ${verticalAlignmentClass}`}
@@ -93,7 +89,7 @@ class Navigation extends React.Component {
               this.setState({ navigationVisible: false })
             }}
           >
-            <Icon
+            <MenuClose
               className={styles.menuIcon}
               fill="#f1f1f1"
               path="M13.37.71L12.66 0 6.68 5.98.71 0 0 .71l5.98 5.97L0 12.66l.71.71 5.97-5.98 5.98 5.98.71-.71-5.98-5.98L13.37.71z"

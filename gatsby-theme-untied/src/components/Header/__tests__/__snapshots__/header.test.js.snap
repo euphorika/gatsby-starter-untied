@@ -28,10 +28,8 @@ exports[`Header renders correctly 1`] = `
         onClick={[Function]}
       >
         <svg
-          className="menuIcon"
-          viewBox="0 0 13.37 13.37"
+          viewBox="0 0 17.91 15.39"
           xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <path
             d="M0 0h17.91v1H0zM0 7.2h17.91v1H0zM0 14.39h17.91v1H0z"
@@ -49,10 +47,8 @@ exports[`Header renders correctly 1`] = `
           onClick={[Function]}
         >
           <svg
-            className="menuIcon"
-            viewBox="0 0 17.91 15.39"
+            viewBox="0 0 13.37 13.37"
             xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
           >
             <path
               d="M13.37.71L12.66 0 6.68 5.98.71 0 0 .71l5.98 5.97L0 12.66l.71.71 5.97-5.98 5.98 5.98.71-.71-5.98-5.98L13.37.71z"
