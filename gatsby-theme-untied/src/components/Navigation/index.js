@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
+import MenuOpen from './menu-open.js'
+import MenuClose from './menu-close.js'
 
 import styles from './styles.module.styl'
 
@@ -74,7 +76,7 @@ class Navigation extends React.Component {
             this.setState({ navigationVisible: !this.state.navigationVisible })
           }}
         >
-          ☰
+          <MenuOpen />
         </button>
         <div
           className={`${toggleVisibilityClass} ${horizontalAlignmentClass} ${verticalAlignmentClass}`}
@@ -87,7 +89,7 @@ class Navigation extends React.Component {
               this.setState({ navigationVisible: false })
             }}
           >
-            ×
+            <MenuClose />
           </button>
           <nav>
             <ul>{this.renderNavigationEntries(this.state.entries)}</ul>
