@@ -89,12 +89,7 @@ class Navigation extends React.Component {
               this.setState({ navigationVisible: false })
             }}
           >
-            <MenuClose
-              className={styles.menuIcon}
-              fill="#f1f1f1"
-              path="M13.37.71L12.66 0 6.68 5.98.71 0 0 .71l5.98 5.97L0 12.66l.71.71 5.97-5.98 5.98 5.98.71-.71-5.98-5.98L13.37.71z"
-              viewBox="0 0 17.91 15.39"
-            />
+            <MenuClose />
           </button>
           <nav>
             <ul>{this.renderNavigationEntries(this.state.entries)}</ul>
