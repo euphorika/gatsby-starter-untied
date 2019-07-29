@@ -1,7 +1,7 @@
 import React from 'react'
 import Slide from './one-slide'
-import ArrowLeft from './images/arrow-left.png'
-import ArrowRight from './images/arrow-right.png'
+import ArrowLeft from './arrow-left.js'
+import ArrowRight from './arrow-right.js'
 
 import styles from './styles.module.styl'
 
@@ -42,14 +42,14 @@ class Slider extends React.Component {
           className={styles.arrowLeft}
           onClick={() => this.slideLeft()}
         >
-          <img src={ArrowLeft} alt="" />
+          <ArrowLeft />
         </div>
         <div
           role="button"
           className={styles.arrowRight}
           onClick={() => this.slideRight()}
         >
-          <img src={ArrowRight} alt="" />
+          <ArrowRight />
         </div>
       </div>
     )

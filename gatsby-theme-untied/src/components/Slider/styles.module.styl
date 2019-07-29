@@ -6,26 +6,6 @@
   overflow hidden
   position relative
   margin-bottom 50px
-
-  .slider-arrows
-    position absolute
-    top calc(50% - 10px)
-    left 0
-    right 0
-    z-index 3
-
-    & > [role="button"]
-      cursor pointer
-      opacity 0.8
-      position absolute
-
-      &.arrow-right
-        right 0
-
-@media only screen and (max-width: 500px) 
-    & > [role="button"]
-      width 20px
-
   .inner-container
     margin-bottom 0px
 
@@ -35,3 +15,40 @@
       .one-slider
         float left
         width 100%
+
+
+    .slider-arrows
+      position absolute
+      top calc(50% - 10px)
+      left 0
+      right 0
+      z-index 3
+
+      & > [role="button"]
+        cursor pointer
+        position absolute
+        width 20px
+
+        &.arrow-left
+          width: 40px
+          left: -15px
+
+          +above('m')
+            width: 60px
+            left: -20px
+
+          +above('l')
+            width: 80px
+            left: -25px
+
+        &.arrow-right
+          width: 40px
+          right: -15px
+
+          +above('m')
+            width: 60px
+            right: -20px
+
+          +above('l')
+            width: 80px
+            right: -25px
