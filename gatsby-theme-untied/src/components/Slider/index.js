@@ -42,14 +42,14 @@ class Slider extends React.Component {
           className={styles.arrowLeft}
           onClick={() => this.slideLeft()}
         >
-          <ArrowLeft src={ArrowLeft} alt="" />
+          <ArrowLeft />
         </div>
         <div
           role="button"
           className={styles.arrowRight}
           onClick={() => this.slideRight()}
         >
-          <ArrowRight src={ArrowRight} alt="" />
+          <ArrowRight />
         </div>
       </div>
     )
