@@ -4,6 +4,12 @@
 @require './element.module.styl'
 
 .button
-  background red
-  padding 5px
-  color white
+  background primary-color
+  border-radius: 5px
+  border 0
+  padding 10px 25px
+  width: 100%
+  color secondary-color
+
+  +above('m')
+    width: auto

@@ -1,13 +1,13 @@
 import React from 'react'
 
-import Input from './input'
-import Checkbox from './checkbox'
-import Radio from './radio'
-import Select from './select'
-import Button from './button'
-import Textarea from './textarea'
+import Input from '../Forms/input'
+import Checkbox from '../Forms/checkbox'
+import Radio from '../Forms/radio'
+import Select from '../Forms/select'
+import Button from '../Forms/button'
+import Textarea from '../Forms/textarea'
 
-import styles from './styles.module.styl'
+import styles from './forms.module.styl'
 
 const Forms = () => {
   const startYear = 1900
@@ -20,10 +20,9 @@ const Forms = () => {
           <div className={`${styles.gridItem} ${styles.firstCol}`}>
             <Input
               name="firstname"
-              value="John"
               message={{
-                type: 'info',
-                text: 'Ich bin ein Infotext',
+                type: 'error',
+                text: "What's your first name?",
               }}
               options={{
                 placeholder: 'Firstname',
@@ -34,10 +33,7 @@ const Forms = () => {
           <div className={`${styles.gridItem} ${styles.sndCol}`}>
             <Input
               name="lastname"
-              message={{
-                type: 'error',
-                text: 'Ich bin eine Fehlermeldung',
-              }}
+              value="Mustermann"
               options={{
                 placeholder: 'Lastname',
                 required: true,
@@ -48,6 +44,11 @@ const Forms = () => {
             <Input
               type="email"
               name="email"
+              value="invalid Email"
+              message={{
+                type: 'error',
+                text: 'Please enter a valid email address.',
+              }}
               options={{
                 placeholder: 'Email',
                 required: true,
@@ -55,27 +56,36 @@ const Forms = () => {
             />
           </div>
           <div className={`${styles.gridItem} ${styles.firstCol}`}>
-            <Radio
-              value="male"
-              label="Male"
-              name="gender"
-              options={{ required: true }}
-            />
-            <Radio
-              value="female"
-              label="Female"
-              name="gender"
-              options={{ required: true }}
-            />
-            <Radio
-              value="other"
-              label="Other"
-              name="gender"
-              options={{ required: true }}
-            />
+            <div role="group">
+              <Radio
+                value="male"
+                label="Male"
+                name="gender"
+                options={{ required: true }}
+              />
+              <Radio
+                value="female"
+                label="Female"
+                name="gender"
+                options={{ required: true }}
+              />
+              <Radio
+                value="other"
+                label="Other"
+                name="gender"
+                options={{ required: true }}
+              />
+            </div>
           </div>
           <div className={`${styles.gridItem} ${styles.sndCol}`}>
-            <Select name="select" options={{ required: true }}>
+            <Select
+              name="select"
+              message={{
+                type: 'info',
+                text: 'Choose your date of birth.',
+              }}
+              options={{ required: true }}
+            >
               <option value="">Year of Birth</option>
               {Array(endYear - startYear + 1)
                 .fill()
