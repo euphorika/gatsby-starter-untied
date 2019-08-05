@@ -129,6 +129,7 @@ module.exports = {
     },
   },
   plugins: [
+    'gatsby-plugin-theme-ui',
     'gatsby-transformer-yaml',
     {
       resolve: `gatsby-source-filesystem`,
