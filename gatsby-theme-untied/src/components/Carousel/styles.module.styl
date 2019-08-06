@@ -1,0 +1,78 @@
+@require '../../themes/standard/config/breakpoints'
+@require '../../themes/standard/config/colors'
+
+.Carousel
+  width: 100%
+  overflow: hidden
+  margin-bottom: 50px;
+  padding: 0 54px
+  +above('m')
+    padding: 0
+
+
+  .carousel-slides
+    display: flex
+    overflow-x: auto
+    scroll-snap-type: x mandatory
+    scroll-behavior: smooth
+    -webkit-overflow-scrolling: touch
+
+
+  .carousel-slides::-webkit-scrollbar
+    width: 5px
+    height: 7px
+
+  .carousel-slides::-webkit-scrollbar-thumb
+    background: primary-color
+    border-radius: 10px
+
+  .carousel-slides::-webkit-scrollbar-track
+    background: transparent
+
+  .carousel-slides > section
+    scroll-snap-align: start
+    flex-shrink: 0
+    height: 100%
+    margin-right: 50px
+    -webkit-transform-origin: center center
+    transform-origin: center center
+    -webkit-transform: scale(1)
+    transform: scale(1)
+    transition: -webkit-transform 0.5s
+    transition: transform 0.5s
+    transition: transform 0.5s, -webkit-transform 0.5s
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    +above('m')
+      flex-shrink: unset
+      margin-right: 15px
+
+  .carousel-slides > div:target
+  /*   transform: scale(0.8) */
+
+
+  .Carousel > a
+    display: inline-flex
+    width: 1.5rem
+    height: 1.5rem
+    background: white
+    text-decoration: none
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    margin: 0 0 0.5rem 0
+    position: relative
+
+  .Carousel > a:active
+    top: 1px
+
+  .Carousel > a:focus
+    background: #000
+
+
+/* Don't need button navigation */
+@supports (scroll-snap-type)
+  .Carousel > a
+    display: block
