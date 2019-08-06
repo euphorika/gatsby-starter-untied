@@ -2,7 +2,7 @@ export default {
   text: '#3c3c3c',
   background: '#f1f1f1',
   primary: '#3c3c3c',
-  // secondary: '',
+  secondary: '#f1f1f1',
   // accent: '',
   // muted: '',
   /*modes: {

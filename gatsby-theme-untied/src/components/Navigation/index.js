@@ -1,12 +1,13 @@
+/** @jsx jsx */
 import React from 'react'
 import PropTypes from 'prop-types'
+
+import { jsx } from 'theme-ui'
 import { Styled } from 'theme-ui'
 import { Link } from 'gatsby'
 
 import MenuOpen from './menu-open.js'
 import MenuClose from './menu-close.js'
-
-import styles from './styles.module.styl'
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -23,45 +24,44 @@ class Navigation extends React.Component {
   renderNavigationEntries = entries =>
     entries.map((entry, key) => (
       <li key={key}>
-        <Link
+        <Styled.a
+          as={Link}
           to={entry.node.link}
           {...(!!entry.node.title ? { title: entry.node.title } : {})}
           {...(!!entry.node.target ? { target: entry.node.target } : {})}
-          activeClassName={styles.active}
+          activeClassName="active"
         >
           {entry.node.name}
-        </Link>
+        </Styled.a>
       </li>
     ))
 
   calculateHorizontalPosition = horizontalAlignment => {
     switch (horizontalAlignment) {
       case 'right':
-        return styles.horizontalAlignRight
+        return 'horizontal-align-right'
       case 'left':
-        return styles.horizontalAlignLeft
+        return 'horizontal-align-left'
       case 'center':
       default:
-        return styles.horizontalAlignCenter
+        return 'horizontal-align-center'
     }
   }
 
   calculateVerticalPosition = verticalAlignment => {
     switch (verticalAlignment) {
       case 'top':
-        return styles.verticalAlignTop
+        return 'vertical-align-top'
       case 'bottom':
-        return styles.verticalAlignBottom
+        return 'vertical-align-bottom'
       case 'center':
       default:
-        return styles.verticalAlignCenter
+        return 'vertical-align-center'
     }
   }
 
   render() {
-    const toggleVisibilityClass = this.state.navigationVisible
-      ? `${styles.menu} ${styles.open}`
-      : styles.menu
+    const toggleVisibilityClass = this.state.navigationVisible ? 'open' : ''
     const horizontalAlignmentClass = this.calculateHorizontalPosition(
       this.state.horizontalAlignment
     )
@@ -72,8 +72,10 @@ class Navigation extends React.Component {
     return (
       <div>
         <button
-          className={styles.navLink}
           id="nav-link"
+          sx={{
+            variant: 'buttons.nav',
+          }}
           onClick={e => {
             this.setState({ navigationVisible: !this.state.navigationVisible })
           }}
@@ -81,12 +83,46 @@ class Navigation extends React.Component {
           <MenuOpen />
         </button>
         <div
-          className={`${toggleVisibilityClass} ${horizontalAlignmentClass} ${verticalAlignmentClass}`}
           id="menu"
+          className={`${toggleVisibilityClass} ${horizontalAlignmentClass} ${verticalAlignmentClass}`}
+          sx={{
+            display: 'none',
+            position: 'fixed',
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+            zIndex: 100,
+            p: '15px',
+            bg: 'primary',
+            '&.open': {
+              display: 'flex',
+            },
+            '&.horizontal-align-center': {
+              justifyContent: 'center',
+            },
+            '&.horizontal-align-left': {
+              justifyContent: 'flex-start',
+            },
+            '&.horizontal-align-right': {
+              justifyContent: 'flex-end',
+            },
+            '&.vertical-align-center': {
+              alignItems: 'center',
+            },
+            '&.vertical-align-top': {
+              alignItems: 'flex-start',
+            },
+            '&.vertical-align-bottom': {
+              alignItems: 'flex-end',
+            },
+          }}
         >
           <button
-            className={styles.navClose}
             id="nav-close"
+            sx={{
+              variant: 'buttons.nav',
+            }}
             onClick={() => {
               this.setState({ navigationVisible: false })
             }}
