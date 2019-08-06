@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Styled } from 'theme-ui'
 import { Link } from 'gatsby'
+
 import MenuOpen from './menu-open.js'
 import MenuClose from './menu-close.js'
 
@@ -92,7 +94,9 @@ class Navigation extends React.Component {
             <MenuClose />
           </button>
           <nav>
-            <ul>{this.renderNavigationEntries(this.state.entries)}</ul>
+            <Styled.ul>
+              {this.renderNavigationEntries(this.state.entries)}
+            </Styled.ul>
           </nav>
         </div>
       </div>

@@ -6,8 +6,6 @@ import { StaticQuery, graphql } from 'gatsby'
 import Header from './Header'
 import Footer from './Footer'
 
-import styles from './layout.module.styl'
-
 const Layout = ({ children, data }) => (
   <StaticQuery
     query={graphql`
@@ -31,7 +29,7 @@ const Layout = ({ children, data }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main className={styles.mainContainer}>{children}</main>
+        <main>{children}</main>
         <Footer />
       </>
     )}
