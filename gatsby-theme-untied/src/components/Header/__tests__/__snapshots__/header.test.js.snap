@@ -57,7 +57,9 @@ exports[`Header renders correctly 1`] = `
           </svg>
         </button>
         <nav>
-          <ul>
+          <ul
+            className="css-0"
+          >
             <li>
               <Link
                 activeClassName="active"

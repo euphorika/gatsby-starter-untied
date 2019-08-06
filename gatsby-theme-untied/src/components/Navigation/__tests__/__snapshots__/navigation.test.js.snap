@@ -37,7 +37,9 @@ exports[`Navigation renders correctly - navigation bottom center 1`] = `
       </svg>
     </button>
     <nav>
-      <ul>
+      <ul
+        className="css-0"
+      >
         <li>
           <Link
             activeClassName="active"
@@ -99,7 +101,9 @@ exports[`Navigation renders correctly - navigation center center 1`] = `
       </svg>
     </button>
     <nav>
-      <ul>
+      <ul
+        className="css-0"
+      >
         <li>
           <Link
             activeClassName="active"
@@ -161,7 +165,9 @@ exports[`Navigation renders correctly - navigation center left 1`] = `
       </svg>
     </button>
     <nav>
-      <ul>
+      <ul
+        className="css-0"
+      >
         <li>
           <Link
             activeClassName="active"
@@ -223,7 +229,9 @@ exports[`Navigation renders correctly - navigation center right 1`] = `
       </svg>
     </button>
     <nav>
-      <ul>
+      <ul
+        className="css-0"
+      >
         <li>
           <Link
             activeClassName="active"
@@ -285,7 +293,9 @@ exports[`Navigation renders correctly - navigation top center 1`] = `
       </svg>
     </button>
     <nav>
-      <ul>
+      <ul
+        className="css-0"
+      >
         <li>
           <Link
             activeClassName="active"
