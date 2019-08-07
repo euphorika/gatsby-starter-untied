@@ -1,4 +1,5 @@
 import colors from './colors'
+import anchors from './anchors'
 
 export default {
   initialColorMode: 'light',
@@ -23,7 +24,26 @@ export default {
     body: 'normal',
     caps: '0.2em',
   },
+  buttons: {
+    nav: {
+      cursor: 'pointer',
+      textRendering: 'geometricPrecision',
+      color: 'secondary',
+      bg: 'primary',
+      border: 'none',
+      width: '50px',
+      position: 'absolute',
+      top: '5px',
+      right: '10px',
+      p: '16px',
+      outline: 'none',
+    },
+  },
+  anchors: {
+    nav: anchors.default,
+  },
   styles: {
+    a: anchors.default,
     ul: {
       listStyleType: 'none',
     },
