@@ -1,4 +1,5 @@
 import colors from './colors'
+import anchors from './anchors'
 
 export default {
   initialColorMode: 'light',
@@ -38,17 +39,11 @@ export default {
       outline: 'none',
     },
   },
+  anchors: {
+    nav: anchors.default,
+  },
   styles: {
-    a: {
-      color: 'secondary',
-      textDecoration: 'none',
-      '&:hover': {
-        textDecoration: 'underline',
-      },
-      '&.active': {
-        textDecoration: 'underline',
-      },
-    },
+    a: anchors.default,
     ul: {
       listStyleType: 'none',
     },

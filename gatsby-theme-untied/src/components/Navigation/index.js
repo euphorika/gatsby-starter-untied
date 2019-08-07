@@ -24,15 +24,17 @@ class Navigation extends React.Component {
   renderNavigationEntries = entries =>
     entries.map((entry, key) => (
       <li key={key}>
-        <Styled.a
-          as={Link}
+        <Link
           to={entry.node.link}
+          activeClassName="active"
           {...(!!entry.node.title ? { title: entry.node.title } : {})}
           {...(!!entry.node.target ? { target: entry.node.target } : {})}
-          activeClassName="active"
+          sx={{
+            variant: 'anchors.nav',
+          }}
         >
           {entry.node.name}
-        </Styled.a>
+        </Link>
       </li>
     ))
 
@@ -61,7 +63,7 @@ class Navigation extends React.Component {
   }
 
   render() {
-    const toggleVisibilityClass = this.state.navigationVisible ? 'open' : ''
+    const toggleVisibilityClass = this.state.navigationVisible ? 'open ' : ''
     const horizontalAlignmentClass = this.calculateHorizontalPosition(
       this.state.horizontalAlignment
     )
@@ -84,7 +86,7 @@ class Navigation extends React.Component {
         </button>
         <div
           id="menu"
-          className={`${toggleVisibilityClass} ${horizontalAlignmentClass} ${verticalAlignmentClass}`}
+          className={`${toggleVisibilityClass}${horizontalAlignmentClass} ${verticalAlignmentClass}`}
           sx={{
             display: 'none',
             position: 'fixed',
