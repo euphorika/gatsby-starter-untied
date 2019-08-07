@@ -2,10 +2,10 @@
 
 exports[`Hero renders correctly 1`] = `
 <section
-  className="heroSection"
+  className="css-aq4zmd"
 >
   <div
-    className="background"
+    className="css-ez4mp1"
   >
     <div
       className=" gatsby-image-wrapper"
@@ -79,23 +79,27 @@ exports[`Hero renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="info"
+    className="css-b2jhp8"
   >
-    <h2>
+    <h2
+      className="css-1lvwiam"
+    >
       Title
     </h2>
-    <p>
+    <p
+      className="css-1qxtz39"
+    >
       Body
     </p>
     <div>
       <button
-        className="button"
+        className="css-2disl3"
       >
         <Link
           to="/"
         >
           <span
-            className="text"
+            className="css-ehimi3"
           >
             Text
           </span>
