@@ -1,19 +1,49 @@
-import React from 'react'
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 import { StaticQuery, graphql, Link } from 'gatsby'
 
 import Navigation from '../Navigation/'
 import Logo from '../Logo/'
 
-import styles from './styles.module.styl'
-
 export const PureHeader = ({ siteTitle, data }) => (
-  <div className={styles.headerContainer}>
-    <header>
-      <h1>
-        <Link to="/">
+  <div
+    sx={{
+      bg: 'primary',
+    }}
+  >
+    <header
+      sx={{
+        margin: '0 auto',
+        maxWidth: 'max-page-width',
+        p: '1.45rem 1.0875rem',
+        display: 'flex',
+        justifyContent: 'space-between',
+      }}
+    >
+      <h1
+        sx={{
+          m: 0,
+          display: 'flex',
+          alignItems: 'center',
+          fontSize: '18px',
+        }}
+      >
+        <Link
+          to="/"
+          sx={{
+            variant: 'anchors.header',
+          }}
+        >
           <Logo />
         </Link>
-        <Link to="/">{siteTitle}</Link>
+        <Link
+          to="/"
+          sx={{
+            variant: 'anchors.header',
+          }}
+        >
+          {siteTitle}
+        </Link>
       </h1>
       <Navigation entries={data.allMainNavigationYaml.edges} />
     </header>

@@ -2,11 +2,16 @@
 
 exports[`Header renders correctly 1`] = `
 <div
-  className="headerContainer"
+  className="css-1lgdhxn"
 >
-  <header>
-    <h1>
+  <header
+    className="css-1qn1oi3"
+  >
+    <h1
+      className="css-1y2up5a"
+    >
       <Link
+        className="css-0"
         to="/"
       >
         <div
@@ -16,6 +21,7 @@ exports[`Header renders correctly 1`] = `
         </div>
       </Link>
       <Link
+        className="css-0"
         to="/"
       >
         Site Title
