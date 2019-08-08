@@ -1,20 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer renders correctly 1`] = `
-<div
-  className="footerContainer"
+<footer
+  className="css-11tnyy5"
 >
-  <footer>
-    <div
-      className="brand"
-    >
-      Gatsby Theme Untied
-    </div>
-    <div
-      className="copyright"
-    >
-      © 2018
-    </div>
-  </footer>
-</div>
+  <div
+    className="css-1efbud1"
+  >
+    Gatsby Theme Untied
+  </div>
+  <div
+    className="css-1qxtz39"
+  >
+    © 2018
+  </div>
+</footer>
 `;
