@@ -4,6 +4,8 @@ import anchors from './anchors'
 export default {
   initialColorMode: 'light',
   useCustomProperties: true,
+  breakpoints: ['40em', '52em', '64em'],
+  space: [0, 4, 8, 16, 32, 64, 128],
   colors,
   fonts: {
     body: 'system-ui, sans-serif',
@@ -24,6 +26,7 @@ export default {
     body: 'normal',
     caps: '0.2em',
   },
+  radii: [4, 8, 16],
   buttons: {
     nav: {
       cursor: 'pointer',
