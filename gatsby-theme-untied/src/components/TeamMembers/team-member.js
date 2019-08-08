@@ -24,7 +24,7 @@ const TeamMember = ({ children, name, position, imgFixed }) => (
         display: ['block', 'flex'],
         flexDirection: 'column',
         position: 'relative',
-        mt: [4, 5],
+        mt: 4,
         ml: ['40%', '30%'],
       }}
     >
