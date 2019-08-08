@@ -2,11 +2,16 @@
 
 exports[`Header renders correctly 1`] = `
 <div
-  className="headerContainer"
+  className="css-1lgdhxn"
 >
-  <header>
-    <h1>
+  <header
+    className="css-1qn1oi3"
+  >
+    <h1
+      className="css-1y2up5a"
+    >
       <Link
+        className="css-0"
         to="/"
       >
         <div
@@ -16,6 +21,7 @@ exports[`Header renders correctly 1`] = `
         </div>
       </Link>
       <Link
+        className="css-0"
         to="/"
       >
         Site Title
@@ -23,7 +29,7 @@ exports[`Header renders correctly 1`] = `
     </h1>
     <div>
       <button
-        className="navLink"
+        className="css-0"
         id="nav-link"
         onClick={[Function]}
       >
@@ -38,11 +44,11 @@ exports[`Header renders correctly 1`] = `
         </svg>
       </button>
       <div
-        className="menu horizontalAlignCenter verticalAlignCenter"
+        className="horizontal-align-center vertical-align-center css-1i8jwq0"
         id="menu"
       >
         <button
-          className="navClose"
+          className="css-0"
           id="nav-close"
           onClick={[Function]}
         >
@@ -57,10 +63,13 @@ exports[`Header renders correctly 1`] = `
           </svg>
         </button>
         <nav>
-          <ul>
+          <ul
+            className="css-0"
+          >
             <li>
               <Link
                 activeClassName="active"
+                className="css-0"
                 title="Title"
                 to="#"
               >
@@ -70,6 +79,7 @@ exports[`Header renders correctly 1`] = `
             <li>
               <Link
                 activeClassName="active"
+                className="css-0"
                 target="_blank"
                 to="#"
               >

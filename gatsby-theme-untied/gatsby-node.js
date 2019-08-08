@@ -1,27 +1,6 @@
 const fs = require('fs')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-exports.onPreBootstrap = ({ reporter }) => {
-  const imagePath = 'src/images'
-  const typographyPath = 'src/utils/typography'
-
-  if (!fs.existsSync('src')) {
-    reporter.info(`creating src directory`)
-    fs.mkdirSync('src')
-    fs.mkdirSync('src/utils', { recursive: true })
-  }
-
-  if (!fs.existsSync(imagePath)) {
-    reporter.info(`creating the ${imagePath} directory`)
-    fs.mkdirSync(imagePath, { recursive: true })
-  }
-
-  if (!fs.existsSync(typographyPath)) {
-    reporter.info(`creating the ${typographyPath} directory`)
-    fs.mkdirSync(typographyPath, { recursive: true })
-  }
-}
-
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {

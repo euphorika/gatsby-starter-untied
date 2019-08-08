@@ -3,7 +3,7 @@
 exports[`Navigation renders correctly - navigation bottom center 1`] = `
 <div>
   <button
-    className="navLink"
+    className="css-0"
     id="nav-link"
     onClick={[Function]}
   >
@@ -18,11 +18,11 @@ exports[`Navigation renders correctly - navigation bottom center 1`] = `
     </svg>
   </button>
   <div
-    className="menu horizontalAlignCenter verticalAlignBottom"
+    className="horizontal-align-center vertical-align-bottom css-1i8jwq0"
     id="menu"
   >
     <button
-      className="navClose"
+      className="css-0"
       id="nav-close"
       onClick={[Function]}
     >
@@ -37,10 +37,13 @@ exports[`Navigation renders correctly - navigation bottom center 1`] = `
       </svg>
     </button>
     <nav>
-      <ul>
+      <ul
+        className="css-0"
+      >
         <li>
           <Link
             activeClassName="active"
+            className="css-0"
             title="Title"
             to="#"
           >
@@ -50,6 +53,7 @@ exports[`Navigation renders correctly - navigation bottom center 1`] = `
         <li>
           <Link
             activeClassName="active"
+            className="css-0"
             target="Target"
             to="#"
           >
@@ -65,7 +69,7 @@ exports[`Navigation renders correctly - navigation bottom center 1`] = `
 exports[`Navigation renders correctly - navigation center center 1`] = `
 <div>
   <button
-    className="navLink"
+    className="css-0"
     id="nav-link"
     onClick={[Function]}
   >
@@ -80,11 +84,11 @@ exports[`Navigation renders correctly - navigation center center 1`] = `
     </svg>
   </button>
   <div
-    className="menu horizontalAlignCenter verticalAlignCenter"
+    className="horizontal-align-center vertical-align-center css-1i8jwq0"
     id="menu"
   >
     <button
-      className="navClose"
+      className="css-0"
       id="nav-close"
       onClick={[Function]}
     >
@@ -99,10 +103,13 @@ exports[`Navigation renders correctly - navigation center center 1`] = `
       </svg>
     </button>
     <nav>
-      <ul>
+      <ul
+        className="css-0"
+      >
         <li>
           <Link
             activeClassName="active"
+            className="css-0"
             title="Title"
             to="#"
           >
@@ -112,6 +119,7 @@ exports[`Navigation renders correctly - navigation center center 1`] = `
         <li>
           <Link
             activeClassName="active"
+            className="css-0"
             target="Target"
             to="#"
           >
@@ -127,7 +135,7 @@ exports[`Navigation renders correctly - navigation center center 1`] = `
 exports[`Navigation renders correctly - navigation center left 1`] = `
 <div>
   <button
-    className="navLink"
+    className="css-0"
     id="nav-link"
     onClick={[Function]}
   >
@@ -142,11 +150,11 @@ exports[`Navigation renders correctly - navigation center left 1`] = `
     </svg>
   </button>
   <div
-    className="menu horizontalAlignLeft verticalAlignCenter"
+    className="horizontal-align-left vertical-align-center css-1i8jwq0"
     id="menu"
   >
     <button
-      className="navClose"
+      className="css-0"
       id="nav-close"
       onClick={[Function]}
     >
@@ -161,10 +169,13 @@ exports[`Navigation renders correctly - navigation center left 1`] = `
       </svg>
     </button>
     <nav>
-      <ul>
+      <ul
+        className="css-0"
+      >
         <li>
           <Link
             activeClassName="active"
+            className="css-0"
             title="Title"
             to="#"
           >
@@ -174,6 +185,7 @@ exports[`Navigation renders correctly - navigation center left 1`] = `
         <li>
           <Link
             activeClassName="active"
+            className="css-0"
             target="Target"
             to="#"
           >
@@ -189,7 +201,7 @@ exports[`Navigation renders correctly - navigation center left 1`] = `
 exports[`Navigation renders correctly - navigation center right 1`] = `
 <div>
   <button
-    className="navLink"
+    className="css-0"
     id="nav-link"
     onClick={[Function]}
   >
@@ -204,11 +216,11 @@ exports[`Navigation renders correctly - navigation center right 1`] = `
     </svg>
   </button>
   <div
-    className="menu horizontalAlignRight verticalAlignCenter"
+    className="horizontal-align-right vertical-align-center css-1i8jwq0"
     id="menu"
   >
     <button
-      className="navClose"
+      className="css-0"
       id="nav-close"
       onClick={[Function]}
     >
@@ -223,10 +235,13 @@ exports[`Navigation renders correctly - navigation center right 1`] = `
       </svg>
     </button>
     <nav>
-      <ul>
+      <ul
+        className="css-0"
+      >
         <li>
           <Link
             activeClassName="active"
+            className="css-0"
             title="Title"
             to="#"
           >
@@ -236,6 +251,7 @@ exports[`Navigation renders correctly - navigation center right 1`] = `
         <li>
           <Link
             activeClassName="active"
+            className="css-0"
             target="Target"
             to="#"
           >
@@ -251,7 +267,7 @@ exports[`Navigation renders correctly - navigation center right 1`] = `
 exports[`Navigation renders correctly - navigation top center 1`] = `
 <div>
   <button
-    className="navLink"
+    className="css-0"
     id="nav-link"
     onClick={[Function]}
   >
@@ -266,11 +282,11 @@ exports[`Navigation renders correctly - navigation top center 1`] = `
     </svg>
   </button>
   <div
-    className="menu horizontalAlignCenter verticalAlignTop"
+    className="horizontal-align-center vertical-align-top css-1i8jwq0"
     id="menu"
   >
     <button
-      className="navClose"
+      className="css-0"
       id="nav-close"
       onClick={[Function]}
     >
@@ -285,10 +301,13 @@ exports[`Navigation renders correctly - navigation top center 1`] = `
       </svg>
     </button>
     <nav>
-      <ul>
+      <ul
+        className="css-0"
+      >
         <li>
           <Link
             activeClassName="active"
+            className="css-0"
             title="Title"
             to="#"
           >
@@ -298,6 +317,7 @@ exports[`Navigation renders correctly - navigation top center 1`] = `
         <li>
           <Link
             activeClassName="active"
+            className="css-0"
             target="Target"
             to="#"
           >
