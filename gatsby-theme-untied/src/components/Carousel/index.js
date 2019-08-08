@@ -15,14 +15,11 @@ class Carousel extends React.Component {
 
   render() {
     const { children } = this.props
-    const { activeIndex } = this.state
 
     return (
       <div className={styles.Carousel}>
         <div
-          className={styles.carouselSlides}
-          id={'slide' + this.state.activeIndex}
-        >
+          className={styles.carouselSlides}>
           {children}
         </div>
         <div className={styles.carouselDots}>

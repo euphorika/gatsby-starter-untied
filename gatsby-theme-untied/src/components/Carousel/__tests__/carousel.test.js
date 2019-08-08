@@ -9,9 +9,6 @@ describe('Carousel', () => {
         <Carousel>
           <div
             className="carouselSlides"
-            id="slide0"
-            id="slide1"
-            id="slide2"
           />
 
         </Carousel>
