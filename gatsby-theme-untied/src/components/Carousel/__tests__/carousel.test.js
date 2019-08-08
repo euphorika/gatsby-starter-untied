@@ -7,8 +7,13 @@ describe('Carousel', () => {
     const tree = renderer
       .create(
         <Carousel>
-          <div style="height: 100% width:100%"></div>
-          <div style="height: 100% width:100%"></div>
+          <div
+            className="carouselSlides"
+            id="slide0"
+            id="slide1"
+            id="slide2"
+          />
+
         </Carousel>
       )
       .toJSON()
