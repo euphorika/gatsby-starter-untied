@@ -1,19 +1,60 @@
-import React from 'react'
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 
-import styles from './styles.module.styl'
-
 const TeamMember = ({ children, name, position, imgFixed }) => (
-  <div className={styles.teamMember}>
-    <div className={styles.imgContainer}>
-      <Img className={styles.memberAvatar} fixed={imgFixed} />
+  <div
+    sx={{
+      float: ['none', 'left'],
+      width: ['auto', '50%'],
+      px: 2,
+      py: 3,
+    }}
+  >
+    <div
+      sx={{
+        position: 'absolute',
+      }}
+    >
+      <Img fixed={imgFixed} />
     </div>
-    <div className={styles.memberInfo}>
-      <h3 className={styles.memberName}>{name}</h3>
-      <p className={styles.memberPosition}>{position}</p>
+    <div
+      sx={{
+        display: ['block', 'flex'],
+        flexDirection: 'column',
+        position: 'relative',
+        mt: 4,
+        ml: ['40%', '30%'],
+      }}
+    >
+      <h3
+        sx={{
+          fontSize: 3,
+          fontWeight: 'heading',
+          mb: 1,
+        }}
+      >
+        {name}
+      </h3>
+      <p
+        sx={{
+          fontSize: 2,
+        }}
+      >
+        {position}
+      </p>
     </div>
-    <div className={styles.memberBio}>{children}</div>
+    <div
+      sx={{
+        fontSize: 1,
+        lineHeight: '26px',
+        mt: 3,
+        mr: [0, 2],
+      }}
+    >
+      {children}
+    </div>
   </div>
 )
 

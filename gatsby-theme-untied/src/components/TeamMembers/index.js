@@ -1,18 +1,13 @@
-import React from 'react'
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 import PropTypes from 'prop-types'
 
-import styles from './styles.module.styl'
-
 const TeamMembers = ({ headline, children }) => {
-  const headlineElement = headline ? (
-    <h2 className={styles.headline}>{headline}</h2>
-  ) : null
+  const headlineElement = headline ? <h2>{headline}</h2> : null
   return (
-    <section className={styles.teamMemberSection}>
-      <div className={styles.innerContainer}>
-        <div>{headlineElement}</div>
-        {children}
-      </div>
+    <section>
+      {headlineElement}
+      {children}
     </section>
   )
 }
