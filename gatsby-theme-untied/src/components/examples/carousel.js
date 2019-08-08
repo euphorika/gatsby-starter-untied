@@ -69,6 +69,7 @@ export default () => {
           return (
             <PricingTable
               key={key}
+              id={'slide' + '-' + key}
               headline={value.headline}
               price={formattedPrice}
               imgFluid={productImages[key].childImageSharp.fluid}

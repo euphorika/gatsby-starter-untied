@@ -6,7 +6,6 @@ import HeroExample from '../components/examples/hero'
 import TeamMembersExample from '../components/examples/teamMembers'
 import CallToActionExample from '../components/examples/callToAction'
 import SliderExample from '../components/examples/slider'
-import PricingTableExample from '../components/examples/pricingTable'
 import CarouselExample from '../components/examples/carousel'
 import FormsExample from '../components/examples/forms'
 import VideoExample from '../components/examples/video'
@@ -20,7 +19,6 @@ const ComponentsPage = () => {
       <TeamMembersExample />
       <CallToActionExample />
       <SliderExample />
-      <PricingTableExample />
       <CarouselExample />
       <FormsExample />
       <VideoExample />

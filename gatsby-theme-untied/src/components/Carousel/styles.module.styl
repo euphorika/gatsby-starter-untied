@@ -2,13 +2,15 @@
 @require '../../themes/standard/config/colors'
 
 .Carousel
-  width: 100%
   overflow: hidden
-  margin-bottom: 50px;
-  padding: 0 54px
+  margin-bottom: 50px
+  margin: 0 auto
+  width: 74%
+
   +above('m')
     padding: 0
-
+    overflow: auto
+    width: unset
 
   .carousel-slides
     display: flex
@@ -19,15 +21,13 @@
 
 
   .carousel-slides::-webkit-scrollbar
-    width: 5px
-    height: 7px
+    display: none
 
   .carousel-slides::-webkit-scrollbar-thumb
-    background: primary-color
-    border-radius: 10px
+    display: none
 
   .carousel-slides::-webkit-scrollbar-track
-    background: transparent
+    display: none
 
   .carousel-slides > section
     scroll-snap-align: start
@@ -49,30 +49,25 @@
       flex-shrink: unset
       margin-right: 15px
 
-  .carousel-slides > div:target
-  /*   transform: scale(0.8) */
 
-
-  .Carousel > a
-    display: inline-flex
-    width: 1.5rem
-    height: 1.5rem
-    background: white
-    text-decoration: none
-    align-items: center
+  .carousel-indicators
+    display: flex
     justify-content: center
-    border-radius: 50%
-    margin: 0 0 0.5rem 0
-    position: relative
+    
+    +above('m')
+      display: none
 
-  .Carousel > a:active
-    top: 1px
+    li
+      width: 20px
+      height: 18px
+      border: 0px solid primary-color
+      border-radius: 50%
+      margin-right: 10px
+      text-align: center
+      &:active
+        background: primary-color
 
-  .Carousel > a:focus
-    background: #000
-
-
-/* Don't need button navigation */
-@supports (scroll-snap-type)
-  .Carousel > a
-    display: block
+        .carousel-indicator
+          width: 20px
+          height: 20px
+          border: 0px solid primary-color
