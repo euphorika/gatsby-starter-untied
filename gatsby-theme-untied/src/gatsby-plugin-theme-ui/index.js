@@ -40,6 +40,7 @@ export default {
     },
   },
   anchors: {
+    header: anchors.default,
     nav: anchors.default,
   },
   styles: {
