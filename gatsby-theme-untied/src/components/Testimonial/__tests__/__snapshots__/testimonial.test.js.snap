@@ -2,10 +2,10 @@
 
 exports[`Testimonial renders correctly 1`] = `
 <section
-  className="testimonialSection"
+  className="css-19midj6"
 >
   <div
-    className="authorImg"
+    className="css-xi606m"
   >
     <div
       className=" gatsby-image-wrapper"
@@ -72,11 +72,13 @@ exports[`Testimonial renders correctly 1`] = `
       />
     </div>
   </div>
-  <blockquote>
+  <blockquote
+    className="css-1fg3val"
+  >
     Body
   </blockquote>
   <div
-    className="author"
+    className="css-xi606m"
   >
     <strong>
       Name
