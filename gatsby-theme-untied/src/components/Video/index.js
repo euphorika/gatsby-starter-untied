@@ -1,7 +1,10 @@
+/** @jsx jsx */
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import imgSrc from './video-play-icon.svg'
-import styles from './styles.module.styl'
+
+import { jsx } from 'theme-ui'
 
 class Video extends React.Component {
   constructor(props) {
@@ -36,14 +39,30 @@ class Video extends React.Component {
     } = this.props
 
     return (
-      <section className={styles.videoContainer}>
-        <div className={styles.innerContainer}>
+      <section
+        sx={{
+          position: 'relative',
+          width: '100%',
+          textAlign: 'center',
+        }}>
+        <div>
           {this.state.showOverlay ? (
-            <div className={styles.overlay}>
+            <div>
               <img
                 src={imgSrc}
                 alt="Play Video"
                 onClick={() => this.handlePlayPause()}
+
+                sx={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                width: ['50px', '100px'],
+                height: ['50px', '100px'],
+                mx: ['calc(-50px / 2)', 'calc(-100px / 2)'],
+                my: ['calc(-50px / 2)', 'calc(-100px / 2)'],
+                }}
+
               />
             </div>
           ) : null}
@@ -52,7 +71,6 @@ class Video extends React.Component {
             onPlay={() => this.handleOverlay()}
             onPause={() => this.handleOverlay()}
             ref="vidRef"
-            className={styles.videoElement}
             poster={poster}
             preload={preload}
             playsInline={playsInline}
@@ -60,6 +78,11 @@ class Video extends React.Component {
             loop={loop}
             controls={controls}
             autoPlay={autoPlay}
+
+            sx={{
+              width: '100%',
+              height: 'auto',
+            }}
           >
             {videos.map((video, id) => (
               <source key={video.id} src={video.src} type={video.type} />
