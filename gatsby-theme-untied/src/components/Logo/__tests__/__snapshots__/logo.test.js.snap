@@ -2,7 +2,7 @@
 
 exports[`Logo renders correctly 1`] = `
 <div
-  className="logoContainer"
+  className="css-gajhq5"
 >
   O
 </div>

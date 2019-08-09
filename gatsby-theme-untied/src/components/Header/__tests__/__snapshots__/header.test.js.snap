@@ -15,7 +15,7 @@ exports[`Header renders correctly 1`] = `
         to="/"
       >
         <div
-          className="logoContainer"
+          className="css-gajhq5"
         >
           O
         </div>
