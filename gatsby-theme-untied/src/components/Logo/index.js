@@ -1,7 +1,14 @@
-import React from 'react'
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 
-import styles from './styles.module.styl'
-
-const Logo = () => <div className={styles.logoContainer}>O</div>
+const Logo = () => (
+  <div
+    sx={{
+      px: 3,
+    }}
+  >
+    O
+  </div>
+)
 
 export default Logo
