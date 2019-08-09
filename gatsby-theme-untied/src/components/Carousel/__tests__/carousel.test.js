@@ -7,10 +7,7 @@ describe('Carousel', () => {
     const tree = renderer
       .create(
         <Carousel>
-          <div
-            className="carouselSlides"
-          />
-
+          <div className="carouselSlides" />
         </Carousel>
       )
       .toJSON()

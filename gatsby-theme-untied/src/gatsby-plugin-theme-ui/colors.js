@@ -4,7 +4,7 @@ export default {
   primary: '#3c3c3c',
   secondary: '#f1f1f1',
   // accent: '',
-  // muted: '',
+  muted: '#eee',
   /*modes: {
     dark: {
       text: '#f1f1f1',

@@ -2,15 +2,16 @@
 
 exports[`PricingTable renders correctly 1`] = `
 <section
-  className="pricingTableSection"
+  className="css-mteijb"
+  id={null}
 >
   <h3
-    className="headline"
+    className="css-1c7lsgz"
   >
     headline
   </h3>
   <p
-    className="price"
+    className="css-p2ms0v"
   >
     1.22
   </p>
@@ -84,14 +85,15 @@ exports[`PricingTable renders correctly 1`] = `
     />
   </div>
   <div
-    className="description"
+    className="css-ugt4zp"
   >
     Description
   </div>
   <div
-    className="callToAction"
+    className="css-ly1rn4"
   >
     <Link
+      className="css-1b437ge"
       to="/"
     >
       Text

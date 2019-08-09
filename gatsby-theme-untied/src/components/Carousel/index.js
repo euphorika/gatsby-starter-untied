@@ -18,17 +18,14 @@ class Carousel extends React.Component {
 
     return (
       <div className={styles.Carousel}>
-        <div
-          className={styles.carouselSlides}>
-          {children}
-        </div>
+        <div className={styles.carouselSlides}>{children}</div>
         <div className={styles.carouselDots}>
           <ul className={styles.carouselIndicators}>
             {this.state.slides.map((slide, index) => (
               <CarouselIndicator
                 key={index}
                 index={index}
-                href={'#' + 'slide' + '-' + index}
+                href={`#slide-${index}`}
               />
             ))}
           </ul>
