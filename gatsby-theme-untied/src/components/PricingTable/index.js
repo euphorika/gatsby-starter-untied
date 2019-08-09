@@ -7,6 +7,7 @@ import Img from 'gatsby-image'
 
 const PricingTable = ({
   children,
+  id,
   headline,
   price,
   imgFluid,
