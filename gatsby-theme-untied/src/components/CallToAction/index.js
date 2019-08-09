@@ -4,11 +4,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
 const CallToAction = ({ button }) => (
-  <section
-    sx={{
-      margin: 0,
-    }}
-  >
+  <section>
     <button
       sx={{
         display: 'block',
@@ -16,14 +12,11 @@ const CallToAction = ({ button }) => (
         bg: 'primary',
         textAlign: 'center',
         fontSize: 2,
-        fontWeight: '600',
+        fontWeight: 'bold',
         p: ['15px 100px', '20px 170px'],
-        mt: '20px',
-        mb: '20px',
-        ml: 'auto',
-        mr: 'auto',
+        mx: 'auto',
+        my: '20px',
         '&:hover': {
-          opacity: '1',
           right: '0',
         },
       }}
@@ -36,17 +29,20 @@ const CallToAction = ({ button }) => (
             transition: '0.5s',
             color: 'secondary',
             '&::after': {
-              //content: '\00bb',
+              content: '"\\00bb"',
               position: 'absolute',
               top: '0',
-              right: '-20px',
-              transition: '0.5s',
-              opacity: '1',
               right: '0',
+              transition: '0.5s',
+              opacity: '0',
+            },
+
+            '&:hover::after': {
+              opacity: '1',
             },
 
             '&:hover': {
-              paddingRight: 4,
+              paddingRight: 3,
             },
           }}
         >

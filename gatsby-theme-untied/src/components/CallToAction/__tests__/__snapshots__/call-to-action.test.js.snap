@@ -1,17 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CallToAction renders correctly 1`] = `
-<section
-  className="css-1uk1gs8"
->
+<section>
   <button
-    className="css-wncyg6"
+    className="css-1j58cyo"
   >
     <Link
       to="/"
     >
       <span
-        className="css-1p49tl4"
+        className="css-1ud81av"
       >
          
         Text
