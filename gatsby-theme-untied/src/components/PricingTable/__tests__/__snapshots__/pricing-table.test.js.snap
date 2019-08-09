@@ -3,6 +3,7 @@
 exports[`PricingTable renders correctly 1`] = `
 <section
   className="css-mteijb"
+  id={null}
 >
   <h3
     className="css-1c7lsgz"

@@ -78,7 +78,12 @@ const PricingTable = ({
   </section>
 )
 
+PricingTable.defaultProps = {
+  id: null,
+}
+
 PricingTable.propTypes = {
+  id: PropTypes.string,
   children: PropTypes.node.isRequired,
   headline: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
