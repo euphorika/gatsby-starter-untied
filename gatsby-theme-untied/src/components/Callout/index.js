@@ -1,14 +1,46 @@
-import React from 'react'
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import styles from './styles.module.styl'
 
 const Callout = ({ message, button }) => (
-  <section className={styles.calloutSection}>
-    <h2 className={styles.message}> {message} </h2>
-    <button className={styles.button}>
-      <Link to={button.link} className={styles.buttonLink}>
-        <span className={styles.text}> {button.text}</span>
+  <section
+    sx={{
+      textAlign: 'center',
+      p: 4,
+      mx: 4,
+      my: 5,
+      bg: 'accent',
+      borderRadius: 1,
+    }}
+  >
+    <h2
+      sx={{
+        fontSize: 3,
+        color: 'secondary',
+        lineHeight: '1.2em',
+        mb: 1,
+        p: 0,
+      }}
+    >
+      {' '}
+      {message}{' '}
+    </h2>
+    <button
+      sx={{
+        bg: 'accent',
+        fontSize: 3,
+        border: 'none',
+      }}
+    >
+      <Link
+        sx={{
+          color: 'secondary',
+          fontWeight: 'bold',
+        }}
+        to={button.link}
+      >
+        {button.text}
       </Link>
     </button>
   </section>
