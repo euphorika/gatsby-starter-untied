@@ -14,6 +14,7 @@ const PricingTable = ({
   callToAction,
 }) => (
   <section
+    id={id}
     sx={{
       mx: ['auto', 3],
       my: 4,
