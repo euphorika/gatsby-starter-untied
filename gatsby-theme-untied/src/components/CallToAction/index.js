@@ -11,41 +11,41 @@ const CallToAction = ({ button }) => (
   >
     <button
       sx={{
-        display: "block",
+        display: 'block',
         borderRadius: 1,
-        bg: "primary",
-        textAlign: "center",
+        bg: 'primary',
+        textAlign: 'center',
         fontSize: 2,
-        fontWeight: "600",
-        p: ["15px 100px", "20px 170px"],
-        mt: "20px",
-        mb: "20px",
-        ml: "auto",
-        mr: "auto",
-        "&:hover": {
-          opacity: "1",
-          right: "0",
+        fontWeight: '600',
+        p: ['15px 100px', '20px 170px'],
+        mt: '20px',
+        mb: '20px',
+        ml: 'auto',
+        mr: 'auto',
+        '&:hover': {
+          opacity: '1',
+          right: '0',
         },
       }}
     >
       <Link to={button.link}>
         <span
           sx={{
-            display: "inline-block",
-            position: "relative",
-            transition: "0.5s",
-            color: "secondary",
-            "&:after": {
-              //content: "\00bb",
-              position: "absolute",
-              top: "0",
-              right: "-20px",
-              transition: "0.5s",
-              opacity: "1",
-              right: "0",
+            display: 'inline-block',
+            position: 'relative',
+            transition: '0.5s',
+            color: 'secondary',
+            '&::after': {
+              //content: '\00bb',
+              position: 'absolute',
+              top: '0',
+              right: '-20px',
+              transition: '0.5s',
+              opacity: '1',
+              right: '0',
             },
 
-            "&:hover": {
+            '&:hover': {
               paddingRight: 4,
             },
           }}
