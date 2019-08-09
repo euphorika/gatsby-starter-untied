@@ -25,7 +25,7 @@ class Carousel extends React.Component {
               <CarouselIndicator
                 key={index}
                 index={index}
-                href={'#' + 'slide' + '-' + index}
+                href={`#slide-${index}`}
               />
             ))}
           </ul>
