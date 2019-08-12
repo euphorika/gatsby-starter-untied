@@ -1,10 +1,10 @@
-import React from 'react'
+/** @jsx jsx */
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Carousel from '../Carousel/'
 import PricingTable from '../PricingTable/'
 
-import styles from './carousel.module.styl'
+import { jsx } from 'theme-ui'
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -58,7 +58,15 @@ export default () => {
   ]
 
   return (
-    <div className={styles.pricingTableExampleContainer}>
+    <div
+      sx={{
+        pl: '10%',
+        pr: '8%',
+        mr: '6px',
+        display: 'flex',
+        justifyContent: 'center',
+      }}
+    >
       <Carousel>
         {data.site.siteMetadata.components.pricingTable.map((value, key) => {
           const formattedPrice = new Intl.NumberFormat(locales, {
