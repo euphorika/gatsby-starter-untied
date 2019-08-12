@@ -1,4 +1,6 @@
 import colors from './colors'
+import elements from './forms/element-variant'
+import inputs from './forms/input-variant'
 import anchors from './anchors'
 
 export default {
@@ -27,6 +29,10 @@ export default {
     caps: '0.2em',
   },
   radii: [4, 8, 16],
+  forms: {
+    elements,
+    inputs,
+  },
   buttons: {
     nav: {
       cursor: 'pointer',
