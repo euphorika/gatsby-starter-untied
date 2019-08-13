@@ -1,10 +1,10 @@
-import React from 'react'
+/** @jsx jsx */
 import { graphql } from 'gatsby'
 
 import PostLink from '../components/post-link'
 import Layout from '../components/layout'
 
-import styles from './styles.module.styl'
+import { jsx } from 'theme-ui'
 
 const IndexPage = ({
   data: {
@@ -17,8 +17,18 @@ const IndexPage = ({
 
   return (
     <Layout>
-      <div className={styles.blogPostsMainContainer}>
-        <h1 className={styles.blogPostsHeadline}>Blog</h1>
+      <div
+        sx={{
+          p: 4,
+        }}
+      >
+        <h1
+          sx={{
+            fontSize: 3,
+          }}
+        >
+          Blog
+        </h1>
         {posts}
       </div>
     </Layout>

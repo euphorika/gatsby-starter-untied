@@ -44,9 +44,10 @@ class Slider extends React.Component {
           left: '0',
           right: '0',
           zIndex: '3',
-        }}>
+        }}
+      >
         <div
-          role='button'
+          role="button"
           sx={{
             cursor: 'pointer',
             width: '20px',
@@ -56,7 +57,7 @@ class Slider extends React.Component {
           <ArrowLeft />
         </div>
         <div
-          role='button'
+          role="button"
           sx={{
             cursor: 'pointer',
             width: '20px',
@@ -73,7 +74,7 @@ class Slider extends React.Component {
     return (
       <div
         sx={{
-          transition: 'margin-left 0.5s'
+          transition: 'margin-left 0.5s',
         }}
         style={{
           width: `${this.state.images.length * this.state.width}%`,
@@ -96,11 +97,13 @@ class Slider extends React.Component {
           overflow: 'hidden',
           position: 'relative',
           marginBottom: '50px',
-        }}>
+        }}
+      >
         <div
           sx={{
             marginBottom: '0',
-          }}>
+          }}
+        >
           {this.renderSlides()}
           {this.renderNavigation()}
         </div>

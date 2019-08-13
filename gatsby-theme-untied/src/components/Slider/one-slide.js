@@ -9,7 +9,8 @@ const OneSlide = ({ image }) => (
     sx={{
       float: 'left',
       width: '100%',
-    }}>
+    }}
+  >
     <Img fluid={image} />
   </div>
 )
