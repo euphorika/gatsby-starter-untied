@@ -6,8 +6,11 @@ export default {
   accent: '#e9426c',
   lightAccent: '#ffebf0',
   muted: '#eee',
+  mutedLight: '#ccc',
   success: '#78b478',
   lightSuccess: '#e6f0e6',
+  checkableBackground: '#fff',
+  checkmark: '#000',
   /*modes: {
     dark: {
       text: '#f1f1f1',

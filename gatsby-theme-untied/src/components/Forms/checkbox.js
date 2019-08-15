@@ -1,31 +1,36 @@
+/** @jsx jsx */
 import React from 'react'
+import { jsx } from 'theme-ui'
 import PropTypes from 'prop-types'
 
 import FormMessage from './message'
 
-import styles from './checkbox.module.styl'
-
-const Checkbox = ({ value, checked, name, label, message = {}, options }) => {
+const Checkbox = ({ value, checked, name, label, message, options }) => {
   const checkbox = (
-    <>
+    <React.Fragment>
       <input
-        className={styles.element}
+        className="element"
         type="checkbox"
         value={value}
         name={name}
         checked={checked}
         {...options}
       />
-      <span className={styles.afterFormElement} />
-      <span className={styles.checkmark} />
-    </>
+      <span className="after-form-element" />
+      <span className="checkmark" />
+    </React.Fragment>
   )
 
   return (
-    <div className={styles.elementContainer}>
+    <div
+      sx={{
+        variant: 'forms.checkbox',
+      }}
+      className="element-container"
+    >
       <FormMessage type={message.type}>{message.text}</FormMessage>
-      <span className={styles.checkable}>
-        <label className={styles.label}>
+      <span className="checkable">
+        <label className="label">
           {checkbox}
           {label}
         </label>
@@ -34,7 +39,9 @@ const Checkbox = ({ value, checked, name, label, message = {}, options }) => {
   )
 }
 
-export default Checkbox
+Checkbox.defaultProps = {
+  message: {},
+}
 
 Checkbox.propTypes = {
   value: PropTypes.string.isRequired,
@@ -44,3 +51,5 @@ Checkbox.propTypes = {
   message: PropTypes.object,
   options: PropTypes.object,
 }
+
+export default Checkbox

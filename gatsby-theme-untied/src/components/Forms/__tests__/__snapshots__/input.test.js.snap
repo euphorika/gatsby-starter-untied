@@ -2,7 +2,7 @@
 
 exports[`Input renders correctly 1`] = `
 <div
-  className="elementContainer"
+  className="element-container css-0"
 >
   <input
     className="element"
@@ -10,14 +10,14 @@ exports[`Input renders correctly 1`] = `
     type="text"
   />
   <span
-    className="afterFormElement"
+    className="after-form-element"
   />
 </div>
 `;
 
 exports[`Input renders required input correctly 1`] = `
 <div
-  className="elementContainer"
+  className="element-container css-0"
 >
   <input
     className="element"
@@ -26,7 +26,7 @@ exports[`Input renders required input correctly 1`] = `
     type="text"
   />
   <span
-    className="afterFormElement"
+    className="after-form-element"
   />
 </div>
 `;

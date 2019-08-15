@@ -1,4 +1,6 @@
+/** @jsx jsx */
 import React from 'react'
+import { jsx } from 'theme-ui'
 import PropTypes from 'prop-types'
 
 import FormMessage from './message'
@@ -7,7 +9,7 @@ import styles from './textarea.module.styl'
 
 const Textarea = ({ children, name, label, message = {}, options }) => {
   const textarea = (
-    <>
+    <React.Fragment>
       <textarea
         className={styles.element}
         value={children}
@@ -15,12 +17,17 @@ const Textarea = ({ children, name, label, message = {}, options }) => {
         {...options}
       />
       <span className={styles.afterFormElement} />
-    </>
+    </React.Fragment>
   )
 
   if (label) {
     return (
-      <div className={styles.elementContainer}>
+      <div
+        sx={{
+          variant: 'forms.elements',
+        }}
+        className={styles.elementContainer}
+      >
         <FormMessage type={message.type}>{message.text}</FormMessage>
         <label className={styles.label}>
           {label}
@@ -31,7 +38,12 @@ const Textarea = ({ children, name, label, message = {}, options }) => {
   }
 
   return (
-    <div className={styles.elementContainer}>
+    <div
+      sx={{
+        variant: 'forms.elements',
+      }}
+      className={styles.elementContainer}
+    >
       <FormMessage type={message.type}>{message.text}</FormMessage>
       {textarea}
     </div>
