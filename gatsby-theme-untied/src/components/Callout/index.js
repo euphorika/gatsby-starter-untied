@@ -17,7 +17,7 @@ const Callout = ({ message, button }) => (
     <h2
       sx={{
         fontSize: 3,
-        color: 'secondary',
+        color: '#f1f1f1',
         lineHeight: '1.2em',
         mb: 1,
         p: 0,
@@ -35,8 +35,10 @@ const Callout = ({ message, button }) => (
     >
       <Link
         sx={{
-          color: 'secondary',
+          variant: 'anchors.callout',
           fontWeight: 'bold',
+          textDecoration: 'underline',
+          color: '#f1f1f1',
         }}
         to={button.link}
       >

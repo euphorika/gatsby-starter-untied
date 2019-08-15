@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TeamMember renders correctly 1`] = `
-<section>
+<section
+  className="css-1wcaknn"
+>
   <div
     className="css-1vbds22"
   >

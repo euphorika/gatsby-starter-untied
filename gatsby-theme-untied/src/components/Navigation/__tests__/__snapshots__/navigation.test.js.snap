@@ -13,12 +13,12 @@ exports[`Navigation renders correctly - navigation bottom center 1`] = `
     >
       <path
         d="M0 0h17.91v1H0zM0 7.2h17.91v1H0zM0 14.39h17.91v1H0z"
-        fill="#f1f1f1"
+        fill="primary"
       />
     </svg>
   </button>
   <div
-    className="horizontal-align-center vertical-align-bottom css-1i8jwq0"
+    className="horizontal-align-center vertical-align-bottom css-1gl1ukg"
     id="menu"
   >
     <button
@@ -27,12 +27,12 @@ exports[`Navigation renders correctly - navigation bottom center 1`] = `
       onClick={[Function]}
     >
       <svg
+        fill="primary"
         viewBox="0 0 13.37 13.37"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M13.37.71L12.66 0 6.68 5.98.71 0 0 .71l5.98 5.97L0 12.66l.71.71 5.97-5.98 5.98 5.98.71-.71-5.98-5.98L13.37.71z"
-          fill="#f1f1f1"
         />
       </svg>
     </button>
@@ -79,12 +79,12 @@ exports[`Navigation renders correctly - navigation center center 1`] = `
     >
       <path
         d="M0 0h17.91v1H0zM0 7.2h17.91v1H0zM0 14.39h17.91v1H0z"
-        fill="#f1f1f1"
+        fill="primary"
       />
     </svg>
   </button>
   <div
-    className="horizontal-align-center vertical-align-center css-1i8jwq0"
+    className="horizontal-align-center vertical-align-center css-1gl1ukg"
     id="menu"
   >
     <button
@@ -93,12 +93,12 @@ exports[`Navigation renders correctly - navigation center center 1`] = `
       onClick={[Function]}
     >
       <svg
+        fill="primary"
         viewBox="0 0 13.37 13.37"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M13.37.71L12.66 0 6.68 5.98.71 0 0 .71l5.98 5.97L0 12.66l.71.71 5.97-5.98 5.98 5.98.71-.71-5.98-5.98L13.37.71z"
-          fill="#f1f1f1"
         />
       </svg>
     </button>
@@ -145,12 +145,12 @@ exports[`Navigation renders correctly - navigation center left 1`] = `
     >
       <path
         d="M0 0h17.91v1H0zM0 7.2h17.91v1H0zM0 14.39h17.91v1H0z"
-        fill="#f1f1f1"
+        fill="primary"
       />
     </svg>
   </button>
   <div
-    className="horizontal-align-left vertical-align-center css-1i8jwq0"
+    className="horizontal-align-left vertical-align-center css-1gl1ukg"
     id="menu"
   >
     <button
@@ -159,12 +159,12 @@ exports[`Navigation renders correctly - navigation center left 1`] = `
       onClick={[Function]}
     >
       <svg
+        fill="primary"
         viewBox="0 0 13.37 13.37"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M13.37.71L12.66 0 6.68 5.98.71 0 0 .71l5.98 5.97L0 12.66l.71.71 5.97-5.98 5.98 5.98.71-.71-5.98-5.98L13.37.71z"
-          fill="#f1f1f1"
         />
       </svg>
     </button>
@@ -211,12 +211,12 @@ exports[`Navigation renders correctly - navigation center right 1`] = `
     >
       <path
         d="M0 0h17.91v1H0zM0 7.2h17.91v1H0zM0 14.39h17.91v1H0z"
-        fill="#f1f1f1"
+        fill="primary"
       />
     </svg>
   </button>
   <div
-    className="horizontal-align-right vertical-align-center css-1i8jwq0"
+    className="horizontal-align-right vertical-align-center css-1gl1ukg"
     id="menu"
   >
     <button
@@ -225,12 +225,12 @@ exports[`Navigation renders correctly - navigation center right 1`] = `
       onClick={[Function]}
     >
       <svg
+        fill="primary"
         viewBox="0 0 13.37 13.37"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M13.37.71L12.66 0 6.68 5.98.71 0 0 .71l5.98 5.97L0 12.66l.71.71 5.97-5.98 5.98 5.98.71-.71-5.98-5.98L13.37.71z"
-          fill="#f1f1f1"
         />
       </svg>
     </button>
@@ -277,12 +277,12 @@ exports[`Navigation renders correctly - navigation top center 1`] = `
     >
       <path
         d="M0 0h17.91v1H0zM0 7.2h17.91v1H0zM0 14.39h17.91v1H0z"
-        fill="#f1f1f1"
+        fill="primary"
       />
     </svg>
   </button>
   <div
-    className="horizontal-align-center vertical-align-top css-1i8jwq0"
+    className="horizontal-align-center vertical-align-top css-1gl1ukg"
     id="menu"
   >
     <button
@@ -291,12 +291,12 @@ exports[`Navigation renders correctly - navigation top center 1`] = `
       onClick={[Function]}
     >
       <svg
+        fill="primary"
         viewBox="0 0 13.37 13.37"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M13.37.71L12.66 0 6.68 5.98.71 0 0 .71l5.98 5.97L0 12.66l.71.71 5.97-5.98 5.98 5.98.71-.71-5.98-5.98L13.37.71z"
-          fill="#f1f1f1"
         />
       </svg>
     </button>

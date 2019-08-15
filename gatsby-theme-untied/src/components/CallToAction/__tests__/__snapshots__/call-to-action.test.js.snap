@@ -3,13 +3,13 @@
 exports[`CallToAction renders correctly 1`] = `
 <section>
   <button
-    className="css-1j58cyo"
+    className="css-pqwwlh"
   >
     <Link
       to="/"
     >
       <span
-        className="css-1ud81av"
+        className="css-1mefvgs"
       >
          
         Text

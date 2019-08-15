@@ -28,11 +28,24 @@ export default {
   },
   radii: [4, 8, 16],
   buttons: {
+    hero: {
+      cursor: 'pointer',
+      textRendering: 'geometricPrecision',
+      bg: 'btnBgHero',
+      outline: 'none',
+      width: '100%',
+      maxWidth: '300px',
+      border: 0,
+      display: 'inline-block',
+      borderRadius: 0,
+      fontSize: 0,
+      padding: 3,
+    },
     nav: {
       cursor: 'pointer',
       textRendering: 'geometricPrecision',
-      color: 'secondary',
-      bg: 'primary',
+      color: 'primary',
+      bg: 'background',
       border: 'none',
       width: '50px',
       position: 'absolute',
@@ -45,6 +58,8 @@ export default {
   anchors: {
     header: anchors.default,
     nav: anchors.default,
+    hero: anchors.default,
+    callout: anchors.default,
   },
   styles: {
     a: anchors.default,

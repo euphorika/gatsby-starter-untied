@@ -82,7 +82,11 @@ class Navigation extends React.Component {
             this.setState({ navigationVisible: !this.state.navigationVisible })
           }}
         >
-          <MenuOpen />
+          <MenuOpen
+            sx={{
+              fill: 'primary',
+            }}
+          />
         </button>
         <div
           id="menu"
@@ -96,7 +100,7 @@ class Navigation extends React.Component {
             left: 0,
             zIndex: 100,
             p: '15px',
-            bg: 'primary',
+            bg: 'background',
             '&.open': {
               display: 'flex',
             },

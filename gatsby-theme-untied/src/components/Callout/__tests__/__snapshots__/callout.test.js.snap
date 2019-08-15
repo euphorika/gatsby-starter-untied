@@ -5,7 +5,7 @@ exports[`Callout renders correctly 1`] = `
   className="css-s9g8ug"
 >
   <h2
-    className="css-18svvyh"
+    className="css-1qp22yt"
   >
      
     Message
@@ -15,7 +15,7 @@ exports[`Callout renders correctly 1`] = `
     className="css-f13g10"
   >
     <Link
-      className="css-9y45kv"
+      className="css-g3g1sv"
       to="/"
     >
       Text

@@ -15,7 +15,7 @@ MenuOpen.propTypes = {
 }
 
 MenuOpen.defaultProps = {
-  color: '#f1f1f1',
+  color: 'primary',
 }
 
 export default MenuOpen
