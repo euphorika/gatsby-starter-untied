@@ -24,6 +24,15 @@ const PricingTable = ({
       py: 2,
       border: 'solid 1px',
       borderColor: 'muted',
+      scrollSnapAlign: 'start',
+      flexShrink: ['0', 'unset'],
+      mr: ['50px', '15px'],
+      webkitTransformOrigin: 'center center',
+      transformOrigin: 'center center',
+      webkitTransform: 'scale(1)',
+      transform: 'scale(1)',
+      webbkitTransition: '-webkit-transform 0.5s',
+      transition: 'transform 0.5s',
     }}
   >
     <h3
