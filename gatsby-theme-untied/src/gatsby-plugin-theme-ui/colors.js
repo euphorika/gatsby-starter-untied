@@ -9,6 +9,9 @@ export default {
   mutedLight: '#ccc',
   success: '#78b478',
   lightSuccess: '#e6f0e6',
+  selectBackground: '#eee',
+  selectHoverBackground: '#ccc',
+  selectArrowColor: '#000',
   checkableBackground: '#fff',
   checkmark: '#000',
   /*modes: {

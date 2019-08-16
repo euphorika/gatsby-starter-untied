@@ -2,10 +2,10 @@
 
 exports[`Select renders correctly 1`] = `
 <div
-  className="elementContainer"
+  className="element-container css-0"
 >
   <div
-    className="selectBox"
+    className="select-box"
   >
     <select
       className="element"
@@ -16,7 +16,7 @@ exports[`Select renders correctly 1`] = `
       />
     </select>
     <span
-      className="afterFormElement"
+      className="after-form-element"
     />
   </div>
 </div>
@@ -24,10 +24,10 @@ exports[`Select renders correctly 1`] = `
 
 exports[`Select renders required correctly 1`] = `
 <div
-  className="elementContainer"
+  className="element-container css-0"
 >
   <div
-    className="selectBox required"
+    className="select-box required"
   >
     <select
       className="element"
@@ -39,7 +39,7 @@ exports[`Select renders required correctly 1`] = `
       />
     </select>
     <span
-      className="afterFormElement"
+      className="after-form-element"
     />
   </div>
 </div>

@@ -1,6 +1,7 @@
 import colors from './colors'
 import elements from './forms/element-variant'
 import inputs from './forms/input-variant'
+import select from './forms/select-variant'
 import checkbox from './forms/checkbox-variant'
 import radio from './forms/radio-variant'
 import anchors from './anchors'
@@ -34,6 +35,7 @@ export default {
   forms: {
     elements,
     inputs,
+    select,
     checkbox,
     radio,
   },
