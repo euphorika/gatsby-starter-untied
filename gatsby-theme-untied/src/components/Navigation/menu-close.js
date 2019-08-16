@@ -1,22 +1,36 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 
-const MenuClose = ({ color }) => (
+const MenuClose = ({ size = '1em' }) => (
   <svg
-    fill={color}
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 13.37 13.37"
+    width={size}
+    height={size}
+    fill="currentcolor"
+    viewBox="0 0 24 24"
+    sx={{
+      display: 'block',
+      margin: 0,
+      fontSize: 3,
+    }}
   >
-    <path d="M13.37.71L12.66 0 6.68 5.98.71 0 0 .71l5.98 5.97L0 12.66l.71.71 5.97-5.98 5.98 5.98.71-.71-5.98-5.98L13.37.71z" />
+    <polygon points="13.37 0.71 12.66 0 6.68 5.98 0.71 0 0 0.71 5.98 6.68 0 12.66 0.71 13.37 6.68 7.39 12.66 13.37 13.37 12.66 7.39 6.68 13.37 0.71" />
   </svg>
 )
 
-MenuClose.propTypes = {
-  color: PropTypes.string,
-}
-
-MenuClose.defaultProps = {
-  color: 'primary',
-}
-
-export default MenuClose
+export default props => (
+  <span
+    title="Close Menu"
+    {...props}
+    sx={{
+      fontFamily: 'inherit',
+      color: 'inherit',
+      bg: 'transparent',
+      m: 0,
+      border: 0,
+      appearance: 'none',
+    }}
+  >
+    <MenuClose />
+  </span>
+)

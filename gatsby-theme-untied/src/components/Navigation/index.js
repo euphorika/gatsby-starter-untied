@@ -82,11 +82,7 @@ class Navigation extends React.Component {
             this.setState({ navigationVisible: !this.state.navigationVisible })
           }}
         >
-          <MenuOpen
-            sx={{
-              fill: 'primary',
-            }}
-          />
+          <MenuOpen />
         </button>
         <div
           id="menu"
