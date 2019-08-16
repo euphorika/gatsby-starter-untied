@@ -2,7 +2,7 @@
 
 exports[`Button renders correctly 1`] = `
 <div
-  className="elementContainer"
+  className="element-container css-0"
 >
   <button
     className="button"
