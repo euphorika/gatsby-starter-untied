@@ -9,11 +9,15 @@ export default {
   mutedLight: '#ccc',
   success: '#78b478',
   lightSuccess: '#e6f0e6',
+  info: '#b1b1b1',
+  warning: '#ffa03c',
+  alert: '#e9426c',
   selectBackground: '#eee',
   selectHoverBackground: '#ccc',
   selectArrowColor: '#000',
   checkableBackground: '#fff',
   checkmark: '#000',
+  message: '#fff',
   /*modes: {
     dark: {
       text: '#f1f1f1',

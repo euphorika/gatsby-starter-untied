@@ -6,6 +6,7 @@ import select from './forms/select-variant'
 import checkbox from './forms/checkbox-variant'
 import radio from './forms/radio-variant'
 import button from './forms/button-variant'
+import message from './forms/message-variant'
 import anchors from './anchors'
 
 export default {
@@ -42,6 +43,7 @@ export default {
     checkbox,
     radio,
     button,
+    message,
   },
   buttons: {
     nav: {

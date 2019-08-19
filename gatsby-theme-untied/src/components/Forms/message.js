@@ -1,20 +1,19 @@
-import React from 'react'
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 import PropTypes from 'prop-types'
-
-import styles from './message.module.styl'
 
 const FormMessage = ({ type, children }) => {
   const makeClassName = type => {
     switch (type) {
       case 'warn':
-        return styles.warn
+        return 'warn'
 
       case 'error':
-        return styles.error
+        return 'error'
 
       case 'info':
       default:
-        return styles.info
+        return 'info'
     }
   }
 
@@ -23,7 +22,12 @@ const FormMessage = ({ type, children }) => {
   }
 
   return (
-    <div className={`${styles.formMessage} ${makeClassName(type)}`}>
+    <div
+      sx={{
+        variant: 'forms.message',
+      }}
+      className={makeClassName(type)}
+    >
       {children}
     </div>
   )
