@@ -28,7 +28,11 @@ class CarouselIndicator extends React.Component {
               : null
           }
         >
-          <DotKontorIcon />
+          <DotKontorIcon
+            sx={{
+              fill: 'primary',
+            }}
+          />
         </a>
       </li>
     )

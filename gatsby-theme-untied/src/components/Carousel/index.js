@@ -23,8 +23,8 @@ class Carousel extends React.Component {
           overflow: ['hidden', 'auto'],
           mx: 'auto',
           my: '0',
-          width: '100vw',
-          padding: ['unset', 0],
+          width: ['90%', '100%'],
+          padding: [2, 0],
         }}
       >
         <div

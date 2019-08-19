@@ -8,8 +8,9 @@ const CallToAction = ({ button }) => (
     <button
       sx={{
         display: 'block',
+        border: 'none',
         borderRadius: 1,
-        bg: 'primary',
+        bg: 'btnBg',
         textAlign: 'center',
         fontSize: 2,
         fontWeight: 'bold',
@@ -27,7 +28,7 @@ const CallToAction = ({ button }) => (
             display: 'inline-block',
             position: 'relative',
             transition: '0.5s',
-            color: 'secondary',
+            color: 'btnText',
             '&::after': {
               content: '"\\00bb"',
               position: 'absolute',

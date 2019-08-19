@@ -5,7 +5,11 @@ import PropTypes from 'prop-types'
 const TeamMembers = ({ headline, children }) => {
   const headlineElement = headline ? <h2>{headline}</h2> : null
   return (
-    <section>
+    <section
+      sx={{
+        p: 4,
+      }}
+    >
       {headlineElement}
       {children}
     </section>

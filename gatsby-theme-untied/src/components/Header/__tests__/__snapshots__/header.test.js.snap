@@ -2,7 +2,7 @@
 
 exports[`Header renders correctly 1`] = `
 <div
-  className="css-1lgdhxn"
+  className="css-18penj4"
 >
   <header
     className="css-1qn1oi3"
@@ -33,18 +33,35 @@ exports[`Header renders correctly 1`] = `
         id="nav-link"
         onClick={[Function]}
       >
-        <svg
-          viewBox="0 0 17.91 15.39"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="css-1f55rt2"
+          title="Toggle Menu"
         >
-          <path
-            d="M0 0h17.91v1H0zM0 7.2h17.91v1H0zM0 14.39h17.91v1H0z"
-            fill="#f1f1f1"
-          />
-        </svg>
+          <svg
+            className="css-xxjuk1"
+            fill="currentcolor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="1.23"
+              width="20"
+            />
+            <rect
+              height="1.23"
+              width="20"
+              y="8"
+            />
+            <rect
+              height="1.23"
+              width="20"
+              y="16"
+            />
+          </svg>
+        </span>
       </button>
       <div
-        className="horizontal-align-center vertical-align-center css-1i8jwq0"
+        className="horizontal-align-center vertical-align-center css-1gl1ukg"
         id="menu"
       >
         <button
@@ -52,15 +69,23 @@ exports[`Header renders correctly 1`] = `
           id="nav-close"
           onClick={[Function]}
         >
-          <svg
-            viewBox="0 0 13.37 13.37"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            className="css-hzp8v1"
+            title="Close Menu"
           >
-            <path
-              d="M13.37.71L12.66 0 6.68 5.98.71 0 0 .71l5.98 5.97L0 12.66l.71.71 5.97-5.98 5.98 5.98.71-.71-5.98-5.98L13.37.71z"
-              fill="#f1f1f1"
-            />
-          </svg>
+            <svg
+              className="css-xxjuk1"
+              fill="currentcolor"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polygon
+                points="13.37 0.71 12.66 0 6.68 5.98 0.71 0 0 0.71 5.98 6.68 0 12.66 0.71 13.37 6.68 7.39 12.66 13.37 13.37 12.66 7.39 6.68 13.37 0.71"
+              />
+            </svg>
+          </span>
         </button>
         <nav>
           <ul

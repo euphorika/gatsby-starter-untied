@@ -37,6 +37,7 @@ const Hero = ({ children, headline, button, imgFluid }) => (
         position: 'relative',
         maxWidth: '400px',
         zIndex: '10',
+        color: 'text',
       }}
     >
       <h2
@@ -57,20 +58,18 @@ const Hero = ({ children, headline, button, imgFluid }) => (
       <div>
         <button
           sx={{
-            bg: 'primary',
-            width: '100%',
-            maxWidth: '300px',
-            border: 0,
-            display: 'inline-block',
-            borderRadius: 0,
-            fontSize: 0,
-            padding: 3,
+            variant: 'buttons.hero',
           }}
         >
-          <Link to={button.link}>
+          <Link
+            to={button.link}
+            sx={{
+              variant: 'anchors.hero',
+            }}
+          >
             <span
               sx={{
-                color: 'secondary',
+                color: 'btnText',
               }}
             >
               {button.text}

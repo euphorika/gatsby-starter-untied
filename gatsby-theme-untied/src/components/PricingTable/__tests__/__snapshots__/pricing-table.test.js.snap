@@ -2,7 +2,7 @@
 
 exports[`PricingTable renders correctly 1`] = `
 <section
-  className="css-uycm"
+  className="css-1xot7x9"
   id={null}
 >
   <h3
@@ -93,7 +93,7 @@ exports[`PricingTable renders correctly 1`] = `
     className="css-ly1rn4"
   >
     <Link
-      className="css-1b437ge"
+      className="css-1obveo8"
       to="/"
     >
       Text
