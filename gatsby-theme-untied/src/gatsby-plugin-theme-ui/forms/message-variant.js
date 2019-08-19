@@ -36,7 +36,7 @@ export default {
   '&.error': {
     bg: 'alert',
     '&::after': {
-      borderTopColor: 'alert', // color value wird nicht gemappt, bug??
+      borderTopColor: 'alert',
     },
   },
 }
