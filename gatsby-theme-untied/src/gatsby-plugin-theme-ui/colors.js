@@ -8,7 +8,8 @@ export default {
   secondary: '#f1f1f1',
   accent: '#e9426c',
   muted: '#eee',
-  modes: {
+  calloutFont: '#fff',
+  /*modes: {
     dark: {
       text: '#f1f1f1',
       background: '#3c3c3c',
@@ -16,5 +17,5 @@ export default {
       primary: '#f1f1f1',
       secondary: '#3c3c3c',
     },
-  },
+  },*/
 }
