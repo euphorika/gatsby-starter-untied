@@ -16,6 +16,8 @@ cache:
     - ~/.cache
 install:
   - yarn
+- run:
+  - npm ci
 before_script:
   - npm install -g gatsby-cli
 script:
