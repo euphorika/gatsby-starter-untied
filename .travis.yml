@@ -13,7 +13,7 @@ cache:
   yarn: true
   directories:
     # we also need to cache folder with Cypress binary
-    - ~/.cache
+    - /home/travis/.cache/Cypress
 install:
   - yarn
 before_script:
