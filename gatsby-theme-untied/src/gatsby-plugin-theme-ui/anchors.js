@@ -1,6 +1,6 @@
 export default {
   default: {
-    color: 'secondary',
+    color: 'primary',
     textDecoration: 'none',
     '&:hover': {
       textDecoration: 'underline',

@@ -8,7 +8,7 @@ import Logo from '../Logo/'
 export const PureHeader = ({ siteTitle, data }) => (
   <div
     sx={{
-      bg: 'primary',
+      bg: 'secondary',
     }}
   >
     <header

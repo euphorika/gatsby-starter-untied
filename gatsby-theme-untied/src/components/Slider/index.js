@@ -1,9 +1,10 @@
+/** @jsx jsx */
 import React from 'react'
 import Slide from './one-slide'
 import ArrowLeft from './arrow-left.js'
 import ArrowRight from './arrow-right.js'
 
-import styles from './styles.module.styl'
+import { jsx } from 'theme-ui'
 
 class Slider extends React.Component {
   constructor(props) {
@@ -36,17 +37,31 @@ class Slider extends React.Component {
 
   renderNavigation() {
     return (
-      <div className={styles.sliderArrows}>
+      <div
+        sx={{
+          position: 'absolute',
+          top: 'calc(50% - 10px)',
+          left: '0',
+          right: '0',
+          zIndex: '3',
+        }}
+      >
         <div
           role="button"
-          className={styles.arrowLeft}
+          sx={{
+            cursor: 'pointer',
+            width: '20px',
+          }}
           onClick={() => this.slideLeft()}
         >
           <ArrowLeft />
         </div>
         <div
           role="button"
-          className={styles.arrowRight}
+          sx={{
+            cursor: 'pointer',
+            width: '20px',
+          }}
           onClick={() => this.slideRight()}
         >
           <ArrowRight />
@@ -58,7 +73,9 @@ class Slider extends React.Component {
   renderSlides() {
     return (
       <div
-        className={styles.sliderItems}
+        sx={{
+          transition: 'margin-left 0.5s',
+        }}
         style={{
           width: `${this.state.images.length * this.state.width}%`,
           marginLeft: `-${this.state.width * this.state.slideIndex}%`,
@@ -74,8 +91,19 @@ class Slider extends React.Component {
 
   render() {
     return (
-      <div className={styles.slider}>
-        <div className={styles.innerContainer}>
+      <div
+        sx={{
+          width: '100%',
+          overflow: 'hidden',
+          position: 'relative',
+          marginBottom: '50px',
+        }}
+      >
+        <div
+          sx={{
+            marginBottom: '0',
+          }}
+        >
           {this.renderSlides()}
           {this.renderNavigation()}
         </div>

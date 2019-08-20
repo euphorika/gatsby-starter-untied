@@ -2,22 +2,22 @@
 
 exports[`Carousel renders correctly 1`] = `
 <div
-  className="Carousel"
+  className="css-zn3xal"
 >
   <div
-    className="carouselSlides"
+    className="css-e5ipd7"
   >
     <div
       className="carouselSlides"
     />
   </div>
-  <div
-    className="carouselDots"
-  >
+  <div>
     <ul
-      className="carouselIndicators"
+      className="css-4uo4xy"
     >
-      <li>
+      <li
+        className="css-xoxyht"
+      >
         <a
           className={null}
           href="#slide-0"

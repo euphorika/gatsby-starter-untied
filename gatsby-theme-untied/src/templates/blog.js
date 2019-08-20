@@ -1,8 +1,8 @@
-import React from 'react'
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import styles from './styles.module.styl'
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -11,12 +11,35 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-      <div className={styles.blogPostMainContainer}>
-        <div className={styles.blogPost}>
-          <h1 className={styles.blogPostTitle}>{frontmatter.title}</h1>
-          <h2 className={styles.blogPostDate}>{frontmatter.date}</h2>
+      <div
+        sx={{
+          p: 4,
+        }}
+      >
+        <div>
+          <h1
+            sx={{
+              fontSize: 3,
+              fontWeight: 'bold',
+              mb: 2,
+            }}
+          >
+            {frontmatter.title}
+          </h1>
+          <h2
+            sx={{
+              fontSize: 3,
+              fontWeight: 'body',
+              mb: 4,
+            }}
+          >
+            {frontmatter.date}
+          </h2>
           <div
-            className={styles.blogPostContent}
+            sx={{
+              fontSize: 0,
+              lineHeight: 'body',
+            }}
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>

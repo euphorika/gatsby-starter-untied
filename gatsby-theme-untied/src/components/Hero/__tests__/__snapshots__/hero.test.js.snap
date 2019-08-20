@@ -79,7 +79,7 @@ exports[`Hero renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="css-b2jhp8"
+    className="css-amhm6e"
   >
     <h2
       className="css-1lvwiam"
@@ -93,13 +93,14 @@ exports[`Hero renders correctly 1`] = `
     </p>
     <div>
       <button
-        className="css-2disl3"
+        className="css-0"
       >
         <Link
+          className="css-0"
           to="/"
         >
           <span
-            className="css-ehimi3"
+            className="css-drzs1b"
           >
             Text
           </span>

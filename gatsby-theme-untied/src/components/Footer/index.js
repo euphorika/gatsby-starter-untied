@@ -4,10 +4,15 @@ import { jsx } from 'theme-ui'
 const Footer = () => (
   <footer
     sx={{
+      display: ['block', 'inline-flex'],
+      justifyContent: 'space-between',
+      width: '100%',
       textAlign: 'center',
-      bg: 'primary',
-      p: '1.45rem 1.0875rem',
-      color: 'secondary',
+      borderTop: '1px solid',
+      borderColor: 'primary',
+      bg: 'secondary',
+      p: '1rem 1.95rem',
+      color: 'primary',
     }}
   >
     <div

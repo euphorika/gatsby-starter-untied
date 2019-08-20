@@ -2,45 +2,45 @@
 
 exports[`Post-Link renders correctly 1`] = `
 <div
-  className="postLinkMainContainer"
+  className="css-jn01mi"
 >
   <h2
-    className="postLinkTitle"
+    className="css-1e0e5in"
   >
     <Link
-      className="postLinkSlug"
+      className="css-1ycv66s"
       to="/slug"
     >
       title
     </Link>
   </h2>
   <h3
-    className="postLinkDate"
+    className="css-umd53x"
   >
     <Link
-      className="postLinkSlug"
+      className="css-sgt0ek"
       to="/slug"
     >
       November 05, 2018
     </Link>
   </h3>
   <p
-    className="postLinkExcerpt"
+    className="css-10y66la"
   >
     excerpt
   </p>
   <div
-    className="buttonContainer"
+    className="css-xi606m"
   >
     <button
-      className="button"
+      className="css-4cr8dp"
     >
       <Link
-        className="buttonSlug"
+        className="css-ytumd6"
         to="/slug"
       >
         <span
-          className="buttonText"
+          className="css-ehimi3"
         >
           Read more
         </span>
