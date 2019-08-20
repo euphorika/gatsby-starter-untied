@@ -1,31 +1,36 @@
+/** @jsx jsx */
 import React from 'react'
+import { jsx } from 'theme-ui'
 import PropTypes from 'prop-types'
 
 import FormMessage from './message'
 
-import styles from './radio.module.styl'
-
-const Radio = ({ value, checked, name, label, message = {}, options }) => {
+const Radio = ({ value, checked, name, label, message, options }) => {
   const radio = (
-    <>
+    <React.Fragment>
       <input
-        className={styles.element}
+        className="element"
         type="radio"
         value={value}
         name={name}
         checked={checked}
         {...options}
       />
-      <span className={styles.afterFormElement} />
-      <span className={styles.checkmark} />
-    </>
+      <span className="after-form-element" />
+      <span className="checkmark" />
+    </React.Fragment>
   )
 
   return (
-    <div className={styles.elementContainer}>
+    <div
+      sx={{
+        variant: 'forms.radio',
+      }}
+      className="element-container"
+    >
       <FormMessage type={message.type}>{message.text}</FormMessage>
-      <span className={styles.checkable}>
-        <label className={styles.label}>
+      <span className="checkable">
+        <label className="label">
           {radio}
           {label}
         </label>
@@ -34,7 +39,9 @@ const Radio = ({ value, checked, name, label, message = {}, options }) => {
   )
 }
 
-export default Radio
+Radio.defaultProps = {
+  message: {},
+}
 
 Radio.propTypes = {
   value: PropTypes.string.isRequired,
@@ -44,3 +51,5 @@ Radio.propTypes = {
   message: PropTypes.object,
   options: PropTypes.object,
 }
+
+export default Radio

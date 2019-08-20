@@ -1,28 +1,33 @@
+/** @jsx jsx */
 import React from 'react'
+import { jsx } from 'theme-ui'
 import PropTypes from 'prop-types'
 
 import FormMessage from './message'
 
-import styles from './select.module.styl'
-
-const Select = ({ children, name, label, message = {}, options }) => {
-  const requiredClass = options && options.required ? ` ${styles.required}` : ''
+const Select = ({ children, name, label, message, options }) => {
+  const requiredClass = options && options.required ? ` required` : ''
   const select = (
-    <>
-      <div className={`${styles.selectBox}${requiredClass}`}>
-        <select className={styles.element} name={name} {...options}>
+    <React.Fragment>
+      <div className={`select-box${requiredClass}`}>
+        <select className="element" name={name} {...options}>
           {children}
         </select>
-        <span className={styles.afterFormElement} />
+        <span className="after-form-element" />
       </div>
       <FormMessage type={message.type}>{message.text}</FormMessage>
-    </>
+    </React.Fragment>
   )
 
   if (label) {
     return (
-      <div className={styles.elementContainer}>
-        <label className={styles.label}>
+      <div
+        sx={{
+          variant: 'forms.select',
+        }}
+        className="element-container"
+      >
+        <label className="label">
           {label}
           {select}
         </label>
@@ -30,10 +35,21 @@ const Select = ({ children, name, label, message = {}, options }) => {
     )
   }
 
-  return <div className={styles.elementContainer}>{select}</div>
+  return (
+    <div
+      sx={{
+        variant: 'forms.select',
+      }}
+      className="element-container"
+    >
+      {select}
+    </div>
+  )
 }
 
-export default Select
+Select.defaultProps = {
+  message: {},
+}
 
 Select.propTypes = {
   children: PropTypes.node.isRequired,
@@ -42,3 +58,5 @@ Select.propTypes = {
   message: PropTypes.object,
   options: PropTypes.object,
 }
+
+export default Select

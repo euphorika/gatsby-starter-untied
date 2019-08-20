@@ -1,4 +1,12 @@
 import colors from './colors'
+import elements from './forms/element-variant'
+import inputs from './forms/input-variant'
+import textarea from './forms/textarea-variant'
+import select from './forms/select-variant'
+import checkbox from './forms/checkbox-variant'
+import radio from './forms/radio-variant'
+import button from './forms/button-variant'
+import message from './forms/message-variant'
 import anchors from './anchors'
 
 export default {
@@ -27,6 +35,16 @@ export default {
     caps: '0.2em',
   },
   radii: [4, 8, 16],
+  forms: {
+    elements,
+    inputs,
+    textarea,
+    select,
+    checkbox,
+    radio,
+    button,
+    message,
+  },
   buttons: {
     hero: {
       cursor: 'pointer',

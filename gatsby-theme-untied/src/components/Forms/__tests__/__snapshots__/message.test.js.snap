@@ -2,7 +2,7 @@
 
 exports[`Message renders error message correctly 1`] = `
 <div
-  className="formMessage error"
+  className="error css-0"
 >
   Error Message
 </div>
@@ -10,7 +10,7 @@ exports[`Message renders error message correctly 1`] = `
 
 exports[`Message renders info message correctly 1`] = `
 <div
-  className="formMessage info"
+  className="info css-0"
 >
   Error Message
 </div>
@@ -18,7 +18,7 @@ exports[`Message renders info message correctly 1`] = `
 
 exports[`Message renders warn message correctly 1`] = `
 <div
-  className="formMessage warn"
+  className="warn css-0"
 >
   Error Message
 </div>

@@ -2,7 +2,7 @@
 
 exports[`Radio renders correctly 1`] = `
 <div
-  className="elementContainer"
+  className="element-container css-0"
 >
   <span
     className="checkable"
@@ -17,7 +17,7 @@ exports[`Radio renders correctly 1`] = `
         value="Value"
       />
       <span
-        className="afterFormElement"
+        className="after-form-element"
       />
       <span
         className="checkmark"
@@ -29,7 +29,7 @@ exports[`Radio renders correctly 1`] = `
 
 exports[`Radio renders required correctly 1`] = `
 <div
-  className="elementContainer"
+  className="element-container css-0"
 >
   <span
     className="checkable"
@@ -45,7 +45,7 @@ exports[`Radio renders required correctly 1`] = `
         value="Value"
       />
       <span
-        className="afterFormElement"
+        className="after-form-element"
       />
       <span
         className="checkmark"
