@@ -1,8 +1,24 @@
 language: node_js
 node_js:
-  - "10"
-install: yarn
-cache: yarn
+  - 10
+addons:
+  apt:
+    packages:
+      # Ubuntu 16+ does not install this dependency by default, so we need to install it ourselves
+      - libgconf-2-4
+cache:
+  # Caches $HOME/.npm when npm ci is default script command
+  # Caches node_modules in all other cases
+  npm: true
+  yarn: true
+  directories:
+    # we also need to cache folder with Cypress binary
+    - ~/.cache
+install:
+  - npm ci
+  - yarn
 before_script:
   - npm install -g gatsby-cli
-script: yarn workspace gatsby-theme-untied test:e2e:ci
+script:
+  - $(npm bin)/cypress run --record
+  - yarn workspace gatsby-theme-untied test:e2e:ci
