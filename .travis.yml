@@ -13,9 +13,9 @@ cache:
   yarn: true
   directories:
     # we also need to cache folder with Cypress binary
-    - /home/travis/.cache/Cypress
+    - ~/.cache
 install:
-  - yarn
+  - yarn install
 before_script:
   - npm install -g gatsby-cli
 script:
