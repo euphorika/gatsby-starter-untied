@@ -7,6 +7,7 @@ import checkbox from './forms/checkbox-variant'
 import radio from './forms/radio-variant'
 import button from './forms/button-variant'
 import message from './forms/message-variant'
+import example from './forms/example-variant'
 import anchors from './anchors'
 
 export default {
@@ -44,6 +45,7 @@ export default {
     radio,
     button,
     message,
+    example,
   },
   buttons: {
     hero: {
