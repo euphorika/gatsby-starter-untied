@@ -1,4 +1,5 @@
-import React from 'react'
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 
 import Input from '../Forms/input'
 import Checkbox from '../Forms/checkbox'
@@ -7,17 +8,20 @@ import Select from '../Forms/select'
 import Button from '../Forms/button'
 import Textarea from '../Forms/textarea'
 
-import styles from './forms.module.styl'
-
 const Forms = () => {
   const startYear = 1900
   let endYear = new Date().getFullYear()
 
   return (
-    <section className={styles.formsSection}>
-      <div className={styles.exampleForm}>
-        <div className={styles.formWrapper}>
-          <div className={`${styles.gridItem} ${styles.firstCol}`}>
+    <section
+      sx={{
+        variant: 'forms.example',
+      }}
+      className="forms-section"
+    >
+      <div className="example-form">
+        <div className="form-wrapper">
+          <div className="grid-item first-col">
             <Input
               name="firstname"
               message={{
@@ -30,7 +34,7 @@ const Forms = () => {
               }}
             />
           </div>
-          <div className={`${styles.gridItem} ${styles.sndCol}`}>
+          <div className="grid-item snd-col">
             <Input
               name="lastname"
               value="Mustermann"
@@ -40,7 +44,7 @@ const Forms = () => {
               }}
             />
           </div>
-          <div className={`${styles.gridItem} ${styles.fullsize}`}>
+          <div className="grid-item fullsize">
             <Input
               type="email"
               name="email"
@@ -55,7 +59,7 @@ const Forms = () => {
               }}
             />
           </div>
-          <div className={`${styles.gridItem} ${styles.firstCol}`}>
+          <div className="grid-item first-col">
             <div role="group">
               <Radio
                 value="male"
@@ -77,7 +81,7 @@ const Forms = () => {
               />
             </div>
           </div>
-          <div className={`${styles.gridItem} ${styles.sndCol}`}>
+          <div className="grid-item snd-col">
             <Select
               name="select"
               message={{
@@ -97,13 +101,13 @@ const Forms = () => {
                 ))}
             </Select>
           </div>
-          <div className={`${styles.gridItem} ${styles.fullsize}`}>
+          <div className="grid-item fullsize">
             <Textarea
               name="message"
               options={{ required: true, placeholder: 'Message' }}
             />
           </div>
-          <div className={`${styles.gridItem} ${styles.fullsize}`}>
+          <div className="grid-item fullsize">
             <Checkbox
               value="accept"
               label="Accept Requirements"
@@ -111,7 +115,7 @@ const Forms = () => {
               options={{ required: true }}
             />
           </div>
-          <div className={`${styles.gridItem} ${styles.fullsize}`}>
+          <div className="grid-item fullsize">
             <Button type="submit" options={{ disabled: false }}>
               <span>Send</span>
             </Button>
