@@ -22,7 +22,7 @@ export default {
   checkmark: '#000',
   message: '#fff',
   calloutFont: '#fff',
-  modes: {
+  /*modes: {
     dark: {
       text: '#f1f1f1',
       background: '#3c3c3c',
@@ -30,5 +30,5 @@ export default {
       primary: '#f1f1f1',
       secondary: '#3c3c3c',
     },
-  },
+  },*/
 }

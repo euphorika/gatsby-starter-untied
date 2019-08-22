@@ -8,42 +8,39 @@ const TeamMember = ({ children, name, position, imgFixed }) => (
     sx={{
       float: ['none', 'left'],
       width: ['auto', '50%'],
+      mt: [4, 0],
       px: 2,
       py: 3,
     }}
   >
-    <div
-      sx={{
-        position: 'absolute',
-      }}
-    >
+    <div sx={{ display: 'flex' }}>
       <Img fixed={imgFixed} />
-    </div>
-    <div
-      sx={{
-        display: ['block', 'flex'],
-        flexDirection: 'column',
-        position: 'relative',
-        mt: 4,
-        ml: ['40%', '30%'],
-      }}
-    >
-      <h3
+      <div
         sx={{
-          fontSize: 3,
-          fontWeight: 'heading',
-          mb: 1,
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          pl: 2,
         }}
       >
-        {name}
-      </h3>
-      <p
-        sx={{
-          fontSize: 2,
-        }}
-      >
-        {position}
-      </p>
+        <h3
+          sx={{
+            fontSize: 3,
+            fontWeight: 'heading',
+            mb: 1,
+          }}
+        >
+          {name}
+        </h3>
+        <p
+          sx={{
+            fontSize: 2,
+            margin: 0,
+          }}
+        >
+          {position}
+        </p>
+      </div>
     </div>
     <div
       sx={{
