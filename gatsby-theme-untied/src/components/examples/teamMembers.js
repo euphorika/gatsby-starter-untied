@@ -1,8 +1,8 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
-import TeamMembers from '../TeamMembers/'
-import TeamMember from '../TeamMembers/team-member'
+import TeamMembers from "../TeamMembers/"
+import TeamMember from "../TeamMembers/team-member"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -55,7 +55,7 @@ export default () => {
       }
     }
   `)
-  const teamMemberImages = ['business', 'person', 'teacher', 'user']
+  const teamMemberImages = ["business", "person", "teacher", "user"]
 
   return (
     <div>

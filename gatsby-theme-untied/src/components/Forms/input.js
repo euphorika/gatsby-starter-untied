@@ -1,10 +1,10 @@
 /** @jsx jsx */
-import React from 'react'
-import { jsx } from 'theme-ui'
-import PropTypes from 'prop-types'
+import React from "react"
+import { jsx } from "theme-ui"
+import PropTypes from "prop-types"
 
-import FormMessage from './message'
-import Icon from './icon'
+import FormMessage from "./message"
+import Icon from "./icon"
 
 const Input = ({ value, name, type, label, message, options }) => {
   const renderIcon =
@@ -33,7 +33,7 @@ const Input = ({ value, name, type, label, message, options }) => {
     return (
       <div
         sx={{
-          variant: 'forms.inputs',
+          variant: "forms.inputs",
         }}
         className="element-container"
       >
@@ -48,7 +48,7 @@ const Input = ({ value, name, type, label, message, options }) => {
   return (
     <div
       sx={{
-        variant: 'forms.inputs',
+        variant: "forms.inputs",
       }}
       className="element-container"
     >
@@ -58,7 +58,7 @@ const Input = ({ value, name, type, label, message, options }) => {
 }
 
 Input.defaultProps = {
-  type: 'text',
+  type: "text",
   message: {},
 }
 

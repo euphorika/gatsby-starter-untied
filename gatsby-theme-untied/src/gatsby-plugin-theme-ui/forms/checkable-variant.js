@@ -1,69 +1,69 @@
-import merge from 'lodash/merge'
-import inputs from './input-variant'
+import merge from "lodash/merge"
+import inputs from "./input-variant"
 
 const dimensions = 20
 
 export default merge(
   {
-    display: 'inline-block',
-    '.label': {
-      position: 'relative',
-      '&:hover': {
-        '.element': {
-          '& ~ .checkmark': {
-            bg: 'mutedLight',
+    display: "inline-block",
+    ".label": {
+      position: "relative",
+      "&:hover": {
+        ".element": {
+          "& ~ .checkmark": {
+            bg: "mutedLight",
           },
         },
       },
-      '.element': {
-        position: 'absolute',
+      ".element": {
+        position: "absolute",
         opacity: 0,
-        cursor: 'pointer',
+        cursor: "pointer",
         height: 0,
         width: 0,
-        '&:checked': {
-          '& ~ .checkmark': {
-            bg: 'mutedLight',
-            '&::after': {
-              display: 'block',
+        "&:checked": {
+          "& ~ .checkmark": {
+            bg: "mutedLight",
+            "&::after": {
+              display: "block",
             },
           },
         },
-        '&:required': {
-          '& + .after-form-element': {
-            '&::before': {
+        "&:required": {
+          "& + .after-form-element": {
+            "&::before": {
               pl: `${dimensions + 6}px`,
             },
           },
         },
       },
-      '.checkmark': {
-        position: 'absolute',
+      ".checkmark": {
+        position: "absolute",
         top: 0,
         left: 0,
         height: `${dimensions}px`,
         width: `${dimensions}px`,
-        backgroundColor: 'checkableBackground',
-        border: 'solid 1px',
-        borderColor: 'checkmark',
-        '&::after': {
+        backgroundColor: "checkableBackground",
+        border: "solid 1px",
+        borderColor: "checkmark",
+        "&::after": {
           content: '""',
-          position: 'absolute',
-          display: 'none',
+          position: "absolute",
+          display: "none",
         },
       },
     },
   },
   inputs,
   {
-    '.label': {
+    ".label": {
       p: 0,
-      '.element': {
-        '&:required': {
-          '& + .after-form-element': {
-            '&::before': {
+      ".element": {
+        "&:required": {
+          "& + .after-form-element": {
+            "&::before": {
               marginTop: 0,
-              position: 'static',
+              position: "static",
             },
           },
         },

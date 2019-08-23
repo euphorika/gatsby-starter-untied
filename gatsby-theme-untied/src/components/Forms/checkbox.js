@@ -1,9 +1,9 @@
 /** @jsx jsx */
-import React from 'react'
-import { jsx } from 'theme-ui'
-import PropTypes from 'prop-types'
+import React from "react"
+import { jsx } from "theme-ui"
+import PropTypes from "prop-types"
 
-import FormMessage from './message'
+import FormMessage from "./message"
 
 const Checkbox = ({ value, checked, name, label, message, options }) => {
   const checkbox = (
@@ -24,7 +24,7 @@ const Checkbox = ({ value, checked, name, label, message, options }) => {
   return (
     <div
       sx={{
-        variant: 'forms.checkbox',
+        variant: "forms.checkbox",
       }}
       className="element-container"
     >

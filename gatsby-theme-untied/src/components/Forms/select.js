@@ -1,12 +1,12 @@
 /** @jsx jsx */
-import React from 'react'
-import { jsx } from 'theme-ui'
-import PropTypes from 'prop-types'
+import React from "react"
+import { jsx } from "theme-ui"
+import PropTypes from "prop-types"
 
-import FormMessage from './message'
+import FormMessage from "./message"
 
 const Select = ({ children, name, label, message, options }) => {
-  const requiredClass = options && options.required ? ` required` : ''
+  const requiredClass = options && options.required ? ` required` : ""
   const select = (
     <React.Fragment>
       <div className={`select-box${requiredClass}`}>
@@ -23,7 +23,7 @@ const Select = ({ children, name, label, message, options }) => {
     return (
       <div
         sx={{
-          variant: 'forms.select',
+          variant: "forms.select",
         }}
         className="element-container"
       >
@@ -38,7 +38,7 @@ const Select = ({ children, name, label, message, options }) => {
   return (
     <div
       sx={{
-        variant: 'forms.select',
+        variant: "forms.select",
       }}
       className="element-container"
     >

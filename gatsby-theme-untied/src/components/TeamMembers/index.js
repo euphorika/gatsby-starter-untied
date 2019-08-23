@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
-import PropTypes from 'prop-types'
+import { jsx } from "theme-ui"
+import PropTypes from "prop-types"
 
 const TeamMembers = ({ headline, children }) => {
   const headlineElement = headline ? <h2>{headline}</h2> : null

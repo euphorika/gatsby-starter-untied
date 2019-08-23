@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 
 const FormWarningIcon = ({ width, height }) => {
   const svgString =
@@ -7,7 +7,7 @@ const FormWarningIcon = ({ width, height }) => {
 
   return (
     <span
-      style={{ display: 'inline-block', width: width, height: height }}
+      style={{ display: "inline-block", width: width, height: height }}
       dangerouslySetInnerHTML={{ __html: svgString }}
     />
   )
@@ -19,8 +19,8 @@ FormWarningIcon.propTypes = {
 }
 
 FormWarningIcon.defaultProps = {
-  width: '100%',
-  height: 'auto',
+  width: "100%",
+  height: "auto",
 }
 
 export default FormWarningIcon

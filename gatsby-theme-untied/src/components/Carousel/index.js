@@ -1,9 +1,9 @@
 /** @jsx jsx */
-import React from 'react'
-import { jsx, Styled } from 'theme-ui'
-import PropTypes from 'prop-types'
+import React from "react"
+import { jsx, Styled } from "theme-ui"
+import PropTypes from "prop-types"
 
-import CarouselIndicator from './indicator.js'
+import CarouselIndicator from "./indicator.js"
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -27,22 +27,22 @@ class Carousel extends React.Component {
     return (
       <div
         sx={{
-          mx: 'auto',
-          width: ['90%', '100%'],
+          mx: "auto",
+          width: ["90%", "100%"],
         }}
       >
         <div
           sx={{
-            display: 'flex',
-            overflowX: 'auto',
-            scrollSnapType: 'x mandatory',
-            scrollBehavior: 'smooth',
-            scrollbarWidth: 'none',
-            '& > *': {
+            display: "flex",
+            overflowX: "auto",
+            scrollSnapType: "x mandatory",
+            scrollBehavior: "smooth",
+            scrollbarWidth: "none",
+            "& > *": {
               flexShrink: [0, 1],
             },
-            '::webkitScrollbar': {
-              display: 'none',
+            "::webkitScrollbar": {
+              display: "none",
             },
           }}
         >
@@ -51,8 +51,8 @@ class Carousel extends React.Component {
         <div>
           <Styled.ul
             sx={{
-              display: ['flex', 'none'],
-              justifyContent: 'center',
+              display: ["flex", "none"],
+              justifyContent: "center",
             }}
           >
             {this.state.slides.map((slide, index) => (

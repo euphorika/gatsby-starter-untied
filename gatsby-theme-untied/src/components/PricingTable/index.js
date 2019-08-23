@@ -1,9 +1,9 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
-import PropTypes from 'prop-types'
+import { jsx } from "theme-ui"
+import PropTypes from "prop-types"
 
-import { Link } from 'gatsby'
-import Img from 'gatsby-image'
+import { Link } from "gatsby"
+import Img from "gatsby-image"
 
 const PricingTable = ({
   id,
@@ -16,18 +16,18 @@ const PricingTable = ({
   <section
     id={id}
     sx={{
-      mx: ['auto', 3],
+      mx: ["auto", 3],
       py: 4,
-      width: '100%',
-      scrollSnapAlign: 'start',
+      width: "100%",
+      scrollSnapAlign: "start",
       fontSize: 0,
     }}
   >
     <div
       sx={{
         py: 4,
-        border: 'solid 1px',
-        borderColor: 'muted',
+        border: "solid 1px",
+        borderColor: "muted",
       }}
     >
       <h3
@@ -65,14 +65,14 @@ const PricingTable = ({
       >
         <Link
           sx={{
-            display: 'inline-block',
-            width: '100%',
-            textAlign: 'center',
-            color: 'btnText',
+            display: "inline-block",
+            width: "100%",
+            textAlign: "center",
+            color: "btnText",
             fontSize: 0,
-            fontWeight: 'bold',
-            bg: 'btnBg',
-            textDecoration: 'none',
+            fontWeight: "bold",
+            bg: "btnBg",
+            textDecoration: "none",
             borderRadius: 0,
             p: 2,
           }}

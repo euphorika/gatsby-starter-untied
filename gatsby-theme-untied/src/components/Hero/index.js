@@ -1,25 +1,25 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
-import PropTypes from 'prop-types'
+import { jsx } from "theme-ui"
+import PropTypes from "prop-types"
 
-import { Link } from 'gatsby'
-import Img from 'gatsby-image'
+import { Link } from "gatsby"
+import Img from "gatsby-image"
 
 const Hero = ({ children, headline, button, imgFluid }) => (
   <section
     sx={{
-      display: 'flex',
-      alignItems: 'center',
-      position: 'relative',
-      width: '100vw',
-      height: '100vh',
-      color: 'secondary',
+      display: "flex",
+      alignItems: "center",
+      position: "relative",
+      width: "100vw",
+      height: "100vh",
+      color: "secondary",
       p: [3, 4],
     }}
   >
     <div
       sx={{
-        position: 'absolute',
+        position: "absolute",
         top: 0,
         right: 0,
         bottom: 0,
@@ -28,16 +28,16 @@ const Hero = ({ children, headline, button, imgFluid }) => (
     >
       <Img
         fluid={imgFluid}
-        style={{ height: '100%' }}
-        imgStyle={{ objectFit: 'cover' }}
+        style={{ height: "100%" }}
+        imgStyle={{ objectFit: "cover" }}
       />
     </div>
     <div
       sx={{
-        position: 'relative',
-        maxWidth: '400px',
-        zIndex: '10',
-        color: 'text',
+        position: "relative",
+        maxWidth: "400px",
+        zIndex: "10",
+        color: "text",
       }}
     >
       <h2
@@ -58,18 +58,18 @@ const Hero = ({ children, headline, button, imgFluid }) => (
       <div>
         <button
           sx={{
-            variant: 'buttons.hero',
+            variant: "buttons.hero",
           }}
         >
           <Link
             to={button.link}
             sx={{
-              variant: 'anchors.hero',
+              variant: "anchors.hero",
             }}
           >
             <span
               sx={{
-                color: 'btnText',
+                color: "btnText",
               }}
             >
               {button.text}

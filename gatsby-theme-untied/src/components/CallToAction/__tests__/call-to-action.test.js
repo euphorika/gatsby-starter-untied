@@ -1,12 +1,12 @@
-import React from 'react'
-import renderer from 'react-test-renderer'
-import CallToAction from '../'
+import React from "react"
+import renderer from "react-test-renderer"
+import CallToAction from "../"
 
-describe('CallToAction', () => {
-  it('renders correctly', () => {
+describe("CallToAction", () => {
+  it("renders correctly", () => {
     const button = {
-      text: 'Text',
-      link: '/',
+      text: "Text",
+      link: "/",
     }
 
     const callToAction = <CallToAction button={button} />

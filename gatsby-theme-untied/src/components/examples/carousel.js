@@ -1,9 +1,9 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
-import { useStaticQuery, graphql } from 'gatsby'
+import { jsx } from "theme-ui"
+import { useStaticQuery, graphql } from "gatsby"
 
-import Carousel from '../Carousel/'
-import PricingTable from '../PricingTable/'
+import Carousel from "../Carousel/"
+import PricingTable from "../PricingTable/"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -59,14 +59,14 @@ export default () => {
   return (
     <div
       css={{
-        maxWidth: '1200px',
-        margin: 'auto',
+        maxWidth: "1200px",
+        margin: "auto",
       }}
     >
       <Carousel>
         {data.site.siteMetadata.components.pricingTable.map((value, key) => {
           const formattedPrice = new Intl.NumberFormat(locales, {
-            style: 'currency',
+            style: "currency",
             currency: value.currency,
           }).format(value.price)
 

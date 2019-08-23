@@ -6,6 +6,7 @@
   ],
   "scripts": {
     "predeploy": "yarn workspace gatsby-theme-untied test",
-    "deploy": "yarn workspace site build"
+    "deploy": "yarn workspace site build",
+    "format": "yarn workspace gatsby-theme-untied format && yarn workspace site format"
   }
 }

@@ -1,9 +1,9 @@
-import React from 'react'
-import renderer from 'react-test-renderer'
-import Select from '../select'
+import React from "react"
+import renderer from "react-test-renderer"
+import Select from "../select"
 
-describe('Select', () => {
-  it('renders correctly', () => {
+describe("Select", () => {
+  it("renders correctly", () => {
     const select = (
       <Select name="Select">
         <option value="" />
@@ -14,7 +14,7 @@ describe('Select', () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders required correctly', () => {
+  it("renders required correctly", () => {
     const select = (
       <Select name="Select" options={{ required: true }}>
         <option value="" />

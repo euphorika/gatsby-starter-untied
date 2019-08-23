@@ -1,12 +1,12 @@
 /** @jsx jsx */
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
-import { jsx } from 'theme-ui'
+import PropTypes from "prop-types"
+import { Link } from "gatsby"
+import { jsx } from "theme-ui"
 
 const PostLink = ({ post, button }) => (
   <div
     sx={{
-      mt: '50px',
+      mt: "50px",
     }}
   >
     <h2
@@ -18,8 +18,8 @@ const PostLink = ({ post, button }) => (
       <Link
         to={post.fields.slug}
         sx={{
-          color: 'primary',
-          fontWeight: 'bold',
+          color: "primary",
+          fontWeight: "bold",
         }}
       >
         {post.frontmatter.title}
@@ -34,8 +34,8 @@ const PostLink = ({ post, button }) => (
       <Link
         to={post.fields.slug}
         sx={{
-          color: 'primary',
-          fontWeight: 'body',
+          color: "primary",
+          fontWeight: "body",
         }}
       >
         {post.frontmatter.date}
@@ -44,23 +44,23 @@ const PostLink = ({ post, button }) => (
     <p
       sx={{
         fontSize: 0,
-        lineHeight: 'body',
+        lineHeight: "body",
       }}
     >
       {post.excerpt}
     </p>
     <div
       sx={{
-        textAlign: 'center',
+        textAlign: "center",
       }}
     >
       <button
         sx={{
-          bg: 'primary',
-          width: ['100%', '23%'],
-          maxWidth: '100%',
-          border: '0',
-          display: 'inline-block',
+          bg: "primary",
+          width: ["100%", "23%"],
+          maxWidth: "100%",
+          border: "0",
+          display: "inline-block",
           borderRadius: 0,
           fontSize: 0,
           p: 3,
@@ -69,12 +69,12 @@ const PostLink = ({ post, button }) => (
         <Link
           to={post.fields.slug}
           sx={{
-            textDecoration: 'none',
+            textDecoration: "none",
           }}
         >
           <span
             sx={{
-              color: 'secondary',
+              color: "secondary",
             }}
           >
             Read more

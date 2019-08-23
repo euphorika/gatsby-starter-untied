@@ -1,44 +1,44 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
+import { jsx } from "theme-ui"
+import PropTypes from "prop-types"
+import { Link } from "gatsby"
 
 const Callout = ({ message, button }) => (
   <section
     sx={{
-      textAlign: 'center',
+      textAlign: "center",
       p: 4,
       mx: 4,
       my: 5,
-      bg: 'accent',
+      bg: "accent",
       borderRadius: 1,
     }}
   >
     <h2
       sx={{
         fontSize: 3,
-        color: '#fff',
-        lineHeight: '1.2em',
+        color: "#fff",
+        lineHeight: "1.2em",
         mb: 1,
         p: 0,
       }}
     >
-      {' '}
-      {message}{' '}
+      {" "}
+      {message}{" "}
     </h2>
     <button
       sx={{
-        bg: 'accent',
+        bg: "accent",
         fontSize: 3,
-        border: 'none',
+        border: "none",
       }}
     >
       <Link
         sx={{
-          variant: 'anchors.callout',
-          fontWeight: 'bold',
-          textDecoration: 'underline',
-          color: '#fff',
+          variant: "anchors.callout",
+          fontWeight: "bold",
+          textDecoration: "underline",
+          color: "#fff",
         }}
         to={button.link}
       >

@@ -1,9 +1,9 @@
 /** @jsx jsx */
-import React from 'react'
-import { jsx } from 'theme-ui'
-import PropTypes from 'prop-types'
+import React from "react"
+import { jsx } from "theme-ui"
+import PropTypes from "prop-types"
 
-import imgSrc from './video-play-icon.svg'
+import imgSrc from "./video-play-icon.svg"
 
 class Video extends React.Component {
   constructor(props) {
@@ -40,8 +40,8 @@ class Video extends React.Component {
     return (
       <section
         sx={{
-          position: 'relative',
-          textAlign: 'center',
+          position: "relative",
+          textAlign: "center",
         }}
       >
         <div>
@@ -49,13 +49,13 @@ class Video extends React.Component {
             <div>
               <img
                 sx={{
-                  position: 'absolute',
-                  top: '50%',
-                  left: '50%',
-                  width: ['50px', '100px'],
-                  height: ['50px', '100px'],
-                  ml: ['-25px', '-50px'],
-                  mt: ['-25px', '-50px'],
+                  position: "absolute",
+                  top: "50%",
+                  left: "50%",
+                  width: ["50px", "100px"],
+                  height: ["50px", "100px"],
+                  ml: ["-25px", "-50px"],
+                  mt: ["-25px", "-50px"],
                 }}
                 src={imgSrc}
                 alt="Play Video"
@@ -69,8 +69,8 @@ class Video extends React.Component {
             onPause={() => this.handleOverlay()}
             ref="vidRef"
             sx={{
-              width: '100%',
-              height: 'auto',
+              width: "100%",
+              height: "auto",
             }}
             poster={poster}
             preload={preload}
@@ -91,7 +91,7 @@ class Video extends React.Component {
 }
 
 Video.defaultProps = {
-  preload: 'auto',
+  preload: "auto",
   playsInline: true,
   muted: true,
   loop: false,
@@ -101,7 +101,7 @@ Video.defaultProps = {
 
 Video.propTypes = {
   poster: PropTypes.string,
-  preload: PropTypes.oneOf(['none', 'preload', 'auto']),
+  preload: PropTypes.oneOf(["none", "preload", "auto"]),
   playsInline: PropTypes.bool,
   autoPlay: PropTypes.bool,
   muted: PropTypes.bool,

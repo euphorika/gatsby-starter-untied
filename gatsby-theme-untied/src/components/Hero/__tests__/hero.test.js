@@ -1,20 +1,20 @@
-import React from 'react'
-import renderer from 'react-test-renderer'
-import Hero from '../'
+import React from "react"
+import renderer from "react-test-renderer"
+import Hero from "../"
 
-describe('Hero', () => {
-  it('renders correctly', () => {
+describe("Hero", () => {
+  it("renders correctly", () => {
     const imgFluid = {
       aspectRatio: 1.0,
-      base64: 'String',
-      sizes: '(max-width: 4928px) 100vw, 4928px',
-      src: 'image.jpg',
-      srcSet: 'srcSet.image.jpg',
+      base64: "String",
+      sizes: "(max-width: 4928px) 100vw, 4928px",
+      src: "image.jpg",
+      srcSet: "srcSet.image.jpg",
     }
 
     const button = {
-      text: 'Text',
-      link: '/',
+      text: "Text",
+      link: "/",
     }
 
     const hero = (

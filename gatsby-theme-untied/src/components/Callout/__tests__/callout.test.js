@@ -1,12 +1,12 @@
-import React from 'react'
-import renderer from 'react-test-renderer'
-import Callout from '../'
+import React from "react"
+import renderer from "react-test-renderer"
+import Callout from "../"
 
-describe('Callout', () => {
-  it('renders correctly', () => {
+describe("Callout", () => {
+  it("renders correctly", () => {
     const button = {
-      text: 'Text',
-      link: '/',
+      text: "Text",
+      link: "/",
     }
 
     const callout = <Callout message="Message" button={button} />

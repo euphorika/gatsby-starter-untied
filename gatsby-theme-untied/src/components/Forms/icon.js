@@ -1,24 +1,24 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 
-import InfoIcon from './icons/info'
-import WarningIcon from './icons/warning'
-import ErrorIcon from './icons/error'
+import InfoIcon from "./icons/info"
+import WarningIcon from "./icons/warning"
+import ErrorIcon from "./icons/error"
 
 const FormIcon = ({ type }) => {
   switch (type) {
-    case 'error':
+    case "error":
       return <ErrorIcon />
-    case 'warn':
+    case "warn":
       return <WarningIcon />
-    case 'info':
+    case "info":
     default:
       return <InfoIcon />
   }
 }
 
 FormIcon.propTypes = {
-  type: PropTypes.oneOf(['info', 'warn', 'error']).isRequired,
+  type: PropTypes.oneOf(["info", "warn", "error"]).isRequired,
 }
 
 export default FormIcon

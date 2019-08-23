@@ -1,9 +1,9 @@
 /** @jsx jsx */
-import React from 'react'
-import { jsx } from 'theme-ui'
-import PropTypes from 'prop-types'
+import React from "react"
+import { jsx } from "theme-ui"
+import PropTypes from "prop-types"
 
-import FormMessage from './message'
+import FormMessage from "./message"
 
 const Textarea = ({ children, name, label, message = {}, options }) => {
   const textarea = (
@@ -17,7 +17,7 @@ const Textarea = ({ children, name, label, message = {}, options }) => {
     return (
       <div
         sx={{
-          variant: 'forms.textarea',
+          variant: "forms.textarea",
         }}
         className="element-container"
       >
@@ -33,7 +33,7 @@ const Textarea = ({ children, name, label, message = {}, options }) => {
   return (
     <div
       sx={{
-        variant: 'forms.textarea',
+        variant: "forms.textarea",
       }}
       className="element-container"
     >

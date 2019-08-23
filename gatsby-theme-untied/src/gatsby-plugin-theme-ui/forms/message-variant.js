@@ -1,42 +1,42 @@
 export default {
-  position: ['static', 'absolute'],
+  position: ["static", "absolute"],
   padding: 2,
   borderRadius: 0,
-  color: 'message',
+  color: "message",
   mt: 2,
-  textAlign: 'center',
+  textAlign: "center",
   fontSize: 0,
   zIndex: 20,
-  top: '-40px',
-  right: '15px',
-  '&::after': {
+  top: "-40px",
+  right: "15px",
+  "&::after": {
     content: '""',
-    display: ['none', 'block'],
-    position: 'absolute',
-    top: '100%',
-    right: '12px',
+    display: ["none", "block"],
+    position: "absolute",
+    top: "100%",
+    right: "12px",
     width: 0,
     height: 0,
-    borderLeft: '5px solid transparent',
-    borderRight: '5px solid transparent',
-    borderTop: '5px solid #fff',
+    borderLeft: "5px solid transparent",
+    borderRight: "5px solid transparent",
+    borderTop: "5px solid #fff",
   },
-  '&.info': {
-    bg: 'info',
-    '&::after': {
-      borderTopColor: 'info',
+  "&.info": {
+    bg: "info",
+    "&::after": {
+      borderTopColor: "info",
     },
   },
-  '&.warn': {
-    bg: 'warning',
-    '&::after': {
-      borderTopColor: 'warning',
+  "&.warn": {
+    bg: "warning",
+    "&::after": {
+      borderTopColor: "warning",
     },
   },
-  '&.error': {
-    bg: 'alert',
-    '&::after': {
-      borderTopColor: 'alert',
+  "&.error": {
+    bg: "alert",
+    "&::after": {
+      borderTopColor: "alert",
     },
   },
 }

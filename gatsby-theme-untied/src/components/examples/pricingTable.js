@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
-import { useStaticQuery, graphql } from 'gatsby'
+import { jsx } from "theme-ui"
+import { useStaticQuery, graphql } from "gatsby"
 
-import PricingTable from '../PricingTable/'
+import PricingTable from "../PricingTable/"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -58,13 +58,13 @@ export default () => {
   return (
     <div
       sx={{
-        display: ['block', 'flex'],
-        justifyContent: 'center',
+        display: ["block", "flex"],
+        justifyContent: "center",
       }}
     >
       {data.site.siteMetadata.components.pricingTable.map((value, key) => {
         const formattedPrice = new Intl.NumberFormat(locales, {
-          style: 'currency',
+          style: "currency",
           currency: value.currency,
         }).format(value.price)
 

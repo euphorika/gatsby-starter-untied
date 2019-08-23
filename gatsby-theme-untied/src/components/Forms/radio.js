@@ -1,9 +1,9 @@
 /** @jsx jsx */
-import React from 'react'
-import { jsx } from 'theme-ui'
-import PropTypes from 'prop-types'
+import React from "react"
+import { jsx } from "theme-ui"
+import PropTypes from "prop-types"
 
-import FormMessage from './message'
+import FormMessage from "./message"
 
 const Radio = ({ value, checked, name, label, message, options }) => {
   const radio = (
@@ -24,7 +24,7 @@ const Radio = ({ value, checked, name, label, message, options }) => {
   return (
     <div
       sx={{
-        variant: 'forms.radio',
+        variant: "forms.radio",
       }}
       className="element-container"
     >
