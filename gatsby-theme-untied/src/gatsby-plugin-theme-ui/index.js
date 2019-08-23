@@ -84,9 +84,11 @@ export default {
     a: anchors.default,
     ul: {
       listStyleType: 'none',
+      ml: 0,
     },
     ol: {
       listStyleType: 'none',
+      ml: 0,
     },
   },
 }

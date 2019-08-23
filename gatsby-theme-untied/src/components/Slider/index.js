@@ -1,10 +1,11 @@
 /** @jsx jsx */
 import React from 'react'
+import { jsx } from 'theme-ui'
+import PropTypes from 'prop-types'
+
 import Slide from './one-slide'
 import ArrowLeft from './arrow-left.js'
 import ArrowRight from './arrow-right.js'
-
-import { jsx } from 'theme-ui'
 
 class Slider extends React.Component {
   constructor(props) {
@@ -96,7 +97,6 @@ class Slider extends React.Component {
           width: '100%',
           overflow: 'hidden',
           position: 'relative',
-          marginBottom: '50px',
         }}
       >
         <div
@@ -110,6 +110,10 @@ class Slider extends React.Component {
       </div>
     )
   }
+}
+
+Slider.propTypes = {
+  images: PropTypes.array,
 }
 
 export default Slider

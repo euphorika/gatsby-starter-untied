@@ -1,10 +1,9 @@
 /** @jsx jsx */
+import { jsx } from 'theme-ui'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Carousel from '../Carousel/'
 import PricingTable from '../PricingTable/'
-
-import { jsx } from 'theme-ui'
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -59,12 +58,9 @@ export default () => {
 
   return (
     <div
-      sx={{
-        pl: '10%',
-        pr: '8%',
-        mr: '6px',
-        display: 'flex',
-        justifyContent: 'center',
+      css={{
+        maxWidth: '1200px',
+        margin: 'auto',
       }}
     >
       <Carousel>

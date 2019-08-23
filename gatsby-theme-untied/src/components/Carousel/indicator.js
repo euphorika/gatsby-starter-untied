@@ -1,41 +1,34 @@
 /** @jsx jsx */
-import React from 'react'
-import DotKontorIcon from './dot-kontur-icon.js'
-
 import { jsx } from 'theme-ui'
+import PropTypes from 'prop-types'
 
-class CarouselIndicator extends React.Component {
-  render() {
-    return (
-      <li
-        sx={{
-          width: '20px',
-          height: '18px',
-          borderRadius: '50%',
-          mr: '5px',
-          textAlign: 'center',
+const CarouselIndicator = ({ anchor, active, onClick }) => (
+  <li
+    sx={{
+      width: '15px',
+      height: '15px',
+      borderRadius: '50%',
+      border: 'solid 1px',
+      borderColor: 'primary',
+      mx: 1,
+      bg: active ? 'primary' : 'none',
+    }}
+    onClick={onClick}
+  >
+    <a sx={{ textDecoration: 'none' }} href={anchor}>
+      &nbsp;
+    </a>
+  </li>
+)
 
-          '&:hover': {
-            bg: 'primary',
-          },
-        }}
-      >
-        <a
-          href={this.props.href}
-          className={
-            this.props.index === this.props.activeIndex
-              ? 'carousel-indicator carousel-indicator--active'
-              : null
-          }
-        >
-          <DotKontorIcon
-            sx={{
-              fill: 'primary',
-            }}
-          />
-        </a>
-      </li>
-    )
-  }
+CarouselIndicator.defaultProps = {
+  active: false,
 }
+
+CarouselIndicator.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  anchor: PropTypes.string.isRequired,
+  active: PropTypes.bool,
+}
+
 export default CarouselIndicator

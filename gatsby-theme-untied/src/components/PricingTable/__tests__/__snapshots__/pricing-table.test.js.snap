@@ -2,102 +2,106 @@
 
 exports[`PricingTable renders correctly 1`] = `
 <section
-  className="css-1xot7x9"
+  className="css-1n7py6i"
   id={null}
 >
-  <h3
-    className="css-1c7lsgz"
-  >
-    headline
-  </h3>
-  <p
-    className="css-p2ms0v"
-  >
-    1.22
-  </p>
   <div
-    className=" gatsby-image-wrapper"
-    style={
-      Object {
-        "overflow": "hidden",
-        "position": "relative",
-      }
-    }
+    className="css-1gwydv7"
   >
+    <h3
+      className="css-15mnsi5"
+    >
+      headline
+    </h3>
+    <p
+      className="css-12l35fi"
+    >
+      1.22
+    </p>
     <div
+      className=" gatsby-image-wrapper"
       style={
         Object {
-          "paddingBottom": "100%",
-          "width": "100%",
+          "overflow": "hidden",
+          "position": "relative",
         }
       }
-    />
-    <img
-      alt=""
-      src="String"
-      style={
-        Object {
-          "height": "100%",
-          "left": 0,
-          "objectFit": "cover",
-          "objectPosition": "center",
-          "opacity": 1,
-          "position": "absolute",
-          "top": 0,
-          "transitionDelay": "500ms",
-          "width": "100%",
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": "100%",
+            "width": "100%",
+          }
         }
-      }
-    />
-    <picture>
-      <source
-        sizes="(max-width: 4928px) 100vw, 4928px"
-        srcSet="srcSet.image.jpg"
       />
       <img
-        alt="headline"
-        loading="lazy"
-        onLoad={[Function]}
-        sizes="(max-width: 4928px) 100vw, 4928px"
-        src="image.jpg"
-        srcSet="srcSet.image.jpg"
+        alt=""
+        src="String"
         style={
           Object {
             "height": "100%",
             "left": 0,
             "objectFit": "cover",
             "objectPosition": "center",
-            "opacity": 0,
+            "opacity": 1,
             "position": "absolute",
             "top": 0,
-            "transition": "opacity 500ms",
+            "transitionDelay": "500ms",
             "width": "100%",
           }
         }
       />
-    </picture>
-    <noscript
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "<picture><source srcset=\\"srcSet.image.jpg\\" sizes=\\"(max-width: 4928px) 100vw, 4928px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 4928px) 100vw, 4928px\\" srcset=\\"srcSet.image.jpg\\" src=\\"image.jpg\\" alt=\\"headline\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+      <picture>
+        <source
+          sizes="(max-width: 4928px) 100vw, 4928px"
+          srcSet="srcSet.image.jpg"
+        />
+        <img
+          alt="headline"
+          loading="lazy"
+          onLoad={[Function]}
+          sizes="(max-width: 4928px) 100vw, 4928px"
+          src="image.jpg"
+          srcSet="srcSet.image.jpg"
+          style={
+            Object {
+              "height": "100%",
+              "left": 0,
+              "objectFit": "cover",
+              "objectPosition": "center",
+              "opacity": 0,
+              "position": "absolute",
+              "top": 0,
+              "transition": "opacity 500ms",
+              "width": "100%",
+            }
+          }
+        />
+      </picture>
+      <noscript
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<picture><source srcset=\\"srcSet.image.jpg\\" sizes=\\"(max-width: 4928px) 100vw, 4928px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 4928px) 100vw, 4928px\\" srcset=\\"srcSet.image.jpg\\" src=\\"image.jpg\\" alt=\\"headline\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+          }
         }
-      }
-    />
-  </div>
-  <div
-    className="css-ugt4zp"
-  >
-    Description
-  </div>
-  <div
-    className="css-ly1rn4"
-  >
-    <Link
-      className="css-1obveo8"
-      to="/"
+      />
+    </div>
+    <div
+      className="css-tgll2l"
     >
-      Text
-    </Link>
+      Description
+    </div>
+    <div
+      className="css-tgll2l"
+    >
+      <Link
+        className="css-1obveo8"
+        to="/"
+      >
+        Text
+      </Link>
+    </div>
   </div>
 </section>
 `;

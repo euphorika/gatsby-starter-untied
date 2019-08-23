@@ -5,10 +5,10 @@ exports[`TeamMember renders correctly 1`] = `
   className="css-1wcaknn"
 >
   <div
-    className="css-1vbds22"
+    className="css-37a2v3"
   >
     <div
-      className="css-12efcmn"
+      className="css-k008qs"
     >
       <div
         className=" gatsby-image-wrapper"
@@ -74,20 +74,20 @@ exports[`TeamMember renders correctly 1`] = `
           }
         />
       </div>
-    </div>
-    <div
-      className="css-1b7z776"
-    >
-      <h3
-        className="css-xv8jf7"
+      <div
+        className="css-15qf3hu"
       >
-        Name
-      </h3>
-      <p
-        className="css-6xix1i"
-      >
-        position
-      </p>
+        <h3
+          className="css-xv8jf7"
+        >
+          Name
+        </h3>
+        <p
+          className="css-17tubym"
+        >
+          position
+        </p>
+      </div>
     </div>
     <div
       className="css-10dnwl4"
