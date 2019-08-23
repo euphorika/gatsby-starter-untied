@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
-import { graphql } from 'gatsby'
+import { jsx } from "theme-ui"
+import { graphql } from "gatsby"
 
-import Layout from '../components/layout'
+import Layout from "../components/layout"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -20,7 +20,7 @@ export default function Template({
           <h1
             sx={{
               fontSize: 3,
-              fontWeight: 'bold',
+              fontWeight: "bold",
               mb: 2,
             }}
           >
@@ -29,7 +29,7 @@ export default function Template({
           <h2
             sx={{
               fontSize: 3,
-              fontWeight: 'body',
+              fontWeight: "body",
               mb: 4,
             }}
           >
@@ -38,7 +38,7 @@ export default function Template({
           <div
             sx={{
               fontSize: 0,
-              lineHeight: 'body',
+              lineHeight: "body",
             }}
             dangerouslySetInnerHTML={{ __html: html }}
           />

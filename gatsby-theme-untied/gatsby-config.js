@@ -1,126 +1,126 @@
-const path = require('path')
+const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Theme Untied',
-    locales: 'de-DE',
+    title: "Gatsby Theme Untied",
+    locales: "de-DE",
     components: {
       callToAction: [
         {
           button: {
-            text: 'Get Started',
-            link: '/',
+            text: "Get Started",
+            link: "/",
           },
         },
       ],
       callout: [
         {
-          message: 'Hey! Pay attention to this very important message.',
+          message: "Hey! Pay attention to this very important message.",
           button: {
-            text: 'Click Here',
-            link: '/',
+            text: "Click Here",
+            link: "/",
           },
         },
       ],
       hero: [
         {
-          headline: 'Hero Block',
+          headline: "Hero Block",
           body:
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
           button: {
-            text: 'Click Here',
-            link: '/',
+            text: "Click Here",
+            link: "/",
           },
         },
       ],
       testimonials: [
         {
-          name: 'Sarah Author',
-          img: 'sarah.png',
+          name: "Sarah Author",
+          img: "sarah.png",
           body:
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
         },
       ],
       team: {
-        headline: 'Our Team',
+        headline: "Our Team",
         teamMembers: [
           {
-            name: 'Hans Hinrich',
-            position: 'CEO',
+            name: "Hans Hinrich",
+            position: "CEO",
             body:
-              'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
           },
           {
-            name: 'Ulf Knulf',
-            position: 'Person',
+            name: "Ulf Knulf",
+            position: "Person",
             body:
-              'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
           },
           {
-            name: 'Karla Marla',
-            position: 'Teacher',
+            name: "Karla Marla",
+            position: "Teacher",
             body:
-              'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
           },
           {
-            name: 'Esta Bester',
-            position: 'User',
+            name: "Esta Bester",
+            position: "User",
             body:
-              'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
           },
         ],
       },
       pricingTable: [
         {
-          headline: 'Product 1',
+          headline: "Product 1",
           price: 12.99,
-          currency: 'EUR',
-          img: 'product-1.jpg',
+          currency: "EUR",
+          img: "product-1.jpg",
           callToAction: {
-            text: 'Buy',
-            link: '/components/',
+            text: "Buy",
+            link: "/components/",
           },
           body:
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
         },
         {
-          headline: 'Product 2',
+          headline: "Product 2",
           price: 13.99,
-          currency: 'EUR',
-          img: 'product-2.jpg',
+          currency: "EUR",
+          img: "product-2.jpg",
           callToAction: {
-            text: 'Buy',
-            link: '/components/',
+            text: "Buy",
+            link: "/components/",
           },
           body:
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
         },
         {
-          headline: 'Product 3',
+          headline: "Product 3",
           price: 14.99,
-          currency: 'EUR',
-          img: 'product-3.jpg',
+          currency: "EUR",
+          img: "product-3.jpg",
           callToAction: {
-            text: 'Buy',
-            link: '/components/',
+            text: "Buy",
+            link: "/components/",
           },
           body:
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
         },
       ],
       video: [
         {
-          poster: '/videos/big_buck_bunny.jpg',
+          poster: "/videos/big_buck_bunny.jpg",
           source: [
             {
               id: 0,
-              src: '/videos/sample-video-1.mp4',
-              type: 'video/mp4',
+              src: "/videos/sample-video-1.mp4",
+              type: "video/mp4",
             },
             {
               id: 1,
-              src: '/videos/sample-video-1.webm',
-              type: 'videos/webm',
+              src: "/videos/sample-video-1.webm",
+              type: "videos/webm",
             },
           ],
         },
@@ -128,27 +128,27 @@ module.exports = {
     },
   },
   plugins: [
-    'gatsby-plugin-theme-ui',
-    'gatsby-transformer-yaml',
+    "gatsby-plugin-theme-ui",
+    "gatsby-transformer-yaml",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/images`,
-        name: 'images',
+        name: "images",
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/navigation`,
-        name: 'navigation',
+        name: "navigation",
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages',
+        name: "pages",
       },
     },
     {
@@ -158,7 +158,7 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
           {
@@ -170,17 +170,17 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-untied',
-        short_name: 'starter',
-        start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: path.resolve(__dirname, 'src/images/gatsby-icon.png'),
+        name: "gatsby-starter-untied",
+        short_name: "starter",
+        start_url: "/",
+        background_color: "#663399",
+        theme_color: "#663399",
+        display: "minimal-ui",
+        icon: path.resolve(__dirname, "src/images/gatsby-icon.png"),
       },
     },
     {
@@ -191,6 +191,6 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    'gatsby-plugin-offline',
+    "gatsby-plugin-offline",
   ],
 }

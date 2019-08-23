@@ -1,6 +1,6 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import Slider from '../Slider/'
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Slider from "../Slider/"
 
 export default () => {
   const data = useStaticQuery(graphql`

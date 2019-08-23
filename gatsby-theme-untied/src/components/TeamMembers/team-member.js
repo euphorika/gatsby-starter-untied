@@ -1,32 +1,32 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
-import PropTypes from 'prop-types'
-import Img from 'gatsby-image'
+import { jsx } from "theme-ui"
+import PropTypes from "prop-types"
+import Img from "gatsby-image"
 
 const TeamMember = ({ children, name, position, imgFixed }) => (
   <div
     sx={{
-      float: ['none', 'left'],
-      width: ['auto', '50%'],
+      float: ["none", "left"],
+      width: ["auto", "50%"],
       mt: [4, 0],
       px: 2,
       py: 3,
     }}
   >
-    <div sx={{ display: 'flex' }}>
+    <div sx={{ display: "flex" }}>
       <Img fixed={imgFixed} />
       <div
         sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
           pl: 2,
         }}
       >
         <h3
           sx={{
             fontSize: 3,
-            fontWeight: 'heading',
+            fontWeight: "heading",
             mb: 1,
           }}
         >
@@ -45,7 +45,7 @@ const TeamMember = ({ children, name, position, imgFixed }) => (
     <div
       sx={{
         fontSize: 1,
-        lineHeight: '26px',
+        lineHeight: "26px",
         mt: 3,
         mr: [0, 2],
       }}

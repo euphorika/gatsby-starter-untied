@@ -1,10 +1,10 @@
 /** @jsx jsx */
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 
-import PostLink from '../components/post-link'
-import Layout from '../components/layout'
+import PostLink from "../components/post-link"
+import Layout from "../components/layout"
 
-import { jsx } from 'theme-ui'
+import { jsx } from "theme-ui"
 
 const IndexPage = ({
   data: {

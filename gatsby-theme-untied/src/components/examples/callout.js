@@ -1,7 +1,7 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
-import Callout from '../Callout/'
+import Callout from "../Callout/"
 
 export default () => {
   const data = useStaticQuery(graphql`

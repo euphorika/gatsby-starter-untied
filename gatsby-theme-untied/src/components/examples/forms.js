@@ -1,12 +1,12 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
+import { jsx } from "theme-ui"
 
-import Input from '../Forms/input'
-import Checkbox from '../Forms/checkbox'
-import Radio from '../Forms/radio'
-import Select from '../Forms/select'
-import Button from '../Forms/button'
-import Textarea from '../Forms/textarea'
+import Input from "../Forms/input"
+import Checkbox from "../Forms/checkbox"
+import Radio from "../Forms/radio"
+import Select from "../Forms/select"
+import Button from "../Forms/button"
+import Textarea from "../Forms/textarea"
 
 const Forms = () => {
   const startYear = 1900
@@ -15,7 +15,7 @@ const Forms = () => {
   return (
     <section
       sx={{
-        variant: 'forms.example',
+        variant: "forms.example",
       }}
       className="forms-section"
     >
@@ -25,11 +25,11 @@ const Forms = () => {
             <Input
               name="firstname"
               message={{
-                type: 'error',
+                type: "error",
                 text: "What's your first name?",
               }}
               options={{
-                placeholder: 'Firstname',
+                placeholder: "Firstname",
                 required: true,
               }}
             />
@@ -39,7 +39,7 @@ const Forms = () => {
               name="lastname"
               value="Mustermann"
               options={{
-                placeholder: 'Lastname',
+                placeholder: "Lastname",
                 required: true,
               }}
             />
@@ -50,11 +50,11 @@ const Forms = () => {
               name="email"
               value="invalid Email"
               message={{
-                type: 'error',
-                text: 'Please enter a valid email address.',
+                type: "error",
+                text: "Please enter a valid email address.",
               }}
               options={{
-                placeholder: 'Email',
+                placeholder: "Email",
                 required: true,
               }}
             />
@@ -85,8 +85,8 @@ const Forms = () => {
             <Select
               name="select"
               message={{
-                type: 'info',
-                text: 'Choose your date of birth.',
+                type: "info",
+                text: "Choose your date of birth.",
               }}
               options={{ required: true }}
             >
@@ -104,7 +104,7 @@ const Forms = () => {
           <div className="grid-item fullsize">
             <Textarea
               name="message"
-              options={{ required: true, placeholder: 'Message' }}
+              options={{ required: true, placeholder: "Message" }}
             />
           </div>
           <div className="grid-item fullsize">

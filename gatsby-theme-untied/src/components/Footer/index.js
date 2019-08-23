@@ -1,24 +1,24 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
+import { jsx } from "theme-ui"
 
 const Footer = () => (
   <footer
     sx={{
-      display: ['block', 'inline-flex'],
-      justifyContent: 'space-between',
-      width: '100%',
-      textAlign: 'center',
-      borderTop: '1px solid',
-      borderColor: 'primary',
-      bg: 'secondary',
-      p: '1rem 1.95rem',
-      color: 'primary',
+      display: ["block", "inline-flex"],
+      justifyContent: "space-between",
+      width: "100%",
+      textAlign: "center",
+      borderTop: "1px solid",
+      borderColor: "primary",
+      bg: "secondary",
+      p: "1rem 1.95rem",
+      color: "primary",
     }}
   >
     <div
       sx={{
         fontSize: 3,
-        mb: '10px',
+        mb: "10px",
       }}
     >
       Gatsby Theme Untied

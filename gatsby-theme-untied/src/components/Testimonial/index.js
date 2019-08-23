@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
-import PropTypes from 'prop-types'
+import { jsx } from "theme-ui"
+import PropTypes from "prop-types"
 
-import Img from 'gatsby-image'
+import Img from "gatsby-image"
 
 const Testimonial = ({ children, name, imgFixed }) => (
   <section
@@ -12,7 +12,7 @@ const Testimonial = ({ children, name, imgFixed }) => (
   >
     <div
       sx={{
-        textAlign: 'center',
+        textAlign: "center",
       }}
     >
       <Img fixed={imgFixed} />
@@ -20,15 +20,15 @@ const Testimonial = ({ children, name, imgFixed }) => (
     <blockquote
       sx={{
         my: 3,
-        mx: 'auto',
+        mx: "auto",
         fontSize: 0,
-        maxWidth: '400px',
-        textAlign: 'center',
-        '&::before': {
-          content: 'open-quote',
+        maxWidth: "400px",
+        textAlign: "center",
+        "&::before": {
+          content: "open-quote",
         },
-        '&::after': {
-          content: 'close-quote',
+        "&::after": {
+          content: "close-quote",
         },
       }}
     >
@@ -36,7 +36,7 @@ const Testimonial = ({ children, name, imgFixed }) => (
     </blockquote>
     <div
       sx={{
-        textAlign: 'center',
+        textAlign: "center",
       }}
     >
       <strong>{name}</strong>

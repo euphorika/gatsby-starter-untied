@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 
 const FormErrorIcon = ({ width, height }) => {
   const svgString =
@@ -7,7 +7,7 @@ const FormErrorIcon = ({ width, height }) => {
 
   return (
     <span
-      style={{ display: 'inline-block', width: width, height: height }}
+      style={{ display: "inline-block", width: width, height: height }}
       dangerouslySetInnerHTML={{ __html: svgString }}
     />
   )
@@ -19,8 +19,8 @@ FormErrorIcon.propTypes = {
 }
 
 FormErrorIcon.defaultProps = {
-  width: '100%',
-  height: 'auto',
+  width: "100%",
+  height: "auto",
 }
 
 export default FormErrorIcon

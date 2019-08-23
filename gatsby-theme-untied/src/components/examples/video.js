@@ -1,7 +1,7 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
-import Video from '../Video/'
+import Video from "../Video/"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -27,7 +27,7 @@ export default () => {
     <div>
       {data.site.siteMetadata.components.video.map((value, key) => (
         <Video
-          preload={'auto'}
+          preload={"auto"}
           playsInline={true}
           muted={true}
           loop={false}

@@ -1,19 +1,19 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
-import PropTypes from 'prop-types'
+import { jsx } from "theme-ui"
+import PropTypes from "prop-types"
 
 const FormMessage = ({ type, children }) => {
   const makeClassName = type => {
     switch (type) {
-      case 'warn':
-        return 'warn'
+      case "warn":
+        return "warn"
 
-      case 'error':
-        return 'error'
+      case "error":
+        return "error"
 
-      case 'info':
+      case "info":
       default:
-        return 'info'
+        return "info"
     }
   }
 
@@ -24,7 +24,7 @@ const FormMessage = ({ type, children }) => {
   return (
     <div
       sx={{
-        variant: 'forms.message',
+        variant: "forms.message",
       }}
       className={makeClassName(type)}
     >
@@ -34,7 +34,7 @@ const FormMessage = ({ type, children }) => {
 }
 
 FormMessage.propTypes = {
-  type: PropTypes.oneOf(['info', 'warn', 'error']),
+  type: PropTypes.oneOf(["info", "warn", "error"]),
   children: PropTypes.node,
 }
 

@@ -1,12 +1,12 @@
 export default {
   default: {
-    color: 'primary',
-    textDecoration: 'none',
-    '&:hover': {
-      textDecoration: 'underline',
+    color: "primary",
+    textDecoration: "none",
+    "&:hover": {
+      textDecoration: "underline",
     },
-    '&.active': {
-      textDecoration: 'underline',
+    "&.active": {
+      textDecoration: "underline",
     },
   },
 }

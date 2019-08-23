@@ -1,11 +1,11 @@
 /** @jsx jsx */
-import React from 'react'
-import { jsx } from 'theme-ui'
-import PropTypes from 'prop-types'
+import React from "react"
+import { jsx } from "theme-ui"
+import PropTypes from "prop-types"
 
-import Slide from './one-slide'
-import ArrowLeft from './arrow-left.js'
-import ArrowRight from './arrow-right.js'
+import Slide from "./one-slide"
+import ArrowLeft from "./arrow-left.js"
+import ArrowRight from "./arrow-right.js"
 
 class Slider extends React.Component {
   constructor(props) {
@@ -40,18 +40,18 @@ class Slider extends React.Component {
     return (
       <div
         sx={{
-          position: 'absolute',
-          top: 'calc(50% - 10px)',
-          left: '0',
-          right: '0',
-          zIndex: '3',
+          position: "absolute",
+          top: "calc(50% - 10px)",
+          left: "0",
+          right: "0",
+          zIndex: "3",
         }}
       >
         <div
           role="button"
           sx={{
-            cursor: 'pointer',
-            width: '20px',
+            cursor: "pointer",
+            width: "20px",
           }}
           onClick={() => this.slideLeft()}
         >
@@ -60,8 +60,8 @@ class Slider extends React.Component {
         <div
           role="button"
           sx={{
-            cursor: 'pointer',
-            width: '20px',
+            cursor: "pointer",
+            width: "20px",
           }}
           onClick={() => this.slideRight()}
         >
@@ -75,7 +75,7 @@ class Slider extends React.Component {
     return (
       <div
         sx={{
-          transition: 'margin-left 0.5s',
+          transition: "margin-left 0.5s",
         }}
         style={{
           width: `${this.state.images.length * this.state.width}%`,
@@ -94,14 +94,14 @@ class Slider extends React.Component {
     return (
       <div
         sx={{
-          width: '100%',
-          overflow: 'hidden',
-          position: 'relative',
+          width: "100%",
+          overflow: "hidden",
+          position: "relative",
         }}
       >
         <div
           sx={{
-            marginBottom: '0',
+            marginBottom: "0",
           }}
         >
           {this.renderSlides()}

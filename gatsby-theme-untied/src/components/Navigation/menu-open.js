@@ -1,13 +1,13 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
+import { jsx } from "theme-ui"
 
-const MenuOpen = ({ size = '1em' }) => (
+const MenuOpen = ({ size = "1em" }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="currentcolor"
     viewBox="0 0 24 24"
     sx={{
-      display: 'block',
+      display: "block",
       margin: 0,
       fontSize: 3,
     }}
@@ -23,11 +23,11 @@ export default props => (
     title="Toggle Menu"
     {...props}
     sx={{
-      color: 'inherit',
-      bg: 'transparent',
+      color: "inherit",
+      bg: "transparent",
       m: 0,
       border: 0,
-      appearance: 'none',
+      appearance: "none",
     }}
   >
     <MenuOpen />

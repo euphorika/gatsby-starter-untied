@@ -1,13 +1,13 @@
 /** @jsx jsx */
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 
-import { jsx } from 'theme-ui'
-import { Styled } from 'theme-ui'
-import { Link } from 'gatsby'
+import { jsx } from "theme-ui"
+import { Styled } from "theme-ui"
+import { Link } from "gatsby"
 
-import MenuOpen from './menu-open.js'
-import MenuClose from './menu-close.js'
+import MenuOpen from "./menu-open.js"
+import MenuClose from "./menu-close.js"
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -15,8 +15,8 @@ class Navigation extends React.Component {
 
     this.state = {
       navigationVisible: false,
-      horizontalAlignment: this.props.horizontalAlignment || 'center',
-      verticalAlignment: this.props.verticalAlignment || 'center',
+      horizontalAlignment: this.props.horizontalAlignment || "center",
+      verticalAlignment: this.props.verticalAlignment || "center",
       entries: this.props.entries,
     }
   }
@@ -30,7 +30,7 @@ class Navigation extends React.Component {
           {...(!!entry.node.title ? { title: entry.node.title } : {})}
           {...(!!entry.node.target ? { target: entry.node.target } : {})}
           sx={{
-            variant: 'anchors.nav',
+            variant: "anchors.nav",
           }}
         >
           {entry.node.name}
@@ -40,30 +40,30 @@ class Navigation extends React.Component {
 
   calculateHorizontalPosition = horizontalAlignment => {
     switch (horizontalAlignment) {
-      case 'right':
-        return 'horizontal-align-right'
-      case 'left':
-        return 'horizontal-align-left'
-      case 'center':
+      case "right":
+        return "horizontal-align-right"
+      case "left":
+        return "horizontal-align-left"
+      case "center":
       default:
-        return 'horizontal-align-center'
+        return "horizontal-align-center"
     }
   }
 
   calculateVerticalPosition = verticalAlignment => {
     switch (verticalAlignment) {
-      case 'top':
-        return 'vertical-align-top'
-      case 'bottom':
-        return 'vertical-align-bottom'
-      case 'center':
+      case "top":
+        return "vertical-align-top"
+      case "bottom":
+        return "vertical-align-bottom"
+      case "center":
       default:
-        return 'vertical-align-center'
+        return "vertical-align-center"
     }
   }
 
   render() {
-    const toggleVisibilityClass = this.state.navigationVisible ? 'open ' : ''
+    const toggleVisibilityClass = this.state.navigationVisible ? "open " : ""
     const horizontalAlignmentClass = this.calculateHorizontalPosition(
       this.state.horizontalAlignment
     )
@@ -76,7 +76,7 @@ class Navigation extends React.Component {
         <button
           id="nav-link"
           sx={{
-            variant: 'buttons.nav',
+            variant: "buttons.nav",
           }}
           onClick={e => {
             this.setState({ navigationVisible: !this.state.navigationVisible })
@@ -88,42 +88,42 @@ class Navigation extends React.Component {
           id="menu"
           className={`${toggleVisibilityClass}${horizontalAlignmentClass} ${verticalAlignmentClass}`}
           sx={{
-            display: 'none',
-            position: 'fixed',
+            display: "none",
+            position: "fixed",
             top: 0,
             right: 0,
             bottom: 0,
             left: 0,
             zIndex: 100,
-            p: '15px',
-            bg: 'background',
-            '&.open': {
-              display: 'flex',
+            p: "15px",
+            bg: "background",
+            "&.open": {
+              display: "flex",
             },
-            '&.horizontal-align-center': {
-              justifyContent: 'center',
+            "&.horizontal-align-center": {
+              justifyContent: "center",
             },
-            '&.horizontal-align-left': {
-              justifyContent: 'flex-start',
+            "&.horizontal-align-left": {
+              justifyContent: "flex-start",
             },
-            '&.horizontal-align-right': {
-              justifyContent: 'flex-end',
+            "&.horizontal-align-right": {
+              justifyContent: "flex-end",
             },
-            '&.vertical-align-center': {
-              alignItems: 'center',
+            "&.vertical-align-center": {
+              alignItems: "center",
             },
-            '&.vertical-align-top': {
-              alignItems: 'flex-start',
+            "&.vertical-align-top": {
+              alignItems: "flex-start",
             },
-            '&.vertical-align-bottom': {
-              alignItems: 'flex-end',
+            "&.vertical-align-bottom": {
+              alignItems: "flex-end",
             },
           }}
         >
           <button
             id="nav-close"
             sx={{
-              variant: 'buttons.nav',
+              variant: "buttons.nav",
             }}
             onClick={() => {
               this.setState({ navigationVisible: false })
@@ -144,8 +144,8 @@ class Navigation extends React.Component {
 
 Navigation.propTypes = {
   navigationVisible: PropTypes.bool,
-  horizontalAlignment: PropTypes.oneOf(['right', 'center', 'left']),
-  verticalAlignment: PropTypes.oneOf(['top', 'center', 'bottom']),
+  horizontalAlignment: PropTypes.oneOf(["right", "center", "left"]),
+  verticalAlignment: PropTypes.oneOf(["top", "center", "bottom"]),
   entries: PropTypes.array.isRequired,
 }
 

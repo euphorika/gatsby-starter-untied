@@ -1,11 +1,11 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
-import PropTypes from 'prop-types'
+import { jsx } from "theme-ui"
+import PropTypes from "prop-types"
 
 const Button = ({ children, type, options }) => (
   <div
     sx={{
-      variant: 'forms.button',
+      variant: "forms.button",
     }}
     className="element-container"
   >

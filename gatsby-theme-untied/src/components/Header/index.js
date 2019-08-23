@@ -1,37 +1,37 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
-import { StaticQuery, graphql, Link } from 'gatsby'
+import { jsx } from "theme-ui"
+import { StaticQuery, graphql, Link } from "gatsby"
 
-import Navigation from '../Navigation/'
-import Logo from '../Logo/'
+import Navigation from "../Navigation/"
+import Logo from "../Logo/"
 
 export const PureHeader = ({ siteTitle, data }) => (
   <div
     sx={{
-      bg: 'secondary',
+      bg: "secondary",
     }}
   >
     <header
       sx={{
-        margin: '0 auto',
-        maxWidth: 'max-page-width',
-        p: '1.45rem 1.0875rem',
-        display: 'flex',
-        justifyContent: 'space-between',
+        margin: "0 auto",
+        maxWidth: "max-page-width",
+        p: "1.45rem 1.0875rem",
+        display: "flex",
+        justifyContent: "space-between",
       }}
     >
       <h1
         sx={{
           m: 0,
-          display: 'flex',
-          alignItems: 'center',
-          fontSize: '18px',
+          display: "flex",
+          alignItems: "center",
+          fontSize: "18px",
         }}
       >
         <Link
           to="/"
           sx={{
-            variant: 'anchors.header',
+            variant: "anchors.header",
           }}
         >
           <Logo />
@@ -39,7 +39,7 @@ export const PureHeader = ({ siteTitle, data }) => (
         <Link
           to="/"
           sx={{
-            variant: 'anchors.header',
+            variant: "anchors.header",
           }}
         >
           {siteTitle}
