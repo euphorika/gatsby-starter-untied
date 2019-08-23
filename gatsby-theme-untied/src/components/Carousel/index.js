@@ -1,17 +1,24 @@
 /** @jsx jsx */
 import React from 'react'
+import { jsx, Styled } from 'theme-ui'
 import PropTypes from 'prop-types'
-import CarouselIndicator from './indicator.js'
 
-import { jsx } from 'theme-ui'
+import CarouselIndicator from './indicator.js'
 
 class Carousel extends React.Component {
   constructor(props) {
     super(props)
 
     this.state = {
+      active: 0,
       slides: React.Children.toArray(this.props.children),
     }
+  }
+
+  onClickIndicatorHandler = index => {
+    this.setState({
+      active: index,
+    })
   }
 
   render() {
@@ -20,11 +27,8 @@ class Carousel extends React.Component {
     return (
       <div
         sx={{
-          overflow: ['hidden', 'auto'],
           mx: 'auto',
-          my: '0',
           width: ['90%', '100%'],
-          padding: [2, 0],
         }}
       >
         <div
@@ -34,6 +38,9 @@ class Carousel extends React.Component {
             scrollSnapType: 'x mandatory',
             scrollBehavior: 'smooth',
             scrollbarWidth: 'none',
+            '& > *': {
+              flexShrink: [0, 1],
+            },
             '::webkitScrollbar': {
               display: 'none',
             },
@@ -42,22 +49,23 @@ class Carousel extends React.Component {
           {children}
         </div>
         <div>
-          <ul
+          <Styled.ul
             sx={{
               display: ['flex', 'none'],
               justifyContent: 'center',
-              listStyleType: 'none',
-              ml: '5px',
             }}
           >
             {this.state.slides.map((slide, index) => (
               <CarouselIndicator
                 key={index}
-                index={index}
-                href={`#slide-${index}`}
+                onClick={e => {
+                  this.onClickIndicatorHandler(index)
+                }}
+                anchor={`#slide-${index}`}
+                active={!!(this.state.active === index)}
               />
             ))}
-          </ul>
+          </Styled.ul>
         </div>
       </div>
     )
