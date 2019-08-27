@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import CallToAction from "../CallToAction/"
+import { CallToAction } from "gatsby-theme-untied"
 
 export default () => {
   const data = useStaticQuery(graphql`

@@ -1,6 +1,6 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import { Layout } from "gatsby-theme-untied"
 
 import HeroExample from "../components/examples/hero"
 import TeamMembersExample from "../components/examples/teamMembers"

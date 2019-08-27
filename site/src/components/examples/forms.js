@@ -1,12 +1,14 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 
-import Input from "../Forms/input"
-import Checkbox from "../Forms/checkbox"
-import Radio from "../Forms/radio"
-import Select from "../Forms/select"
-import Button from "../Forms/button"
-import Textarea from "../Forms/textarea"
+import {
+  Input,
+  Checkbox,
+  Radio,
+  Select,
+  Button,
+  Textarea,
+} from "gatsby-theme-untied"
 
 const Forms = () => {
   const startYear = 1900

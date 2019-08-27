@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Testimonial from "../Testimonial/"
+import { Testimonial } from "gatsby-theme-untied"
 
 export default () => {
   const data = useStaticQuery(graphql`
