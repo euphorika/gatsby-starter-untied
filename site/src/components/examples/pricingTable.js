@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import { useStaticQuery, graphql } from "gatsby"
 
-import PricingTable from "../PricingTable/"
+import { PricingTable } from "gatsby-theme-untied"
 
 export default () => {
   const data = useStaticQuery(graphql`

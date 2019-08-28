@@ -1,10 +1,8 @@
 /** @jsx jsx */
+import { jsx } from "theme-ui"
 import { graphql } from "gatsby"
 
-import PostLink from "../components/post-link"
-import Layout from "../components/layout"
-
-import { jsx } from "theme-ui"
+import { Layout, PostLink } from "gatsby-theme-untied"
 
 const IndexPage = ({
   data: {

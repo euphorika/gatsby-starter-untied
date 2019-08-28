@@ -2,8 +2,7 @@
 import { jsx } from "theme-ui"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Carousel from "../Carousel/"
-import PricingTable from "../PricingTable/"
+import { Carousel, PricingTable } from "gatsby-theme-untied"
 
 export default () => {
   const data = useStaticQuery(graphql`

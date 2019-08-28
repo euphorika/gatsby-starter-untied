@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Slider from "../Slider/"
+
+import { Slider } from "gatsby-theme-untied"
 
 export default () => {
   const data = useStaticQuery(graphql`

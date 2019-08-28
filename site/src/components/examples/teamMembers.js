@@ -1,8 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import TeamMembers from "../TeamMembers/"
-import TeamMember from "../TeamMembers/team-member"
+import { TeamMembers, TeamMember } from "gatsby-theme-untied"
 
 export default () => {
   const data = useStaticQuery(graphql`
