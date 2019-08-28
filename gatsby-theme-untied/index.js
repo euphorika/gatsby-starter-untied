@@ -1,7 +1,7 @@
 export { default as Layout } from "./src/components/layout"
 export { default as PostLink } from "./src/components/post-link"
 export { default as Callout } from "./src/components/Callout/"
-export { default as CallToAction } from "./src/components/callToAction"
+export { default as CallToAction } from "./src/components/CallToAction"
 export { default as Carousel } from "./src/components/Carousel"
 export { default as Button } from "./src/components/Forms/button"
 export { default as Checkbox } from "./src/components/Forms/checkbox"
