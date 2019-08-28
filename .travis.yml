@@ -5,4 +5,4 @@ install: yarn
 cache: yarn
 before_script:
   - npm install -g gatsby-cli
-script: yarn workspace gatsby-theme-untied test:e2e:ci
+script: yarn workspace site test:e2e:ci

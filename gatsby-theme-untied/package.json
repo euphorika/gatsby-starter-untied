@@ -33,10 +33,6 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "clean": "gatsby clean",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
-    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
-    "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run",
     "format": "prettier --write '**/*.js'",
     "test": "jest"
   },
@@ -60,8 +56,7 @@
     "prettier": "^1.14.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-test-renderer": "^16.4.2",
-    "start-server-and-test": "^1.7.7"
+    "react-test-renderer": "^16.4.2"
   },
   "repository": {
     "type": "git",
