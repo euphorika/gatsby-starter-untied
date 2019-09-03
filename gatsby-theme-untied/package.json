@@ -33,10 +33,6 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "clean": "gatsby clean",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
-    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
-    "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run",
     "format": "prettier --write '**/*.js'",
     "test": "jest"
   },
@@ -53,15 +49,13 @@
     "@babel/preset-react": "^7.0.0-rc.3",
     "babel-core": "^7.0.0-0",
     "babel-jest": "^23.4.2",
-    "cypress": "^3.1.1",
     "gatsby": "^2.0.0-rc.21",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.5.0",
     "prettier": "^1.14.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-test-renderer": "^16.4.2",
-    "start-server-and-test": "^1.7.7"
+    "react-test-renderer": "^16.4.2"
   },
   "repository": {
     "type": "git",
