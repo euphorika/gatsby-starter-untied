@@ -2,7 +2,11 @@ language: node_js
 node_js:
   - "10"
 install: yarn
-cache: yarn
+cache:
+  yarn: true
+  npm: true
+  directories:
+    - node_modules
 before_script:
   - npm install -g gatsby-cli
-script: yarn workspace gatsby-theme-untied test:e2e:ci
+script: yarn workspace site test:e2e:ci
