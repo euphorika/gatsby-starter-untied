@@ -15,7 +15,13 @@ const CarouselIndicator = ({ anchor, active, onClick }) => (
     }}
     onClick={onClick}
   >
-    <a sx={{ textDecoration: "none" }} href={anchor}>
+    <a sx={{
+        textDecoration: "none",
+        display: "block",
+        width: "15px",
+        height: "15px",
+        borderRadius: "50%",
+      }} href={anchor}>
       &nbsp;
     </a>
   </li>
