@@ -44,7 +44,7 @@ yarn workspace gatsby-theme-untied test
 
 You can run the theme integration tests by:
 ```sh
-yarn workspace gatsby-theme-untied test:e2e
+yarn workspace site test:e2e
 ```
 
 You can format you code by:
